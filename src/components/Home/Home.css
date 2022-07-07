@@ -1,0 +1,19 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home__items {
+  display: flex;
+  align-items: center;
+  width: 85rem;
+  border: 1px solid black;
+}
+
+.home__title {
+  padding: 0rem 2rem;
+}
+
+.home__image img {
+  width: 100%;
+}
