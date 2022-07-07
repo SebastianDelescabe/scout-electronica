@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import Logo from '../../assets/logo-nav.png'
+import { Drawer } from './Drawer'
 
 export const Navbar = () => {
   return (
@@ -11,10 +12,13 @@ export const Navbar = () => {
         </div>
         <div className='container-titles-nav'>
           <a href="/">PRODUCTOS</a>
-          <a href="/">SERVVICIO TÉCNCIO</a>
+          <a href="/">SERVICIO TÉCNCIO</a>
           <a href="/">NOSOTROS</a>
           <a href="/">CLIENTES</a>
           <a href="/">CONTACTO</a>
+        </div>
+        <div className='container-drawer-nav'>
+        <Drawer/>
         </div>
       </div>
     </div>
