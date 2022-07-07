@@ -1,6 +1,7 @@
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './components/Home/Home';
+import { Carrousel } from './components/Carrousel/Carrousel';
 import { Navbar } from './components/Navbar/Navbar';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
       <div>
         <Navbar/>
         <Routes>
-          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/' element={<Carrousel />} />
         </Routes>
       </div>
     </div>
