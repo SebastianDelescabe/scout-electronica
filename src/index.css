@@ -3,6 +3,7 @@
 body {
   background: white;
   font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -10,6 +11,7 @@ body {
   --color-aqua: #6fe3e7;
   --color-gray: #9b9999;
   --color-background: rgb(238, 238, 238);
+  --hard-grey: #4c4c4c;
 }
 
 * {
