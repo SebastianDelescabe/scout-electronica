@@ -15,7 +15,7 @@ export const Navbar = () => {
           <a href="/">SERVICIO TÉCNCIO</a>
           <a href="/">NOSOTROS</a>
           <a href="/">CLIENTES</a>
-          <a href="/">CONTACTO</a>
+          <a href="/contact">CONTACTO</a>
         </div>
         <div className='container-drawer-nav'>
         <Drawer/>
