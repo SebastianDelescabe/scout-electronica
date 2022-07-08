@@ -1,0 +1,5 @@
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  margin-top: 10rem;
+  width: 20px;
+}
