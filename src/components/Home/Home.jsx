@@ -1,7 +1,6 @@
 import React from 'react';
 import './Home.css';
 import fotoHome from '../../assets/fotoHome.png';
-// import { products } from '../../assets/productData.js';
 
 export const Home = () => {
     return (
@@ -9,7 +8,8 @@ export const Home = () => {
             <div className='home'>
                 <div className='home__items'>
                     <div className="home__title">
-                        <h1>Inovacion y calidad para productos en latinoamerica</h1>
+                        <span>Inovacion y calidad para productos en latinoamerica</span>
+                        <button>Conocenos</button>
                     </div>
                     <div className='home__image'>
                         <img src={fotoHome} alt="" />
