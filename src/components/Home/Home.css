@@ -10,18 +10,20 @@
   align-items: center;
   width: 90%;
   padding: 2rem 0rem;
+  height: 550px;
 }
 
 .home__title {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 60%;
 }
 
 .home__title span {
   padding-left: 1rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--hard-grey);
 }
 
@@ -34,7 +36,29 @@
   border: none;
   margin-top: 3rem;
 }
-
+.home__image {
+  width: 50%;
+  padding: 0rem 2rem;
+}
 .home__image img {
   width: 100%;
+}
+
+@media (max-width: 850px) {
+  .home__items {
+    flex-direction: column;
+  }
+  .home__title {
+    width: 100%;
+  }
+  .home__title span {
+    font-size: 2rem;
+  }
+
+  .home__title button {
+    margin: 2rem 0rem;
+  }
+  .home__image {
+    width: 90%;
+  }
 }

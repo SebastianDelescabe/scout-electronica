@@ -1,7 +1,3 @@
-:root {
-  --swiper-theme-color: var(--color-aqua);
-}
-
 .swiper-button-next::after,
 .swiper-button-prev::after {
   margin-top: 10rem;

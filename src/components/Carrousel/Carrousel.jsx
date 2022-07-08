@@ -1,7 +1,9 @@
 import React from 'react';
 import { Home } from '../Home/Home';
+import { homeData } from '../../assets/data/homeData';
 import './Carrousel.css'
 
+//Carrousel imports
 import { Navigation, Pagination, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -18,13 +20,16 @@ export const Carrousel = () => {
             }}
             navigation
             pagination={{ clickable: true }}
-            className="swiper"
             modules={[Navigation, Pagination, Autoplay]}
+            className="swiper"
         >
-            <SwiperSlide><Home /></SwiperSlide>
-            <SwiperSlide><Home /></SwiperSlide>
-            <SwiperSlide><Home /></SwiperSlide>
-            <SwiperSlide><Home /></SwiperSlide>
+            {
+                homeData && homeData.map(data => (
+                    <SwiperSlide>
+                        <Home data={data} />
+                    </SwiperSlide>
+                ))
+            }
         </Swiper>
     );
 };
