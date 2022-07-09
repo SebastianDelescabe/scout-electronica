@@ -1,4 +1,5 @@
 import React from 'react';
+import { ContactForm } from './ContactForm';
 import { MdPhone } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 import { MdHouse } from "react-icons/md";
@@ -38,7 +39,9 @@ export const Contact = () => {
               </div>
             </div>
           </div>
-          <div className='contact-form'>Form</div>
+          <div className='contact-form'>
+            <ContactForm />
+          </div>
         </div>
       </div>
     </div>
