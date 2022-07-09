@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useFormik } from 'formik';
-import * as Yup from 'yup'
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import './Contact.css';
 
 export const ContactForm = () => {
+
+    const form = useRef();
 
     const initialValues = {
         company: '',
@@ -13,22 +17,34 @@ export const ContactForm = () => {
     }
 
     const onSubmit = () => {
-        alert('ye')
+        emailjs.sendForm('service_h2zusuy', 'template_pqpj53j', form.current, 'x6-8LVIrjwT2UXfe-')
+            .then((result) => {
+                toast.success("Email enviado correctamente");
+            }, (error) => {
+                toast.error("Completar campos correctamente");
+            });
+
     }
 
     const formik = useFormik({ initialValues, onSubmit });
 
-    const { handleSubmit, handleChange } = formik  //Touched y handleBlur es para salir del campo y que aparezca error si no complete nada
+    const { handleSubmit, handleChange, values } = formik
 
     return (
         <>
             <h2>Contáctenos desde éste formulario</h2>
             <div className="form-container">
-                <form onSubmit={handleSubmit}>
+                <ToastContainer
+                    position="top-center"
+                    theme="colored"
+                    autoClose={2000}
+                />
+                <form onSubmit={handleSubmit} ref={form}>
                     <div className='form-container'>
                         <span>Empresa</span>
                         <input
                             name="company"
+                            values={values.company}
                             required
                             onChange={handleChange}
                         />
@@ -38,6 +54,7 @@ export const ContactForm = () => {
                         <input
                             name="email"
                             type="email"
+                            values={values.email}
                             required
                             onChange={handleChange}
                         />
@@ -47,6 +64,7 @@ export const ContactForm = () => {
                         <input
                             name="phone"
                             type='number'
+                            values={values.phone}
                             required
                             onChange={handleChange}
                         />
@@ -55,10 +73,11 @@ export const ContactForm = () => {
                         <span>Consulta</span>
                         <textarea
                             name="request"
+                            values={values.request}
                             required
                             onChange={handleChange}
                             cols="30"
-                            rows="8"
+                            rows="7"
                             maxlength={1000}
                         />
                     </div>
