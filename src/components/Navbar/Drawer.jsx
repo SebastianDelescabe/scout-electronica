@@ -26,8 +26,6 @@ export const Drawer = () => {
             open={state[anchor]}
             onClick={toggleDrawer(anchor, true)}
             style={{
-              width: 100,
-              marginLeft: 60,
               fontSize: "large",
               cursor: "pointer",
               color: "#4c4c4c",
