@@ -2,6 +2,7 @@ import React from 'react';
 import { MdPhone } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 import { MdHouse } from "react-icons/md";
+import { MapContact } from './MapContact';
 import './Contact.css';
 
 export const Contact = () => {
@@ -10,6 +11,7 @@ export const Contact = () => {
       <div className='container-elements-contact'>
         <p className='title-contact'>CONTACTO</p>
         <div className='container-map-contact'>
+          <MapContact/>
         </div>
         <div className='container-form-info-contact'>
 

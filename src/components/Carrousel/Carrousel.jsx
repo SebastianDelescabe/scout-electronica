@@ -1,6 +1,6 @@
 import React from 'react';
 import { Home } from '../Home/Home';
-import { homeData } from '../../assets/data/homeData';
+import {homeData} from '../../assets/data/homeData'
 import './Carrousel.css'
 
 //Carrousel imports

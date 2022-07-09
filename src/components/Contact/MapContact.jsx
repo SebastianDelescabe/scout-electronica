@@ -1,32 +1,22 @@
-import React from 'react'
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
-
-const containerStyle = {
-  width: '1120px',
-  height: '420px'
-};
-
-const center = {
-  lat: -3.745,
-  lng: -38.523
-};
+import React from "react";
 
 export const MapContact = () => {
   return (
-    <div style={{width:'200px'}}>
-
-      <LoadScript
-        googleMapsApiKey="AIzaSyDIkMFGwMkJJ3U7Y1-enbTpt5VdpTEfXS8"
-      >
-        <GoogleMap
-          // mapContainerStyle={containerStyle}
-          center={center}
-          zoom={10}
-        >
-          { /* Child components, such as markers, info windows, etc. */ }
-          <></>
-        </GoogleMap>
-      </LoadScript>
+    <div>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+          className="map-google"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=-34.54732856384533,%20-58.57467868565344&t=&z=17&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe>
+          <a href="https://fmovies-online.net"></a>
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
