@@ -36,6 +36,17 @@
 .container-titles-nav a:hover {
   border-bottom: solid 2px var(--color-aqua);
 }
+.container-titles-nav p {
+  color: var(--hard-grey);
+  font-weight: 500;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+.container-titles-nav p:hover {
+  border-bottom: solid 2px var(--color-aqua);
+  cursor: pointer;
+}
 /*-----------------------------------------------------------------*/
 /*----------------------------*DRAWER*-----------------------------*/
 /*-----------------------------------------------------------------*/
