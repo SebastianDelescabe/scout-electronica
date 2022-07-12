@@ -1,0 +1,61 @@
+.container-nosotros{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bg-nosotros{
+ background-image: url(../../assets/bgNosotros.jpg);   
+ height: 21rem;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-attachment: fixed;
+ background-size: cover;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.container-elements-nosotros{
+    width: 70rem;
+    height: 40rem;
+}
+.bg-black{
+    background-color: rgba(0,0,0,0.4);
+    height: 21rem;
+    padding: 2rem;
+    text-align: center;
+}
+.experience-title-nosotros{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+}
+.quines-title-nosotros{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+}
+.text-nosotros{
+    font-size: 1.1rem;
+    color: #fff;
+}
+/*-----------------------------------------------------------------*/
+/*-------------------------*MEDIA QUERIES*-------------------------*/
+/*-----------------------------------------------------------------*/
+
+@media (min-width: 1700px) {
+    .container-elements-nosotros{
+        width: 110rem;
+    }
+}
+  
+  /*-------------------------*600*-------------------------*/
+  
+  @media (max-width: 600px) {
+    .container-elements-nosotros{
+        width: 20rem;
+    }
+  }

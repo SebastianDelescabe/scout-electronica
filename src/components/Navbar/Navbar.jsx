@@ -43,9 +43,8 @@ export const Navbar = () => {
               }}
               disableScrollLock
             >
-              <MenuItem onClick={handleClose}><Link to={'/ss'}>Hola</Link></MenuItem>
-              <MenuItem onClick={handleClose}><Link to={'/ss'}>Hola</Link></MenuItem>
-              <MenuItem onClick={handleClose}><Link to={'/ss'}>Hola</Link></MenuItem>
+              <MenuItem onClick={handleClose}><Link to={'/ss'}>Control de calidad</Link></MenuItem>
+              <MenuItem onClick={handleClose}><Link to={'/ss'}>Line Producción</Link></MenuItem>
             </Menu>
           </>
           <a href="/">SERVICIO TÉCNCIO</a>
