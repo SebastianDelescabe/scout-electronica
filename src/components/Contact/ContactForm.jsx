@@ -21,7 +21,8 @@ export const ContactForm = () => {
             .then((result) => {
                 toast.success("Email enviado correctamente");
             }, (error) => {
-                toast.error("Completar campos correctamente");
+                toast.error("Error al enviar la consulta");
+                console.log(error);
             });
 
     }
@@ -31,49 +32,63 @@ export const ContactForm = () => {
     const { handleSubmit, handleChange, values } = formik
 
     return (
-        <>
-            <h2>Contáctenos desde éste formulario</h2>
-            <div className="form-container">
+        <div className='contact-form'>
+            <div>
                 <ToastContainer
                     position="top-center"
                     theme="colored"
                     autoClose={2000}
                 />
                 <form onSubmit={handleSubmit} ref={form}>
-                    <div className='form-container'>
-                        <span>Empresa</span>
-                        <input
-                            name="company"
-                            values={values.company}
-                            required
-                            onChange={handleChange}
-                        />
+                    <h2>Contáctenos</h2>
+                    <div className='contact-form-inputs-container'>
+                        <div>
+                            <input
+                                placeholder='Empresa'
+                                name="company"
+                                values={values.company}
+                                required
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div>
+                            <input
+                                name="email"
+                                type="email"
+                                placeholder='Email'
+                                values={values.email}
+                                required
+                                onChange={handleChange}
+                            />
+                        </div>
+                    </div>
+                    <div className='contact-form-inputs-container'>
+                        <div>
+                            <input
+                                placeholder='Teléfono'
+                                name="phone"
+                                type='tel'
+                                values={values.phone}
+                                required
+                                onChange={handleChange}
+                            />
+                        </div>
+                        <div>
+                            <input
+                                name=''
+                                type='text'
+                                placeholder='Asunto'
+                                values={values.phone}
+                                required
+                                onChange={handleChange}
+                            />
+                        </div>
                     </div>
                     <div>
-                        <label>Email </label>
-                        <input
-                            name="email"
-                            type="email"
-                            values={values.email}
-                            required
-                            onChange={handleChange}
-                        />
-                    </div>
-                    <div>
-                        <label>Teléfono </label>
-                        <input
-                            name="phone"
-                            type='number'
-                            values={values.phone}
-                            required
-                            onChange={handleChange}
-                        />
-                    </div>
-                    <div>
-                        <span>Consulta</span>
                         <textarea
                             name="request"
                             values={values.request}
+                            placeholder='Consulta'
                             required
                             onChange={handleChange}
                             cols="30"
@@ -81,9 +96,11 @@ export const ContactForm = () => {
                             maxlength={1000}
                         />
                     </div>
-                    <button type='submit'>Enviar consulta</button>
+                    <div className='form-button'>
+                        <button type='submit'>Enviar</button>
+                    </div>
                 </form>
             </div>
-        </>
+        </div>
     )
 }
