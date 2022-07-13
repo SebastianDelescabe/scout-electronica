@@ -1,18 +1,37 @@
 import React from 'react';
-import './Home.css';
+import { HomeCard } from './HomeCard';
+import { homeData } from '../../assets/data/homeData'
+import './Home.css'
 
-export const Home = ({ data }) => {
+//Carrousel imports
+import { Navigation, Pagination, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/bundle';
+
+export const Home = () => {
     return (
         <div className='home'>
-            <div className='home__items'>
-                <div className="home__title">
-                    <span>{data.title}</span>
-                    <button>{data.button}</button>
-                </div>
-                <div className='home__image'>
-                    <img src={data.image} alt="home__image" />
-                </div>
-            </div>
+            <Swiper
+                slidesPerView={1}
+                loop={true}
+                autoplay={{
+                    delay: 3500,
+                    disableOnInteraction: false,
+                }}
+                //navigation
+                pagination={{ clickable: true }}
+                modules={[Navigation, Pagination, Autoplay]}
+                className="swiper"
+            >
+                {
+                    homeData && homeData.map(data => (
+                        <SwiperSlide>
+                            <HomeCard data={data} />
+                        </SwiperSlide>
+                    ))
+                }
+            </Swiper>
         </div>
-    )
-}
+    );
+};

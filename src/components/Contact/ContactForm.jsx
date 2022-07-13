@@ -13,18 +13,17 @@ export const ContactForm = () => {
         company: '',
         email: '',
         phone: '',
+        theme: '',
         request: '',
     }
 
     const onSubmit = () => {
         emailjs.sendForm('service_h2zusuy', 'template_pqpj53j', form.current, 'x6-8LVIrjwT2UXfe-')
-            .then((result) => {
+            .then(() => {
                 toast.success("Email enviado correctamente");
             }, (error) => {
                 toast.error("Error al enviar la consulta");
-                console.log(error);
             });
-
     }
 
     const formik = useFormik({ initialValues, onSubmit });
@@ -47,18 +46,18 @@ export const ContactForm = () => {
                                 placeholder='Empresa'
                                 name="company"
                                 values={values.company}
-                                required
                                 onChange={handleChange}
+                                required
                             />
                         </div>
                         <div>
                             <input
+                                placeholder='Email'
                                 name="email"
                                 type="email"
-                                placeholder='Email'
                                 values={values.email}
-                                required
                                 onChange={handleChange}
+                                required
                             />
                         </div>
                     </div>
@@ -69,30 +68,30 @@ export const ContactForm = () => {
                                 name="phone"
                                 type='tel'
                                 values={values.phone}
-                                required
                                 onChange={handleChange}
+                                required
                             />
                         </div>
                         <div>
                             <input
-                                name=''
-                                type='text'
                                 placeholder='Asunto'
-                                values={values.phone}
-                                required
+                                name='theme'
+                                type='text'
+                                values={values.theme}
                                 onChange={handleChange}
+                                required
                             />
                         </div>
                     </div>
                     <div>
                         <textarea
+                            placeholder='Consulta'
                             name="request"
                             values={values.request}
-                            placeholder='Consulta'
-                            required
                             onChange={handleChange}
                             cols="30"
                             rows="7"
+                            required
                             maxlength={1000}
                         />
                     </div>

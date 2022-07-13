@@ -1,10 +1,16 @@
-.home {
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  margin-top: 10rem;
+  width: 20px;
+}
+
+.homeCard {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 13rem;
 }
-.home__items {
+.homeCard__items {
   background-color: var(--color-background);
   display: flex;
   align-items: center;
@@ -13,21 +19,21 @@
   height: 550px;
 }
 
-.home__title {
+.homeCard__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 60%;
 }
 
-.home__title span {
+.homeCard__container span {
   padding-left: 1rem;
   text-align: center;
   font-size: 2.5rem;
   color: var(--hard-grey);
 }
 
-.home__title button {
+.homeCard__container button {
   border-radius: 12px;
   font-size: 15px;
   cursor: pointer;
@@ -36,29 +42,47 @@
   border: none;
   margin-top: 3rem;
 }
-.home__image {
+
+.homeCard__image {
   width: 50%;
   padding: 0rem 2rem;
 }
-.home__image img {
+
+.homeCard__image img {
   width: 100%;
 }
 
+.homeCard__button-responsive {
+  display: none;
+}
+
 @media (max-width: 850px) {
-  .home__items {
+  .homeCard__items {
     flex-direction: column;
   }
-  .home__title {
+  .homeCard__container {
     width: 100%;
   }
-  .home__title span {
+  .homeCard__container span {
     font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
-  .home__title button {
-    margin: 2rem 0rem;
+  .homeCard__container button {
+    display: none;
   }
-  .home__image {
+  .homeCard__image {
     width: 90%;
+  }
+
+  .homeCard__button-responsive {
+    display: flex;
+    border-radius: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: white;
+    border: none;
+    margin-top: 2rem;
   }
 }
