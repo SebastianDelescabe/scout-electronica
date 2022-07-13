@@ -33,7 +33,7 @@
 /*-----------------------------------------------------------------*/
 
 .contact-info {
-  height: 28rem;
+  height: 25rem;
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -80,10 +80,9 @@
 /*-----------------------------------------------------------------*/
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
   width: 60%;
-  padding-top: 2rem;
+  height: 25rem;
+  margin-top: 2rem;
 }
 
 .contact-form-inputs-container {
@@ -93,8 +92,12 @@
 }
 
 .contact-form h2 {
-  margin: 2rem 0rem;
   color: var(--color-aqua);
+}
+
+.contact-form h4 {
+  color: var(--color-gray);
+  font-weight: 400;
 }
 
 .contact-form form div {
@@ -184,7 +187,9 @@
   .contact-form {
     width: 100%;
   }
-
+  .contact-form h4 {
+    font-size: 14px;
+  }
   .contact-form-inputs-container {
     flex-direction: column;
   }

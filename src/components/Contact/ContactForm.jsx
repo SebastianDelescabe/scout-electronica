@@ -39,7 +39,9 @@ export const ContactForm = () => {
                     autoClose={2000}
                 />
                 <form onSubmit={handleSubmit} ref={form}>
-                    <h2>Contáctenos</h2>
+                    <h2>Cotizá y Asesorate</h2>
+                    <h4>Solicita más información a través de nuestro formulario de contacto, tenemos cobertura en toda la región.</h4>
+                    <h4></h4>
                     <div className='contact-form-inputs-container'>
                         <div>
                             <input

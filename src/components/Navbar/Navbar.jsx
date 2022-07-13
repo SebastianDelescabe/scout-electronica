@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.css'
 import Logo from '../../assets/logo-nav.png'
 import { Drawer } from './Drawer'
+// import { HashLink, NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
 
 export const Navbar = () => {
   return (
@@ -18,7 +19,7 @@ export const Navbar = () => {
           <a href="/contact">CONTACTO</a>
         </div>
         <div className='container-drawer-nav'>
-        <Drawer/>
+          <Drawer />
         </div>
       </div>
     </div>

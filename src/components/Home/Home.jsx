@@ -1,7 +1,8 @@
 import React from 'react';
 import { HomeCard } from './HomeCard';
-import { homeData } from '../../assets/data/homeData'
-import './Home.css'
+import { Clients } from '../Clients/Clients';
+import { homeData } from '../../assets/data/homeData';
+import './Home.css';
 
 //Carrousel imports
 import { Navigation, Pagination, Autoplay } from 'swiper';
@@ -11,7 +12,7 @@ import 'swiper/css/bundle';
 
 export const Home = () => {
     return (
-        <div className='home'>
+        <div className='home' id='home'>
             <Swiper
                 slidesPerView={1}
                 loop={true}
@@ -19,7 +20,7 @@ export const Home = () => {
                     delay: 3500,
                     disableOnInteraction: false,
                 }}
-                //navigation
+                navigation={true}
                 pagination={{ clickable: true }}
                 modules={[Navigation, Pagination, Autoplay]}
                 className="swiper"
@@ -32,6 +33,9 @@ export const Home = () => {
                     ))
                 }
             </Swiper>
+            <div className='home-clients'>
+                <Clients />
+            </div>
         </div>
     );
 };

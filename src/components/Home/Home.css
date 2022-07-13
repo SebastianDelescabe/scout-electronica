@@ -56,6 +56,13 @@
   display: none;
 }
 
+.home-clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
 @media (max-width: 850px) {
   .homeCard__items {
     flex-direction: column;

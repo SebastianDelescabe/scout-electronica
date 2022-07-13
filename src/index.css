@@ -7,6 +7,10 @@ body {
   --swiper-theme-color: var(--color-aqua);
 }
 
+html {
+  overflow-y: scroll;
+}
+
 :root {
   --font-base: "Poppins", sans-serif;
   --color-aqua: #6fe3e7;
