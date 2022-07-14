@@ -21,8 +21,8 @@
 }
 
 .home__title span {
-  padding-left: 1rem;
-  text-align: center;
+  padding-left: 3rem;
+  text-align: flex-start;
   font-size: 2.5rem;
   color: var(--hard-grey);
 }
@@ -42,6 +42,23 @@
 }
 .home__image img {
   width: 100%;
+}
+
+/*-----------------------------------------------------------------*/
+/*-------------------------*MEDIA QUERIES*-------------------------*/
+/*-----------------------------------------------------------------*/
+
+@media (max-width: 1700px) {
+  .home__items {
+    height: 25rem;
+  }
+  
+.home__title span {
+  padding-left: 3rem;
+  text-align: flex-start;
+  font-size: 2.2rem;
+  color: var(--hard-grey);
+}
 }
 
 @media (max-width: 850px) {
