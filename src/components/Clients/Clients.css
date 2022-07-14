@@ -6,11 +6,32 @@
   justify-content: center;
   width: 90%;
 }
+
+.clients-banner {
+  width: 100%;
+  height: 250px;
+  background-image: url("../../assets/bannerClients.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-banner span {
+  font-size: 25px;
+  margin-left: 8rem;
+  color: var(--hard-grey);
+  font-weight: 600;
+}
 .clients-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+  margin-bottom: 2rem;
 }
 .clients-text h2 {
   color: var(--hard-grey);
@@ -57,5 +78,12 @@
   .clients-images img {
     width: 10rem;
     padding: 4rem 1.5rem 0rem 0rem;
+  }
+
+  .clients-banner {
+    height: 150px;
+  }
+  .clients-banner span {
+    font-size: 15px;
   }
 }

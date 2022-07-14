@@ -17,11 +17,11 @@
   width: 90%;
   padding: 2rem 0rem;
   height: 550px;
-  /* background-image: url("../../assets/fotoHome3.jpg");
 
+  /* background-image: url("../../assets/fondito.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 }
 
 .homeCard__container {
@@ -65,7 +65,6 @@
     flex-direction: column;
     background-color: white;
     height: 500px;
-    border: 1px solid var(--color-background);
   }
   .homeCard__container {
     width: 100%;
@@ -85,12 +84,7 @@
 
   .homeCard__button-responsive {
     display: flex;
-    border-radius: 12px;
-    font-size: 15px;
     cursor: pointer;
-    padding: 1rem;
-    background-color: white;
-    border: none;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 }

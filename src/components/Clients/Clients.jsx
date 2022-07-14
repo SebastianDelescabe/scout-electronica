@@ -5,9 +5,8 @@ import './Clients.css';
 export const Clients = () => {
     return (
         <div className='clients' id="clients">
-            <div className='clients-text'>
-                <span className='clients-title'>Clientes</span>
-                {/* <h2>Confían en nosotros en nosotros</h2> */}
+            <div className='clients-banner'>
+                <span>20 años de experiencia en el mercado </span>
             </div>
             <div className='clients-images'>
                 {clients && clients.map((image) => (
