@@ -1,30 +1,49 @@
 import React from "react";
 import "./Nosotros.css";
+import Compromiso from '../../assets/deal.png'
+import Watch from '../../assets/stopwatch.png'
+import Team from '../../assets/team-management.png'
 
 export const Nosotros = () => {
   return (
-    <div className="container-nosotros">
+    <div className="container-nosotros" id="nosotros">
       <div className="container-elements-nosotros">
         <p className="title-contact">NOSOTROS</p>
         <div className="bg-nosotros">
-        <div className="bg-black">
-          <p className="experience-title-nosotros">
-            15 años de experiencia te garantizan nuestra calidad y compromiso
-          </p>
-          <div>
-            <p className="quines-title-nosotros">¿Quiénes somos?</p>
-            <p className="text-nosotros">
-              Nuestro equipo está formado por un grupo de personas con una vasta experiencia en
-              forma individual atendiendo las necesidades de laboratorios
-              medicinales y afines. Hoy formamos un grupo técnicamente
-              homogéneo, comprometido en cada detalle de la atención al cliente.
-              Esto nos lleva a la fabricación de máquinas con un alto índice de
-              confiabilidad, plazos de entrega reales, costos competitivos y
-              servicio técnico de pronta respuesta.
+          <div className="bg-black">
+            <p className="experience-title-nosotros">
+              20 años de experiencia te garantizan nuestra calidad y compromiso
             </p>
+            <div>
+              <p className="quines-title-nosotros">¿Quiénes somos?</p>
+              <p className="text-nosotros">
+                Scout Electronica es una empresa dedicada a ofrecer soluciones
+                integrales en el suministro de equipos e insumos para
+                laboratorios medicinales o afines.
+              </p>
+            </div>
           </div>
         </div>
+       <div>
+        <p className="porque-nosotros">¿Por qué nosotros?</p>
+       <div className="cotnainer-pq-serv-nosotros">
+          <div className="container-serv-nosotros">
+            <p className="title-serv-card">COMPROMISO</p>
+            <img className="img-serv-card" src={Compromiso} alt="deal" />
+            <p className="text-serv-card">Comprometidos en la fabricación de máquinas con un alto índice de confiabilidad.</p>
+          </div>
+          <div className="container-serv-nosotros">
+            <p className="title-serv-card">TIEMPO</p>
+            <img className="img-serv-card" src={Watch} alt="watch" />
+            <p className="text-serv-card">Plazos de entrega reales y costos competitivos en base al mercado.</p>
+          </div>
+          <div className="container-serv-nosotros">
+            <p className="title-serv-card">SERVICIOS</p>
+            <img className="img-serv-card" src={Team} alt="team" />
+            <p className="text-serv-card">Servicios confiables en tiempo oportuno para garantizar la satisfacción de nuestros clientes.</p>
+          </div>
         </div>
+       </div>
       </div>
     </div>
   );

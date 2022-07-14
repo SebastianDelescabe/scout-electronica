@@ -45,7 +45,7 @@ export const Drawer = () => {
                 <a href="/">SERVVICIO TÉCNCIO</a>
                 <a href="/">NOSOTROS</a>
                 <a href="/">CLIENTES</a>
-                <a href="/">CONTACTO</a>
+                <a href="/contact">CONTACTO</a>
               </div>
             </div>
           </SwipeableDrawer>
