@@ -6,8 +6,13 @@ export const HomeCard = ({ data }) => {
         <div className='homeCard'>
             <div className='homeCard__items'>
                 <div className="homeCard__container">
-                    <span>{data.title}</span>
-                    <button>{data.button}</button>
+                    <span className='homeCard__title'>{data.title}</span>
+                    <button className="app__button">
+                        <span className="circle" aria-hidden="true">
+                            <span className="icon arrow"></span>
+                        </span>
+                        <span className="button-text">{data.button}</span>
+                    </button>
                 </div>
                 <div className='homeCard__image'>
                     <img src={data.image} alt="homeCard__image" />

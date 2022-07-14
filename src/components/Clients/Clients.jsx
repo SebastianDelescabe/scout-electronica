@@ -1,8 +1,6 @@
 import React from 'react';
+import { clients } from '../../assets/data/clientsData'
 import './Clients.css';
-import fotoHome1 from '../../assets/fotoHome1.jpg'
-import fotoHome2 from '../../assets/fotoHome2.jpg'
-import fotoHome3 from '../../assets/fotoHome3.jpg'
 
 export const Clients = () => {
     return (
@@ -12,14 +10,9 @@ export const Clients = () => {
                 {/* <h2>Confían en nosotros en nosotros</h2> */}
             </div>
             <div className='clients-images'>
-                <img src={fotoHome1} alt="" />
-                <img src={fotoHome2} alt="" />
-                <img src={fotoHome3} alt="" />
-                <img src={fotoHome1} alt="" />
-                <img src={fotoHome2} alt="" />
-                <img src={fotoHome3} alt="" />
-                <img src={fotoHome1} alt="" />
-                <img src={fotoHome2} alt="" />
+                {clients && clients.map((image) => (
+                    <img src={image} alt="" />
+                ))}
             </div>
         </div>
     )

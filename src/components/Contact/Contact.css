@@ -24,7 +24,7 @@
 .container-form-info-contact {
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -33,11 +33,11 @@
 /*-----------------------------------------------------------------*/
 
 .contact-info {
-  height: 25rem;
+  height: 28rem;
+  margin-top: 1rem;
   width: 30%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: space-around;
 }
 
@@ -81,7 +81,7 @@
 
 .contact-form {
   width: 60%;
-  height: 25rem;
+  height: 35rem;
   margin-top: 2rem;
 }
 
@@ -125,11 +125,6 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-}
-
-.form-button button {
-  padding: 10px;
-  cursor: pointer;
 }
 
 /*-----------------------------------------------------------------*/

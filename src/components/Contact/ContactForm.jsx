@@ -92,13 +92,18 @@ export const ContactForm = () => {
                             values={values.request}
                             onChange={handleChange}
                             cols="30"
-                            rows="7"
+                            rows="5"
                             required
                             maxlength={1000}
                         />
                     </div>
                     <div className='form-button'>
-                        <button type='submit'>Enviar</button>
+                        <button type='submit' className="app__button">
+                            <span className="circle" aria-hidden="true">
+                                <span className="icon arrow"></span>
+                            </span>
+                            <span className="button-text">Enviar</span>
+                        </button>
                     </div>
                 </form>
             </div>
