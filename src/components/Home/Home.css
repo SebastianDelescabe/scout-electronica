@@ -14,10 +14,9 @@
   background-color: var(--color-background);
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 110rem;
   padding: 2rem 0rem;
   height: 550px;
-
   background-image: url("../../assets/fondo.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -32,7 +31,7 @@
 }
 
 .homeCard__title {
-  padding-left: 1rem;
+  padding-left: 2rem;
   text-align: center;
   font-size: 2.5rem;
   font-weight: 500;
@@ -58,6 +57,29 @@
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
+}
+
+@media (max-width: 1700px) {
+  .homeCard__items {
+    background-color: var(--color-background);
+    display: flex;
+    align-items: center;
+    width: 70rem;
+    padding: 2rem 0rem;
+    height: 400px;
+    background-image: url("../../assets/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .homeCard__title {
+    padding-left: 2rem;
+    text-align: start;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: var(--hard-grey);
+    margin-bottom: 3rem;
+  }
 }
 
 @media (max-width: 850px) {
@@ -87,4 +109,5 @@
     cursor: pointer;
     margin-top: 3rem;
   }
+
 }
