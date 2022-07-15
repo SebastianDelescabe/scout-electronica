@@ -5,7 +5,7 @@ import fotoHome3 from '../../assets/fotoHome3.jpg';
 
 export const homeData = [
     {
-        title: 'Inovación y calidad para productos en latinoamérica',
+        title: 'Inovación y calidad para laboratorios de latinoamérica',
         image: fotoHome1,
         button: 'Conocenos'
     },
