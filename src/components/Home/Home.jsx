@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { HomeCard } from './HomeCard';
 import { Clients } from '../Clients/Clients';
 import { homeData } from '../../assets/data/homeData';
+import { Nosotros } from "../Nosotros/Nosotros";
 import './Home.css';
 
 //Carrousel imports
@@ -50,6 +51,7 @@ export const Home = () => {
                     ))
                 }
             </Swiper>
+            <Nosotros />
             <div className='home-clients'>
                 <Clients />
             </div>

@@ -19,7 +19,6 @@
 .container-map-contact {
   width: 100%;
   height: 26rem;
-  background-color: red;
 }
 .container-form-info-contact {
   display: flex;
@@ -140,7 +139,6 @@
   .container-map-contact {
     width: 100%;
     height: 30rem;
-    background-color: red;
   }
   /*-------------------------*Map*-------------------------*/
   .map-google {
@@ -164,7 +162,6 @@
   .container-map-contact {
     width: 100%;
     height: 30rem;
-    background-color: red;
   }
 
   .container-form-info-contact {
