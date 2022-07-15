@@ -6,9 +6,10 @@ import { Menu, MenuItem } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useScrollPosition } from "../../customHooks/useScrollPosition";
 
-// import { HashLink, NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
+import { NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
 
 export const Navbar = () => {
+
   const scrollPosition = useScrollPosition();
 
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -60,10 +61,10 @@ export const Navbar = () => {
               </MenuItem>
             </Menu>
           </>
-          <a className="hover-underline-animation" href="/">SERVICIO TÉCNCIO</a>
-          <a className="hover-underline-animation" href="#nosotros">NOSOTROS</a>
-          <a className="hover-underline-animation" href="/">CLIENTES</a>
-          <a className="hover-underline-animation" href="/contact">CONTACTO</a>
+          <Link className="hover-underline-animation" to="/">SERVICIO TÉCNCIO</Link>
+          <NavHashLink className="hover-underline-animation" to="/#nosotros">NOSOTROS</NavHashLink>
+          <Link className="hover-underline-animation" to="/">CLIENTES</Link>
+          <Link className="hover-underline-animation" to="/contact">CONTACTO</Link>
         </div>
         <div className="container-drawer-nav">
           <Drawer />
