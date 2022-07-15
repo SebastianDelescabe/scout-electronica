@@ -1,81 +1,90 @@
-.home {
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  margin-top: 10rem;
+  width: 20px;
+}
+
+.homeCard {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 13rem;
 }
-.home__items {
+.homeCard__items {
   background-color: var(--color-background);
   display: flex;
   align-items: center;
   width: 90%;
   padding: 2rem 0rem;
   height: 550px;
+
+  background-image: url("../../assets/fondo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.home__title {
+.homeCard__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 60%;
 }
 
-.home__title span {
-  padding-left: 3rem;
-  text-align: flex-start;
+.homeCard__title {
+  padding-left: 1rem;
+  text-align: center;
   font-size: 2.5rem;
+  font-weight: 500;
   color: var(--hard-grey);
+  margin-bottom: 3rem;
 }
 
-.home__title button {
-  border-radius: 12px;
-  font-size: 15px;
-  cursor: pointer;
-  padding: 1rem;
-  background-color: white;
-  border: none;
-  margin-top: 3rem;
-}
-.home__image {
+.homeCard__image {
   width: 50%;
   padding: 0rem 2rem;
 }
-.home__image img {
+
+.homeCard__image img {
   width: 100%;
 }
 
-/*-----------------------------------------------------------------*/
-/*-------------------------*MEDIA QUERIES*-------------------------*/
-/*-----------------------------------------------------------------*/
-
-@media (max-width: 1700px) {
-  .home__items {
-    height: 25rem;
-  }
-  
-.home__title span {
-  padding-left: 3rem;
-  text-align: flex-start;
-  font-size: 2.2rem;
-  color: var(--hard-grey);
+.homeCard__button-responsive {
+  display: none;
 }
+
+.home-clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
 }
 
 @media (max-width: 850px) {
-  .home__items {
+  .homeCard__items {
     flex-direction: column;
+    background-color: white;
+    height: 500px;
   }
-  .home__title {
+  .homeCard__container {
     width: 100%;
   }
-  .home__title span {
-    font-size: 2rem;
+  .homeCard__container span {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 0rem;
   }
 
-  .home__title button {
-    margin: 2rem 0rem;
+  .homeCard__container button {
+    display: none;
   }
-  .home__image {
+  .homeCard__image {
     width: 90%;
+  }
+
+  .homeCard__button-responsive {
+    display: flex;
+    cursor: pointer;
+    margin-top: 3rem;
   }
 }

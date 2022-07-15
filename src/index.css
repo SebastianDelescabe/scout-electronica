@@ -3,8 +3,11 @@
 body {
   background: white;
   font-family: "Poppins", sans-serif;
-  font-family: "Poppins", sans-serif;
   --swiper-theme-color: var(--color-aqua);
+}
+
+html {
+  overflow-y: scroll;
 }
 
 :root {

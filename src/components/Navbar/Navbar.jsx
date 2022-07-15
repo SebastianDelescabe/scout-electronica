@@ -6,6 +6,8 @@ import { Menu, MenuItem } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useScrollPosition } from "../../customHooks/useScrollPosition";
 
+// import { HashLink, NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
+
 export const Navbar = () => {
   const scrollPosition = useScrollPosition();
 
@@ -67,6 +69,6 @@ export const Navbar = () => {
           <Drawer />
         </div>
       </div>
-    </div>
+    </div >
   );
 };
