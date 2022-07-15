@@ -1,11 +1,11 @@
-import fotoHome1 from '../../assets/fotoHome1.png';
+import fotoHome1 from '../../assets/fotoHome1.jpg';
 import fotoHome2 from '../../assets/fotoHome2.jpg';
 import fotoHome3 from '../../assets/fotoHome3.jpg';
 
 
 export const homeData = [
     {
-        title: 'Inovación y calidad para productos en latinoamérica',
+        title: 'Inovación y calidad para laboratorios de latinoamérica',
         image: fotoHome1,
         button: 'Conocenos'
     },

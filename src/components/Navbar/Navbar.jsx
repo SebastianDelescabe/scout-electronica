@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "./Navbar.css";
 import Logo from "../../assets/logo-nav.png";
@@ -5,6 +6,13 @@ import { Drawer } from "./Drawer";
 import { Menu, MenuItem } from "@mui/material";
 import { Link } from "react-router-dom";
 import { useScrollPosition } from "../../customHooks/useScrollPosition";
+=======
+import React from 'react'
+import './Navbar.css'
+import Logo from '../../assets/logo-nav.png'
+import { Drawer } from './Drawer'
+// import { HashLink, NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
+>>>>>>> seba
 
 export const Navbar = () => {
   const scrollPosition = useScrollPosition();
@@ -63,7 +71,11 @@ export const Navbar = () => {
           <a className="hover-underline-animation" href="/">CLIENTES</a>
           <a className="hover-underline-animation" href="/contact">CONTACTO</a>
         </div>
+<<<<<<< HEAD
         <div className="container-drawer-nav">
+=======
+        <div className='container-drawer-nav'>
+>>>>>>> seba
           <Drawer />
         </div>
       </div>
