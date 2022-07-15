@@ -31,15 +31,9 @@
   width: 60%;
 }
 
-<<<<<<< HEAD
-.home__title span {
-  padding-left: 3rem;
-  text-align: flex-start;
-=======
 .homeCard__title {
   padding-left: 1rem;
   text-align: center;
->>>>>>> seba
   font-size: 2.5rem;
   font-weight: 500;
   color: var(--hard-grey);
@@ -55,23 +49,6 @@
   width: 100%;
 }
 
-<<<<<<< HEAD
-/*-----------------------------------------------------------------*/
-/*-------------------------*MEDIA QUERIES*-------------------------*/
-/*-----------------------------------------------------------------*/
-
-@media (max-width: 1700px) {
-  .home__items {
-    height: 25rem;
-  }
-  
-.home__title span {
-  padding-left: 3rem;
-  text-align: flex-start;
-  font-size: 2.2rem;
-  color: var(--hard-grey);
-}
-=======
 .homeCard__button-responsive {
   display: none;
 }
@@ -81,7 +58,6 @@
   align-items: center;
   justify-content: center;
   padding-top: 2rem;
->>>>>>> seba
 }
 
 @media (max-width: 850px) {
