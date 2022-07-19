@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 92.5%;
-  margin: 4.5rem;
+  margin: 4.5rem 0rem;
 }
 
 .title-client {
@@ -22,7 +22,7 @@
 
 .clients-banner {
   width: 100%;
-  height: 220px;
+  height: 250px;
   background-image: url("../../assets/bannerClients.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -35,10 +35,10 @@
 
 .clients-banner span {
   font-size: 30px;
-  width: 60%;
+  width: 65%;
   margin-right: 3rem;
-  color: var(--hard-grey);
-  font-weight: 600;
+  color: #fff;
+  font-weight: 400;
 }
 
 .clients-images {

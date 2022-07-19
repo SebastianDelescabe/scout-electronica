@@ -51,9 +51,7 @@ export const Home = () => {
                     ))
                 }
             </Swiper>
-            <div>
-                <Nosotros />
-            </div>
+            <Nosotros />
             <div className='home-clients'>
                 <Clients />
             </div>
