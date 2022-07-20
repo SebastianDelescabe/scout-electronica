@@ -3,7 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/Navbar/Navbar';
 import { Contact } from './components/Contact/Contact';
 import { Home } from './components/Home/Home';
-
+import { ControlCalidad } from './components/Productos/ControlCalidad';
+import { LineaProduccion } from './components/Productos/LineaProduccion';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const pageTransition = {
@@ -29,6 +30,8 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/controlcalidad' element={<ControlCalidad/>}/>
+          <Route path='/lineaproduccion' element={<LineaProduccion/>}/>
         </Routes>
       </motion.div>
     </AnimatePresence>

@@ -54,10 +54,10 @@ export const Navbar = () => {
               disableScrollLock
             >
               <MenuItem onClick={handleClose}>
-                <Link to={"/ss"}>Control de calidad</Link>
+                <Link to={"/controlcalidad"}>Control de calidad</Link>
               </MenuItem>
               <MenuItem onClick={handleClose}>
-                <Link to={"/ss"}>Line Producción</Link>
+                <Link to={"/lineaproduccion"}>Line Producción</Link>
               </MenuItem>
             </Menu>
           </>
