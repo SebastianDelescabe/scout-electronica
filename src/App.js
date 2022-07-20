@@ -3,6 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/Navbar/Navbar';
 import { Contact } from './components/Contact/Contact';
 import { Home } from './components/Home/Home';
+import { ControlCalidad } from './components/Productos/ControlCalidad';
+import { LineaProduccion } from './components/Productos/LineaProduccion';
 import { Service } from './components/Service/Service';
 
 import { AnimatePresence, motion } from 'framer-motion';
@@ -30,6 +32,8 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
+          <Route path='/controlcalidad' element={<ControlCalidad/>}/>
+          <Route path='/lineaproduccion' element={<LineaProduccion/>}/>
           <Route path='/service' element={<Service />} />
         </Routes>
       </motion.div>
