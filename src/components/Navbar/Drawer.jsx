@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { SwipeableDrawer, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+
+import { NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
+
 export const Drawer = () => {
   const [state, setState] = useState({
     right: false,
@@ -41,11 +44,11 @@ export const Drawer = () => {
           >
             <div className="div-drawer-contain">
               <div className="div-container-menu-mobile">
-                <a href="/">PRODUCTOS</a>
-                <a href="/">SERVVICIO TÉCNCIO</a>
-                <a href="/">NOSOTROS</a>
-                <a href="/">CLIENTES</a>
-                <a href="/contact">CONTACTO</a>
+                <NavHashLink to="/#productos">PRODUCTOS</NavHashLink>
+                <NavHashLink to="/">SERVICIO TÉCNCIO</NavHashLink>
+                <NavHashLink to="/#nosotros">NOSOTROS</NavHashLink>
+                <NavHashLink to="/#clientes">CLIENTES</NavHashLink>
+                <NavHashLink to="/contact">CONTACTO</NavHashLink>
               </div>
             </div>
           </SwipeableDrawer>

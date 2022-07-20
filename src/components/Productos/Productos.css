@@ -1,0 +1,36 @@
+.container-productos {
+  width: 90%;
+  margin: 0 auto;
+  height: 40rem;
+}
+.title-productos {
+  font-size: 2.2rem;
+  color: var(--color-gray);
+  font-weight: 500;
+  border-bottom: solid 3px var(--color-aqua);
+  width: 13rem;
+  text-align: center;
+}
+/*-----------------------------------------------------------------*/
+/*------------------------*CONTROL CALIDAD*------------------------*/
+/*-----------------------------------------------------------------*/
+.title-ind-products {
+  font-size: 1.5rem;
+  color: var(--color-gray);
+  font-weight: 500;
+  border-bottom: solid 3px var(--color-aqua);
+  width: 15rem;
+  text-align: center;
+}
+
+/*-----------------------------------------------------------------*/
+/*-----------------------*LINEA PRODUCCION*------------------------*/
+/*-----------------------------------------------------------------*/
+.title-cal-products {
+    font-size: 1.5rem;
+    color: var(--color-gray);
+    font-weight: 500;
+    border-bottom: solid 3px var(--color-aqua);
+    width: 16rem;
+    text-align: center;
+}
