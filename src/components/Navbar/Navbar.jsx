@@ -61,7 +61,7 @@ export const Navbar = () => {
               </MenuItem>
             </Menu>
           </>
-          <Link className="hover-underline-animation" to="/">SERVICIO TÉCNCIO</Link>
+          <Link className="hover-underline-animation" to="/service">SERVICIO TÉCNCIO</Link>
           <NavHashLink className="hover-underline-animation" to="/#nosotros">NOSOTROS</NavHashLink>
           <NavHashLink className="hover-underline-animation" to="/#clients">CLIENTES</NavHashLink>
           <Link className="hover-underline-animation" to="/contact">CONTACTO</Link>
