@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import { NavHashLink } from 'react-router-hash-link';
 
 export const HomeCard = ({ data }) => {
     return (
@@ -11,7 +12,7 @@ export const HomeCard = ({ data }) => {
                         <span className="circle" aria-hidden="true">
                             <span className="icon arrow"></span>
                         </span>
-                        <span className="button-text">{data.button}</span>
+                        <NavHashLink className="button-text" to={data.id}>{data.button}</NavHashLink>
                     </button>
                 </div>
                 <div className='homeCard__image'>

@@ -15,8 +15,8 @@
   padding: 2rem 0rem;
   display: flex;
   align-items: center;
+
   width: 110rem;
-  padding: 2rem 0rem;
   height: 550px;
   background-image: url("../../assets/fondo.jpg");
   background-position: center;
@@ -85,11 +85,11 @@
 @media (max-width: 850px) {
   .homeCard__items {
     flex-direction: column;
-    background-color: white;
     height: 500px;
+    width: 22rem;
   }
   .homeCard__container {
-    width: 100%;
+    width: 20rem;
   }
   .homeCard__container span {
     font-size: 1.5rem;
@@ -109,5 +109,4 @@
     cursor: pointer;
     margin-top: 3rem;
   }
-
 }

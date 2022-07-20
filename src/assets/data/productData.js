@@ -1,22 +1,15 @@
 export const products = [
     {
-        title: 'Automuestreador',
+        title: 'Durómetro de capsulas blandas',
         descriptionItems: [
-            '8 (ocho) motores paso a paso',
-            'Gabinete de acrilico',
-            'Display de cuatro renglones,veinte caracteres de backlight',
-            'Teclado a burbuja',
-            'Seteo programable de caudal y tiempo',
-            'Mangueras de muestreo de teflón',
-            'Conectores de 8(ocho) en teflon de manguera de silicona',
-            'Posibilidad de salida de datos RS 232/USB/Bluetooth',
-            'Para diez muestreos y disolutor de ocho vasos, bandeja propuesta capacidad de 80 (ochenta) viales',
-            'Bandeja para viales en acrilico capacidad de la misma a pedido',
-            'Movimiento de pico dosificador controlado por motor paso a paso',
-            'Posicionamiento seguin eje X',
-            'Posicionamiento de ocho mangueras de teflón mediante regla de ajuste',
-            'Descarte de muestra en manguera para ensayo siguiente'
-        ]
+            'Seteo de fuerza requerida para ensayos',
+            'Realiza ensayos instructivos y no destructivos',
+            'Se desempeña como texturometro sin penetracion',
+            'Ideal para capsulas blandas con gel',
+            'Salida RS2332-USB',
+            'Gabinete en acrílico'
+        ],
+        image: 'https://i.ibb.co/rbx7g4w/durometro-convencional.jpg'
     },
     {
         title: 'Baño Termostático',
@@ -26,7 +19,8 @@ export const products = [
             'Resistencia calefactora en acero inoxidable',
             'Sonda de temperatura en acero inoxidable',
             'Gabinete y tapa en acrílico'
-        ]
+        ],
+        image: 'https://i.ibb.co/kKHRjL6/ba-o-termostatico.jpg'
     },
     {
         title: 'Desintegrador',
@@ -46,29 +40,23 @@ export const products = [
             'Fácil calibración de r.p.m como temperatura',
             'Canasta en inoxidable y acrílico de seis racks',
             'Tacos aceleradores normalizados'
-        ]
+        ],
+        image: 'https://i.ibb.co/8YTFkkY/desintegrador.jpg'
     },
     {
-        title: 'Disolutor de ocho a seis vasos de vidrio',
+        title: 'Texturómetro',
         descriptionItems: [
-            'Display de cuatro renglones veinte caracteres con cobertor de acrílico',
-            'Controlador incorporado',
-            'Mínimas dimensiones',
-            'Calentamiento por convección',
-            'Indicación de tiempo de disolución',
-            'Posibilidad de encendido diferido',
-            'Alarmas',
-            'Controlador de velocidad según especificaciones USP',
-            'Velocidad seteable de una en una rpm',
-            'Biblioteca de memoria de productos y operadores',
-            'impresora (opcional)',
-            'Salida USB (opcional)',
-            'Toma-muestras',
-            'Recirculación de agua en batea',
-            'Paletas normalizadas con excentricidad según USP',
-            'Cestillas normalizadas',
-            'Cumple todas las especificaciónes de USP'
-        ]
+            'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
+            'Display de cuatro renglones por veinte caracteres',
+            'Distintas puntas de penetración segun elemento a ensayar',
+            'Posibilidad de seteo de fuerza de compresión',
+            'Simple calibracíon',
+            'En sustancias alimenticias, medición de fuerza G',
+            'En laboratorios medicinales usado para control de calidad de cápsulas blandas',
+            'Posibilidad de salida de datos puertos RS232-USB',
+            'Posibilidad de graficar'
+        ],
+        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg'
     }
 ]
 

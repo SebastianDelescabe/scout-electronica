@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 92.5%;
-  margin: 4.5rem;
+  width: 110rem;
+  margin: 4.5rem 0rem;
 }
 
 .title-client {
@@ -20,9 +20,15 @@
   border-bottom: solid 3px var(--color-aqua);
 }
 
+.clients-background {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 110rem;
+  height: 250px;
+}
+
 .clients-banner {
-  width: 100%;
-  height: 220px;
+  width: 110rem;
+  height: 250px;
   background-image: url("../../assets/bannerClients.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -35,10 +41,10 @@
 
 .clients-banner span {
   font-size: 30px;
-  width: 60%;
+  width: 65%;
   margin-right: 3rem;
-  color: var(--hard-grey);
-  font-weight: 600;
+  color: #fff;
+  font-weight: 400;
 }
 
 .clients-images {
@@ -59,6 +65,7 @@
 
 @media (max-width: 850px) {
   .clients {
+    width: 70rem;
     margin-top: 2rem;
   }
 
@@ -75,7 +82,13 @@
     padding: 4rem 1.5rem 0rem 0rem;
   }
 
+  .clients-background {
+    width: 22rem;
+    height: 150px;
+  }
+
   .clients-banner {
+    width: 22rem;
     height: 150px;
   }
 

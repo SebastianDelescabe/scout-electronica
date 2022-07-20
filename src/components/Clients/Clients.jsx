@@ -8,8 +8,10 @@ export const Clients = () => {
             <div className='title-client'>
                 <p>CLIENTES</p>
             </div>
-            <div className='clients-banner'>
-                <span> Damos solución a los requerimientos de nuestros clientes</span>
+            <div className="clients-background">
+                <div className='clients-banner'>
+                    <span> Damos solución a los requerimientos de nuestros clientes</span>
+                </div>
             </div>
             <div className='clients-images'>
                 {clients && clients.map((image) => (
