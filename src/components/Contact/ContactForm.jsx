@@ -41,7 +41,6 @@ export const ContactForm = () => {
                 <form onSubmit={handleSubmit} ref={form}>
                     <h2>Cotizá y Asesorate</h2>
                     <h4>Solicita más información a través de nuestro formulario de contacto, tenemos cobertura en toda la región.</h4>
-                    <h4></h4>
                     <div className='contact-form-inputs-container'>
                         <div>
                             <input
