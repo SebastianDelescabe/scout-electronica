@@ -1,21 +1,60 @@
 .service {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
   width: 100%;
 }
 
-.service__container {
-  margin-top: 7rem;
-  width: 110rem;
+.service-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
 }
 
-.service h1 {
+.service-title {
+  width: 100%;
+  display: flex;
+  text-align: start;
+}
+
+.service-title p {
+  width: 21rem;
   font-size: 2.2rem;
   color: var(--color-gray);
   font-weight: 500;
   border-bottom: solid 3px var(--color-aqua);
-  text-align: center;
+}
+
+.service__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 75%;
+  padding: 2.5rem 0rem;
+}
+
+.service-container div:nth-child(3) {
+  flex-direction: row-reverse;
+}
+
+.service__image {
+  width: 15%;
+  display: flex;
+  align-items: center;
+}
+
+.service__image img {
+  width: 200px;
+}
+
+.service__item-text {
+  width: 60%;
+}
+
+.service__item-text h1 {
+  font-size: 30px;
+  font-weight: 300;
+  color: gray;
 }

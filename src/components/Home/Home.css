@@ -11,17 +11,17 @@
   padding-top: 13rem;
 }
 .homeCard__items {
-  background-color: var(--color-background);
+  width: 110rem;
+  height: 550px;
   padding: 2rem 0rem;
   display: flex;
   align-items: center;
-
-  width: 110rem;
-  height: 550px;
+  /* border: 2px solid var(--color-background); */
+  /*
   background-image: url("../../assets/fondo.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .homeCard__container {

@@ -34,9 +34,10 @@
 .contact-info {
   height: 28rem;
   margin-top: 1rem;
-  width: 30%;
+  width: 40%;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: space-around;
 }
 
@@ -79,7 +80,7 @@
 /*-----------------------------------------------------------------*/
 
 .contact-form {
-  width: 60%;
+  width: 100%;
   height: 35rem;
   margin-top: 2rem;
 }
@@ -112,7 +113,7 @@
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  border: 0.5px solid #e9e9e9;
+  border: 0.5px solid #c7c7c7;
   border-radius: 8px;
   font-size: 0.9rem;
   outline: 0;
