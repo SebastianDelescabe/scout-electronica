@@ -1,6 +1,9 @@
 import React from 'react';
 import './Service.css';
 import { serviceData } from '../../assets/data/serviceData';
+import { HashLink } from 'react-router-hash-link';
+
+
 
 export const Service = () => {
     return (
@@ -22,6 +25,14 @@ export const Service = () => {
                         </div>
                     ))
                 }
+                <div className='service-button'>
+                    <button type='submit' className="app__button">
+                        <span className="circle" aria-hidden="true">
+                            <span className="icon arrow"></span>
+                        </span>
+                        <HashLink to='/contact#form' className="button-text" >Contactanos</HashLink>
+                    </button>
+                </div>
             </div>
         </div>
     )
