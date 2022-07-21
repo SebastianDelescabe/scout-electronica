@@ -63,10 +63,11 @@
   display: inline-block;
   position: relative;
   color: #4eeaff;
+  padding-bottom: 0.4rem;
 }
 
 .hover-underline-animation:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -93,7 +94,6 @@
 /*-----------------------------------------------------------------*/
 /*-------------------------*MEDIA QUERIES*-------------------------*/
 /*-----------------------------------------------------------------*/
-
 
 /*-------------------------*1700*-------------------------*/
 @media (min-width: 1700px) {

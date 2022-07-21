@@ -3,7 +3,7 @@ import { HomeCard } from './HomeCard';
 import { Clients } from '../Clients/Clients';
 import { homeData } from '../../assets/data/homeData';
 import { Nosotros } from "../Nosotros/Nosotros";
-import {Productos} from '../Productos/Productos'
+import { Productos } from '../Productos/Productos'
 import './Home.css';
 
 //Carrousel imports
@@ -57,7 +57,7 @@ export const Home = () => {
                 <Clients />
             </div>
             <div>
-                <Productos/>
+                <Productos />
             </div>
         </div>
     );
