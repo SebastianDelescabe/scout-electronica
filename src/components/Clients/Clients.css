@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 110rem;
+  width: 90%;
   margin: 4.5rem 0rem;
 }
 
@@ -22,29 +22,39 @@
 
 .clients-background {
   background-color: rgba(0, 0, 0, 0.3);
-  width: 110rem;
+  width: 100%;
   height: 250px;
 }
 
 .clients-banner {
-  width: 110rem;
+  width: 100%;
   height: 250px;
   background-image: url("../../assets/bannerClients.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
+.bg-glass-clients{
+  background-color: rgba(0, 0, 0, 0.1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 250px;
+}
 
-.clients-banner span {
+.bg-glass-clients span {
   font-size: 30px;
   width: 65%;
   margin-right: 3rem;
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .clients-images {
@@ -65,7 +75,7 @@
 
 @media (max-width: 850px) {
   .clients {
-    width: 70rem;
+    width: 90%;
     margin-top: 2rem;
   }
 
