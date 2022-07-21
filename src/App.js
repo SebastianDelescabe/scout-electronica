@@ -4,9 +4,7 @@ import { Navbar } from './components/Navbar/Navbar';
 import { Contact } from './components/Contact/Contact';
 import { Home } from './components/Home/Home';
 import { ControlCalidad } from './components/Productos/ControlCalidad';
-import { LineaProduccion } from './components/Productos/LineaProduccion';
-import { Service } from './components/Service/Service';
-
+import { Productos } from './components/Productos/Productos';
 import { AnimatePresence, motion } from 'framer-motion';
 
 const pageTransition = {
@@ -35,6 +33,8 @@ function App() {
           <Route path='/controlcalidad' element={<ControlCalidad />} />
           <Route path='/lineaproduccion' element={<LineaProduccion />} />
           <Route path='/service' element={<Service />} />
+          <Route path='/controlcalidad' element={<ControlCalidad/>}/>
+          <Route path='/productos' element={<Productos/>}/>
         </Routes>
       </motion.div>
     </AnimatePresence>

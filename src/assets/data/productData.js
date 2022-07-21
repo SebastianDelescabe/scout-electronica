@@ -9,7 +9,8 @@ export const products = [
             'Salida RS2332-USB',
             'Gabinete en acrílico'
         ],
-        image: 'https://i.ibb.co/rbx7g4w/durometro-convencional.jpg'
+        image: 'https://i.ibb.co/rbx7g4w/durometro-convencional.jpg',
+        id: '1'
     },
     {
         title: 'Baño Termostático',
@@ -20,7 +21,8 @@ export const products = [
             'Sonda de temperatura en acero inoxidable',
             'Gabinete y tapa en acrílico'
         ],
-        image: 'https://i.ibb.co/kKHRjL6/ba-o-termostatico.jpg'
+        image: 'https://i.ibb.co/kKHRjL6/ba-o-termostatico.jpg',
+        id: '2'
     },
     {
         title: 'Desintegrador',
@@ -41,7 +43,8 @@ export const products = [
             'Canasta en inoxidable y acrílico de seis racks',
             'Tacos aceleradores normalizados'
         ],
-        image: 'https://i.ibb.co/8YTFkkY/desintegrador.jpg'
+        image: 'https://i.ibb.co/8YTFkkY/desintegrador.jpg',
+        id: '3'
     },
     {
         title: 'Texturómetro',
@@ -56,10 +59,12 @@ export const products = [
             'Posibilidad de salida de datos puertos RS232-USB',
             'Posibilidad de graficar'
         ],
-        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg'
+        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
+        id: '4'
     }
 ]
 
+export default products
 
 // Ejemplo para acceder
 
