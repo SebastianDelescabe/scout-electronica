@@ -12,6 +12,7 @@
 }
 .homeCard__items {
   width: 110rem;
+  background-color: var(--color-background);
   height: 550px;
   padding: 2rem 0rem;
   display: flex;
