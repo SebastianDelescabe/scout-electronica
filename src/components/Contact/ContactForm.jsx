@@ -31,7 +31,7 @@ export const ContactForm = () => {
     const { handleSubmit, handleChange, values } = formik
 
     return (
-        <div className='contact-form'>
+        <div className='contact-form' id="form">
             <div>
                 <ToastContainer
                     position="top-center"
