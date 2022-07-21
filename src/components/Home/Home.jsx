@@ -3,7 +3,6 @@ import { HomeCard } from './HomeCard';
 import { Clients } from '../Clients/Clients';
 import { homeData } from '../../assets/data/homeData';
 import { Nosotros } from "../Nosotros/Nosotros";
-import { Productos } from '../Productos/Productos'
 import './Home.css';
 
 //Carrousel imports
@@ -28,7 +27,6 @@ export const Home = () => {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener('resize', handleResize)
     })
-
 
     return (
         <div className='home' id='home'>
@@ -55,9 +53,6 @@ export const Home = () => {
             <Nosotros />
             <div className='home-clients'>
                 <Clients />
-            </div>
-            <div>
-                <Productos />
             </div>
         </div>
     );
