@@ -32,8 +32,8 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/controlcalidad' element={<ControlCalidad/>}/>
-          <Route path='/lineaproduccion' element={<LineaProduccion/>}/>
+          <Route path='/controlcalidad' element={<ControlCalidad />} />
+          <Route path='/lineaproduccion' element={<LineaProduccion />} />
           <Route path='/service' element={<Service />} />
         </Routes>
       </motion.div>
