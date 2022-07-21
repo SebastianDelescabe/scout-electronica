@@ -10,7 +10,9 @@ export const Clients = () => {
             </div>
             <div className="clients-background">
                 <div className='clients-banner'>
+                    <div className='bg-glass-clients'>
                     <span> Damos solución a los requerimientos de nuestros clientes</span>
+                    </div>
                 </div>
             </div>
             <div className='clients-images'>
