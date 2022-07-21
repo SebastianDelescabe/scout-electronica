@@ -6,6 +6,7 @@ import { Home } from './components/Home/Home';
 import { ControlCalidad } from './components/Productos/ControlCalidad';
 import { Productos } from './components/Productos/Productos';
 import { AnimatePresence, motion } from 'framer-motion';
+import {Service} from './components/Service/Service'
 
 const pageTransition = {
   in: {
@@ -30,8 +31,6 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/controlcalidad' element={<ControlCalidad />} />
-          <Route path='/lineaproduccion' element={<LineaProduccion />} />
           <Route path='/service' element={<Service />} />
           <Route path='/controlcalidad' element={<ControlCalidad/>}/>
           <Route path='/productos' element={<Productos/>}/>
