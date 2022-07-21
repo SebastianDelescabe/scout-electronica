@@ -1,7 +1,9 @@
+
 .container-productos {
   width: 90%;
   margin: 0 auto;
   height: 40rem;
+  padding-top: 8rem;
 }
 .title-productos {
   font-size: 2.2rem;
@@ -10,6 +12,14 @@
   border-bottom: solid 3px var(--color-aqua);
   width: 13rem;
   text-align: center;
+}
+.container-prod-elements{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.img-acc-prod{
+  margin-right: 10rem;
 }
 /*-----------------------------------------------------------------*/
 /*------------------------*CONTROL CALIDAD*------------------------*/

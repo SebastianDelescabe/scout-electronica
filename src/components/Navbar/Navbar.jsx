@@ -32,35 +32,7 @@ export const Navbar = () => {
           </Link>
         </div>
         <div className="container-titles-nav">
-          <>
-            <p
-              id="basic-button"
-              aria-controls={open ? "basic-menu" : undefined}
-              aria-haspopup="true"
-              aria-expanded={open ? "true" : undefined}
-              onClick={handleClick}
-              className="hover-underline-animation"
-            >
-              PRODUCTOS
-            </p>
-            <Menu
-              id="basic-menu"
-              anchorEl={anchorEl}
-              open={open}
-              onClose={handleClose}
-              MenuListProps={{
-                "aria-labelledby": "basic-button",
-              }}
-              disableScrollLock
-            >
-              <MenuItem onClick={handleClose}>
-                <Link to={"/controlcalidad"}>Control de calidad</Link>
-              </MenuItem>
-              <MenuItem onClick={handleClose}>
-                <Link to={"/lineaproduccion"}>Line Producción</Link>
-              </MenuItem>
-            </Menu>
-          </>
+            <Link className="hover-underline-animation" to='/productos'>RODUCTOS</Link>
           <Link className="hover-underline-animation" to="/service">SERVICIO TÉCNCIO</Link>
           <NavHashLink className="hover-underline-animation" to="/#nosotros">NOSOTROS</NavHashLink>
           <NavHashLink className="hover-underline-animation" to="/#clients">CLIENTES</NavHashLink>
