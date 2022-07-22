@@ -1,0 +1,17 @@
+.scroll-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 0.5rem;
+  background-color: transparent;
+  color: var(--color-aqua);
+}
+
+.scrollToTop-icon {
+  font-size: 50px;
+}
+
+@media (max-width: 900px) {
+  .scroll-top {
+    display: none;
+  }
+}
