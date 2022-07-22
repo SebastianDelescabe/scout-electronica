@@ -7,7 +7,7 @@ import { ControlCalidad } from './components/Productos/ControlCalidad';
 import { Productos } from './components/Productos/Productos';
 import { Service } from './components/Service/Service'
 import { Footer } from './components/Footer/Footer';
-import { ScrollToTop } from './components/Footer/ScrollToTop';
+import { WhatsappIcon } from './components/Footer/WhatsappIcon';
 
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -38,7 +38,7 @@ function App() {
           <Route path='/controlcalidad' element={<ControlCalidad />} />
           <Route path='/productos' element={<Productos />} />
         </Routes>
-        <ScrollToTop />
+        <WhatsappIcon />
         <Footer />
       </motion.div>
     </AnimatePresence>
