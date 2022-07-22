@@ -13,8 +13,7 @@
   color: var(--color-gray);
   font-weight: 500;
   border-bottom: solid 3px var(--color-aqua);
-  width: 13rem;
-  text-align: center;
+  width: 12.5rem;
 }
 .container-map-contact {
   width: 100%;
