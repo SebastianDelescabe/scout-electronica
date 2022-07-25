@@ -17,7 +17,7 @@
 .service-title {
   width: 92%;
   display: flex;
-  text-align: start;
+  text-align: center;
 }
 
 .service-title p {
@@ -33,7 +33,12 @@
   align-items: center;
   justify-content: space-between;
   width: 75%;
-  padding: 1rem 0rem;
+  padding: 2rem;
+  margin: 1rem 0rem;
+
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
+  box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
 }
 
 .service-container div:nth-child(3) {
@@ -41,6 +46,7 @@
 }
 
 .service__image {
+  margin: 0rem 10rem;
   width: 15%;
   display: flex;
   align-items: center;

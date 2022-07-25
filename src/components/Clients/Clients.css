@@ -37,7 +37,7 @@
   align-items: center;
   justify-content: flex-end;
 }
-.bg-glass-clients{
+.bg-glass-clients {
   background-color: rgba(0, 0, 0, 0.1);
   background-position: center;
   background-repeat: no-repeat;
@@ -73,23 +73,36 @@
   padding: 2rem;
 }
 
-@media (max-width: 850px) {
+.clients-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-laurel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-laurel img {
+  width: 200px;
+}
+
+@media (max-width: 600px) {
   .clients {
-    width: 90%;
+    width: 22rem;
     margin-top: 2rem;
+  }
+
+  .title-client {
+    text-align: end;
   }
 
   .clients-images {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-wrap: wrap;
     width: 100%;
-    padding: 0px;
-  }
-
-  .clients-images img {
-    width: 10rem;
-    padding: 4rem 1.5rem 0rem 0rem;
   }
 
   .clients-background {
@@ -103,8 +116,14 @@
   }
 
   .clients-banner span {
-    font-size: 14px;
+    font-size: 1.1rem;
     margin: 0.5rem;
-    width: 65%;
+    width: 60%;
+    opacity: 0.9;
+  }
+
+  .bg-glass-clients {
+    width: 100%;
+    height: 150px;
   }
 }

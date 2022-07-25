@@ -20,8 +20,8 @@ export const Navbar = () => {
           </Link>
         </div>
         <div className="container-titles-nav">
-            <Link className="hover-underline-animation" to='/productos'>PRODUCTOS</Link>
-          <Link className="hover-underline-animation" to="/service">SERVICIO TÉCNCIO</Link>
+          <Link className="hover-underline-animation" to='/productos'>PRODUCTOS</Link>
+          <NavHashLink className="hover-underline-animation" to="/service">SERVICIO TÉCNCIO</NavHashLink>
           <NavHashLink className="hover-underline-animation" to="/#nosotros">NOSOTROS</NavHashLink>
           <NavHashLink className="hover-underline-animation" to="/#clients">CLIENTES</NavHashLink>
           <Link className="hover-underline-animation" to="/contact">CONTACTO</Link>
