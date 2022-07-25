@@ -3,7 +3,36 @@
   width: 90%;
   margin: 0 auto;
   height: 40rem;
-  padding-top: 8rem;
+  padding-top: 2rem;
+}
+.banner-bg-products{
+  background: url(../../assets/prodBg.jpg);
+  width: 100%;
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5rem;
+}
+.banner-products-bgblack{
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-title-products{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 4rem;
+  font-weight: 500;
 }
 .title-productos {
   font-size: 2.2rem;

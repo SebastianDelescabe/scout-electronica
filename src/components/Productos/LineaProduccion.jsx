@@ -43,7 +43,7 @@ const AccordionSummary = styled((props) => (
 }));
 
 export const LineaProduccion = () => {
-  const [expanded, setExpanded] = useState("panel1");
+  const [expanded, setExpanded] = useState("");
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
