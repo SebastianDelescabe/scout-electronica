@@ -61,14 +61,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
   width: 62%;
-  padding: 2rem;
+  padding: 0rem;
 }
 
 .clients-images img {
-  width: 200px;
+  width: 150px;
   cursor: pointer;
   padding: 2rem;
 }
@@ -88,6 +88,23 @@
 
 .clients-laurel img {
   width: 200px;
+}
+
+/*-----------------------------------------------------------------*/
+/*-------------------------*MEDIA QUERIES*-------------------------*/
+/*-----------------------------------------------------------------*/
+
+
+@media (min-width: 1700px) {
+  .clients-images {
+    align-items: center;
+    justify-content: center;
+    width: 92%;
+    padding: 4rem;
+  }
+  .clients-images img {
+    width: 250px;
+  }
 }
 
 @media (max-width: 600px) {

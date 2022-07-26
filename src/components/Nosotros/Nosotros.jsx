@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Nosotros.css";
-import Compromiso from '../../assets/deal.png'
-import Watch from '../../assets/stopwatch.png'
-import Team from '../../assets/team-management.png'
+import Compromiso from "../../assets/deal.png";
+import Watch from "../../assets/stopwatch.png";
+import Team from "../../assets/team-management.png";
+import Aos from "aos";
 
 export const Nosotros = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <div className="container-nosotros" id="nosotros">
       <div className="container-elements-nosotros">
@@ -24,26 +28,35 @@ export const Nosotros = () => {
             </div>
           </div>
         </div>
-       <div>
-        <p className="porque-nosotros">¿Por qué nosotros?</p>
-       <div className="cotnainer-pq-serv-nosotros">
-          <div className="container-serv-nosotros">
-            <p className="title-serv-card">COMPROMISO</p>
-            <img className="img-serv-card" src={Compromiso} alt="deal" />
-            <p className="text-serv-card">Comprometidos en la fabricación de máquinas con un alto índice de confiabilidad.</p>
-          </div>
-          <div className="container-serv-nosotros">
-            <p className="title-serv-card">TIEMPO</p>
-            <img className="img-serv-card" src={Watch} alt="watch" />
-            <p className="text-serv-card">Plazos de entrega reales y costos competitivos en base al mercado.</p>
-          </div>
-          <div className="container-serv-nosotros">
-            <p className="title-serv-card">SERVICIOS</p>
-            <img className="img-serv-card" src={Team} alt="team" />
-            <p className="text-serv-card">Servicios confiables en tiempo oportuno para garantizar la satisfacción de nuestros clientes.</p>
+        <div data-aos="fade-up">
+          <p className="porque-nosotros">¿Por qué nosotros?</p>
+          <div className="cotnainer-pq-serv-nosotros">
+            <div className="container-serv-nosotros">
+              <p className="title-serv-card">COMPROMISO</p>
+              <img className="img-serv-card" src={Compromiso} alt="deal" />
+              <p className="text-serv-card">
+                Comprometidos en la fabricación de máquinas con un alto índice
+                de confiabilidad.
+              </p>
+            </div>
+            <div className="container-serv-nosotros">
+              <p className="title-serv-card">TIEMPO</p>
+              <img className="img-serv-card" src={Watch} alt="watch" />
+              <p className="text-serv-card">
+                Plazos de entrega reales y costos competitivos en base al
+                mercado.
+              </p>
+            </div>
+            <div className="container-serv-nosotros">
+              <p className="title-serv-card">SERVICIOS</p>
+              <img className="img-serv-card" src={Team} alt="team" />
+              <p className="text-serv-card">
+                Servicios confiables en tiempo oportuno para garantizar la
+                satisfacción de nuestros clientes.
+              </p>
+            </div>
           </div>
         </div>
-       </div>
       </div>
     </div>
   );
