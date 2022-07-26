@@ -12,7 +12,7 @@ export const Nosotros = () => {
   return (
     <div className="container-nosotros" id="nosotros">
       <div className="container-elements-nosotros">
-        <p className="title-contact">NOSOTROS</p>
+        <p className="title-nosotros">NOSOTROS</p>
         <div className="bg-nosotros">
           <div className="bg-black">
             <p className="experience-title-nosotros">
@@ -28,32 +28,23 @@ export const Nosotros = () => {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up">
+        <div>
           <p className="porque-nosotros">¿Por qué nosotros?</p>
           <div className="cotnainer-pq-serv-nosotros">
             <div className="container-serv-nosotros">
               <p className="title-serv-card">COMPROMISO</p>
               <img className="img-serv-card" src={Compromiso} alt="deal" />
-              <p className="text-serv-card">
-                Comprometidos en la fabricación de máquinas con un alto índice
-                de confiabilidad.
-              </p>
+              <p className="text-serv-card">Comprometidos en la fabricación de máquinas con un alto índice de confiabilidad.</p>
             </div>
             <div className="container-serv-nosotros">
               <p className="title-serv-card">TIEMPO</p>
               <img className="img-serv-card" src={Watch} alt="watch" />
-              <p className="text-serv-card">
-                Plazos de entrega reales y costos competitivos en base al
-                mercado.
-              </p>
+              <p className="text-serv-card">Plazos de entrega reales y costos competitivos en base al mercado.</p>
             </div>
             <div className="container-serv-nosotros">
               <p className="title-serv-card">SERVICIOS</p>
               <img className="img-serv-card" src={Team} alt="team" />
-              <p className="text-serv-card">
-                Servicios confiables en tiempo oportuno para garantizar la
-                satisfacción de nuestros clientes.
-              </p>
+              <p className="text-serv-card">Servicios confiables en tiempo oportuno para garantizar la satisfacción de nuestros clientes.</p>
             </div>
           </div>
         </div>
