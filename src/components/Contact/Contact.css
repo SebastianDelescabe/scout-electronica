@@ -6,7 +6,7 @@
 }
 .container-elements-contact {
   width: 90%;
-  padding-top: 7rem;
+  padding-top: 2rem;
 }
 
 .banner-bg-contact {
@@ -19,6 +19,7 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+  padding-top: 5rem;
 }
 
 .banner-contact-bgblack {
@@ -159,7 +160,7 @@
 @media (min-width: 1700px) {
   .container-elements-contact {
     width: 110rem;
-    padding-top: 7rem;
+    padding-top: 2rem;
   }
   .container-map-contact {
     width: 100%;

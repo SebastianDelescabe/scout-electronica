@@ -62,7 +62,7 @@ export const LineaProduccion = () => {
            <div className="container-prod-elements">
            <div >
              {prod.descriptionItems.map((el) => (
-                <Typography>.{el}</Typography>
+                <Typography><span className="point-product-items">.</span>{el}</Typography>
               ))}
              </div>
               <img className="img-acc-prod" src={prod.image} alt="prod" width="150px"  height='150px'/>

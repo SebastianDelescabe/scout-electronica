@@ -3,12 +3,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .bg-nosotros {
   background-image: url(../../assets/bgNosotros.jpg);
-  height: 21rem;
+  height: 24rem;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -23,13 +23,13 @@
 
 .container-elements-nosotros {
   width: 90%;
-  height: 65rem;
 }
 
 .bg-black {
-  height: 21rem;
+  height: 14rem;
   padding: 2rem;
   margin: 2rem;
+  width: 85%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -43,6 +43,15 @@
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+}
+
+.container-title-nosotros{
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 4rem;
 }
 
 .title-nosotros {
@@ -59,12 +68,12 @@
   color: #fff;
 }
 .quines-title-nosotros {
-  font-size: 1.4rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #fff;
 }
 .text-nosotros {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #fff;
   width: 60rem;
 }
@@ -103,6 +112,7 @@
   font-weight: 500;
   color: rgb(103, 103, 103);
 }
+
 /*-----------------------------------------------------------------*/
 /*-------------------------*MEDIA QUERIES*-------------------------*/
 /*-----------------------------------------------------------------*/
@@ -113,7 +123,6 @@
   }
   .container-elements-nosotros {
     width: 110rem;
-    height: 63rem;
   }
   .bg-nosotros {
     height: 25rem;
@@ -130,6 +139,24 @@
     padding: 1rem;
     text-align: center;
   }
+  .container-title-nosotros{
+    width: 92%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  .bg-black {
+    width: 88%;
+  }
+  .text-nosotros {
+    width: 90rem;
+  }
+  .quines-title-nosotros {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+  }
 }
 
 /*-------------------------*600*-------------------------*/
@@ -143,7 +170,7 @@
   }
   .bg-nosotros {
     background-image: url(../../assets/bgNosotros.jpg);
-    height: 40rem;
+    height: 30rem;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -154,19 +181,26 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   .container-elements-nosotros {
     width: 22rem;
     height: 50rem;
   }
   .bg-black {
-    background-color: rgba(0, 0, 0, 0.4);
-    margin: 1rem;
-    height: 32rem;
+    height: 28rem;
+    padding: 0;
+    width: 20rem;
+    margin: 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(0,0,0,0.3), rgba(255,255,255,0));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow:  0 8px 32px 0 rgba(0, 0, 0, 0.4);
   }
   .experience-title-nosotros {
     font-size: 1.7rem;

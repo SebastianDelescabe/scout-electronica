@@ -2,13 +2,13 @@
 .container-productos {
   width: 90%;
   margin: 0 auto;
-  height: 40rem;
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .banner-bg-products{
-  background: url(../../assets/prodBg.jpg);
+  background-image: url(../../assets/prodBg.jpg);
   width: 100%;
-  height: 30rem;
+  height: 23rem;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -33,6 +33,7 @@
   color: rgba(255, 255, 255, 0.8);
   font-size: 4rem;
   font-weight: 500;
+  margin: 0;
 }
 .title-productos {
   font-size: 2.2rem;
@@ -50,6 +51,11 @@
 .img-acc-prod{
   margin-right: 10rem;
 }
+.point-product-items{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-gray);
+}
 /*-----------------------------------------------------------------*/
 /*------------------------*CONTROL CALIDAD*------------------------*/
 /*-----------------------------------------------------------------*/
@@ -62,6 +68,7 @@
   text-align: center;
 }
 
+
 /*-----------------------------------------------------------------*/
 /*-----------------------*LINEA PRODUCCION*------------------------*/
 /*-----------------------------------------------------------------*/
@@ -72,4 +79,86 @@
     border-bottom: solid 3px var(--color-aqua);
     width: 16rem;
     text-align: center;
+}
+
+
+/*-----------------------------------------------------------------*/
+/*-------------------------*MEDIA QUERIES*-------------------------*/
+/*-----------------------------------------------------------------*/
+
+/*-------------------------*1700*-------------------------*/
+@media (min-width: 1700px) {
+  .banner-bg-products{
+    background-image: url(../../assets/prodBg.jpg);
+    width: 100%;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+  .banner-products-bgblack{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-title-products{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 4rem;
+    font-weight: 500;
+  }
+}
+/*-------------------------*1200*-------------------------*/
+
+/*-------------------------*600*-------------------------*/
+
+@media (max-width: 600px) {
+  .banner-bg-products{
+    background-image: url(../../assets/prodBg.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment: fixed;       
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
+    width:100%; 
+    padding-top: 5rem;
+  }
+  .banner-products-bgblack{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-title-products{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: center;
+  }
+  .container-prod-elements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .img-acc-prod {
+    margin-right: 0rem;
+    margin-top: 1rem;
+}
 }
