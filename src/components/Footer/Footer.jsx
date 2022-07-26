@@ -9,6 +9,11 @@ export const Footer = () => {
     return (
         <div className='footer'>
             <div className='footer__container'>
+                <div className="footer__logo-responsive">
+                    <img src={logo} alt="" />
+                    <span>Nuestros objetivos son los mismos que los suyos.</span>
+                </div>
+
                 <div className="footer__contact">
                     <span>Contactanos</span>
                     <div>
@@ -25,7 +30,7 @@ export const Footer = () => {
                     </div>
                 </div>
                 <div className="footer__logo">
-                    <img src={logo} alt="" />
+                    <img src={logo} alt="logo" />
                     <span>Nuestros objetivos son los mismos que los suyos.</span>
                 </div>
                 <div className='footer__info'>
@@ -36,7 +41,6 @@ export const Footer = () => {
                     <p>Sábados</p>
                     <p>08:00 am 13:00 pm</p>
                 </div>
-
             </div>
         </div >
     )

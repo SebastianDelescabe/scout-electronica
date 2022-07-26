@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   width: 93%;
-  margin: 4.5rem 0rem;
+  margin-top: 4.5rem;
 }
 
 .title-client {
@@ -77,6 +77,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem 0rem;
 }
 
 .clients-laurel {
@@ -125,5 +126,9 @@
   .bg-glass-clients {
     width: 100%;
     height: 150px;
+  }
+
+  .clients-laurel {
+    display: none;
   }
 }

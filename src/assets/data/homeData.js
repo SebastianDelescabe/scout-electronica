@@ -13,8 +13,8 @@ export const homeData = [
     {
         title: 'Servicio técnico de pronta respuesta y calidad',
         image: fotoHome2,
-        button: 'Conocenos',
-        id: '#nosotros'
+        button: 'Servicio Técnico',
+        id: '/service'
     },
     {
         title: 'Trabajamos para clientes de Argentina y latinoamérica',
