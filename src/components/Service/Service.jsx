@@ -8,8 +8,10 @@ export const Service = () => {
     return (
         <div className='service' id='service'>
             <div className='service-container'>
-                <div className='service-title'>
-                    <p>SERVICIO TÉCNICO</p>
+                <div className="banner-bg-service">
+                    <div className="banner-service-bgblack">
+                        <p className="p-title-service">Servicio Técnico</p>
+                    </div>
                 </div>
                 {
                     serviceData && serviceData.map(service => (

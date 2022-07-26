@@ -27,7 +27,7 @@ button.app__button {
 }
 
 button.app__button .circle {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.25s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
   margin: 0;
@@ -38,7 +38,7 @@ button.app__button .circle {
 }
 
 button.app__button .circle .icon {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.25s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -47,7 +47,7 @@ button.app__button .circle .icon {
 }
 
 button.app__button .circle .icon.arrow {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.25s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
   height: 0.125rem;
@@ -67,7 +67,7 @@ button.app__button .circle .icon.arrow::before {
 }
 
 button.app__button .button-text {
-  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  transition: all 0.25s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
   left: 0;
