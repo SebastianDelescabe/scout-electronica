@@ -4,7 +4,7 @@ import serviceFoto3 from '../../assets/service3.png'
 
 export const serviceData = [
     {
-        title: 'Calibración',
+        title: 'Certificación',
         text: 'Calibramos equipos con valores de magnitudes que han sido aceptados por organismos nacionales o internacionales. Entregamos un Certificado de Calibración, donde se evidencia el proceso de verificación, ajuste y calibración para garantizar que el instrumento está en óptimas condiciones técnicas y metrológicas.',
         image: serviceFoto2,
     },
