@@ -1,11 +1,15 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { clients } from '../../assets/data/clientsData'
 import { v4 as uuidv4 } from 'uuid';
 import laurel1 from '../../assets/laurel1.png'
 import laurel2 from '../../assets/laurel2.png'
+import Aos from 'aos'
 import './Clients.css';
 
 export const Clients = () => {
+    useEffect(() => {
+        Aos.init({ duration: 1000 });
+      }, []);
     return (
         <div className='clients' id="clients">
             <div className='title-client'>
@@ -18,7 +22,7 @@ export const Clients = () => {
                     </div>
                 </div>
             </div>
-            <div className='clients-container'>
+            <div data-aos="fade-right" className='clients-container'>
                 <div className='clients-laurel'>
                     <img src={laurel1} alt='laurel1' />
                 </div>
