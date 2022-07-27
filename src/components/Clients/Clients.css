@@ -38,10 +38,6 @@
   justify-content: flex-end;
 }
 .bg-glass-clients {
-  background-color: rgba(0, 0, 0, 0.1);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -99,13 +95,13 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 0rem;
   }
   .clients-images img {
-    width: 200px;
+    width: 250px;
   }
   .clients {
-    margin: 3rem 0rem;
+    margin: 3.5rem 0rem;
   }
 
   .clients-laurel {
@@ -142,17 +138,25 @@
   .clients-banner {
     width: 100%;
     height: 250px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
   }
 
   .clients-banner span {
-    font-size: 1rem;
+    font-size: 1.6rem;
     margin: 0.5rem;
-    width: 72%;
-    opacity: 0.9;
+    width: 100%;
+    opacity: 1;
   }
 
   .bg-glass-clients {
-    width: 100%;
+    background-color: transparent;
+    width: 98%;
     height: 250px;
   }
 

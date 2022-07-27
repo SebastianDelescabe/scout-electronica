@@ -51,7 +51,6 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 4rem;
 }
 
 .title-nosotros {
@@ -60,6 +59,7 @@
   color: var(--color-gray);
   font-weight: 500;
   border-bottom: solid 3px var(--color-aqua);
+  padding-top: 1.5rem;
 }
 
 .experience-title-nosotros {
@@ -124,6 +124,7 @@
   .container-elements-nosotros {
     width: 110rem;
   }
+
   .bg-nosotros {
     height: 25rem;
   }
