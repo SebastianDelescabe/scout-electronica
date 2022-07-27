@@ -1,19 +1,19 @@
 .clients {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  width: 93%;
+  width: 100%;
   margin-top: 2rem;
 }
 
-.title-client {
-  width: 100%;
+.container-title-clients {
+  width: 18rem;
   display: flex;
-  text-align: start;
+  align-items: center;
+  justify-content: center;
 }
 
-.title-client p {
+.title-client {
   font-size: 2.2rem;
   color: var(--color-gray);
   font-weight: 500;
@@ -62,13 +62,13 @@
   align-items: center;
   justify-content: center;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   width: 62%;
   padding: 0rem;
 }
 
 .clients-images img {
-  width: 150px;
+  width: 130px;
   cursor: pointer;
   padding: 2rem;
 }
@@ -94,31 +94,38 @@
 /*-------------------------*MEDIA QUERIES*-------------------------*/
 /*-----------------------------------------------------------------*/
 
-
 @media (min-width: 1700px) {
   .clients-images {
     align-items: center;
     justify-content: center;
-    width: 92%;
-    padding: 4rem;
+    width: 100%;
+    padding: 2rem;
   }
   .clients-images img {
     width: 250px;
   }
   .clients {
-    margin-top: 6rem;
+    margin: 3rem 0rem;
   }
-  
+
+  .clients-laurel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .clients-laurel img {
+    width: 200px;
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .clients {
-    width: 22rem;
-    margin-top: 2rem;
+    width: 100%;
   }
 
-  .title-client {
-    text-align: end;
+  .container-title-clients {
+    width: 13rem;
   }
 
   .clients-images {
@@ -128,25 +135,25 @@
   }
 
   .clients-background {
-    width: 22rem;
-    height: 150px;
+    width: 100%;
+    height: 250px;
   }
 
   .clients-banner {
-    width: 22rem;
-    height: 150px;
+    width: 100%;
+    height: 250px;
   }
 
   .clients-banner span {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0.5rem;
-    width: 60%;
+    width: 72%;
     opacity: 0.9;
   }
 
   .bg-glass-clients {
     width: 100%;
-    height: 150px;
+    height: 250px;
   }
 
   .clients-laurel {

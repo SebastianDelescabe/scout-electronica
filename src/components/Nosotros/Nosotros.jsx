@@ -12,7 +12,7 @@ export const Nosotros = () => {
   return (
     <>
       <div className="container-title-nosotros">
-      <p className="title-nosotros">NOSOTROS</p>
+        <p className="title-nosotros">NOSOTROS</p>
       </div>
       <div className="bg-nosotros">
         <div className="bg-black">
