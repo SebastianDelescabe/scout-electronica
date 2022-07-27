@@ -7,7 +7,7 @@
 }
 
 .container-title-clients {
-  width: 30%;
+  width: 18rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +68,7 @@
 }
 
 .clients-images img {
-  width: 150px;
+  width: 130px;
   cursor: pointer;
   padding: 2rem;
 }
@@ -107,6 +107,16 @@
   .clients {
     margin: 3rem 0rem;
   }
+
+  .clients-laurel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .clients-laurel img {
+    width: 200px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -115,7 +125,7 @@
   }
 
   .container-title-clients {
-    width: 50%;
+    width: 13rem;
   }
 
   .clients-images {
@@ -135,9 +145,9 @@
   }
 
   .clients-banner span {
-    font-size: 1.1rem;
+    font-size: 1rem;
     margin: 0.5rem;
-    width: 60%;
+    width: 72%;
     opacity: 0.9;
   }
 
