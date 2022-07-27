@@ -11,7 +11,7 @@ export const Nosotros = () => {
   }, []);
   return (
     <>
-      <div className="container-title-nosotros">
+      <div className="container-title-nosotros" id="nosotros">
         <p className="title-nosotros">NOSOTROS</p>
       </div>
       <div className="bg-nosotros">
@@ -29,7 +29,7 @@ export const Nosotros = () => {
           </div>
         </div>
       </div>
-      <div className="container-nosotros" id="nosotros">
+      <div className="container-nosotros">
         <div className="container-elements-nosotros">
           <div data-aos="fade-up">
             <p className="porque-nosotros">¿Por qué nosotros?</p>

@@ -2,8 +2,8 @@
   width: 90%;
   margin: 0 auto;
   padding-top: 2rem;
-  padding-bottom: 2rem;
 }
+
 .banner-bg-products {
   background-image: url(../../assets/prodBg.jpg);
   width: 100%;
@@ -54,6 +54,14 @@
   font-size: 2rem;
   font-weight: 600;
   color: var(--color-gray);
+}
+
+.products-button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0rem;
 }
 /*-----------------------------------------------------------------*/
 /*------------------------*CONTROL CALIDAD*------------------------*/
@@ -119,6 +127,11 @@
 /*-------------------------*600*-------------------------*/
 
 @media (max-width: 600px) {
+  .container-productos {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
   .banner-bg-products {
     background-image: url(../../assets/prodBg.jpg);
     background-repeat: no-repeat;

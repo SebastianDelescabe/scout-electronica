@@ -31,7 +31,7 @@ export const Service = () => {
                         <span className="circle" aria-hidden="true">
                             <span className="icon arrow"></span>
                         </span>
-                        <HashLink to='/contact#form' className="button-text" >Contactanos</HashLink>
+                        <HashLink to='/contact#top' className="button-text" >Contactanos</HashLink>
                     </button>
                 </div>
             </div>

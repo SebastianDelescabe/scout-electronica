@@ -23,7 +23,7 @@ export const HomeCard = ({ data }) => {
                         <span className="circle" aria-hidden="true">
                             <span className="icon arrow"></span>
                         </span>
-                        <span className="button-text">{data.button}</span>
+                        <NavHashLink className="button-text" to={data.id}>{data.button}</NavHashLink>
                     </button>
                 </div>
             </div>

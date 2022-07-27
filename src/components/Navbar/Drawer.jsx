@@ -44,10 +44,10 @@ export const Drawer = () => {
           >
             <div className="div-drawer-contain">
               <div className="div-container-menu-mobile">
-                <NavHashLink to="/#productos">PRODUCTOS</NavHashLink>
-                <NavHashLink to="/">SERVICIO TÉCNCIO</NavHashLink>
+                <NavHashLink to="/productos">PRODUCTOS</NavHashLink>
+                <NavHashLink to="/service">SERVICIO TÉCNCIO</NavHashLink>
                 <NavHashLink to="/#nosotros">NOSOTROS</NavHashLink>
-                <NavHashLink to="/#clientes">CLIENTES</NavHashLink>
+                <NavHashLink to="/#clients">CLIENTES</NavHashLink>
                 <NavHashLink to="/contact">CONTACTO</NavHashLink>
               </div>
             </div>
