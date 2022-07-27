@@ -20,6 +20,14 @@ export const Productos = () => {
           <LineaProduccion />
         </div>
       </div>
+      <div className='products-button'>
+        <button type='submit' className="app__button">
+          <span className="circle" aria-hidden="true">
+            <span className="icon arrow"></span>
+          </span>
+          <a href='https://drive.google.com/u/0/uc?id=1J4gnNZKP_-USQcEtoSnMyURBn9C6rlvz&export=download' target="blank" className="button-text" >Catálogo PDF</a>
+        </button>
+      </div>
     </div>
   );
 };
