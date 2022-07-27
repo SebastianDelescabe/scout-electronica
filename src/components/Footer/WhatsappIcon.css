@@ -4,6 +4,7 @@
   right: 0.2rem;
   background-color: transparent;
   color: var(--color-aqua);
+  z-index: 1;
 }
 
 .whatsappIcon img {
