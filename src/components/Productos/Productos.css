@@ -170,4 +170,11 @@
     margin-right: 0rem;
     margin-top: 1rem;
   }
+  .products-button {
+    flex: 1;
+    justify-content: flex-start;
+    padding-top: 0rem;
+    padding-bottom: 2rem 0rem;
+    margin-left: 1rem;
+  }
 }
