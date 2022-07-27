@@ -1,0 +1,19 @@
+.whatsappIcon {
+  position: fixed;
+  bottom: 2rem;
+  right: 0.2rem;
+  background-color: transparent;
+  color: var(--color-aqua);
+  z-index: 1;
+}
+
+.whatsappIcon img {
+  font-size: 50px;
+  width: 60px;
+}
+
+@media (max-width: 900px) {
+  .scroll-top {
+    display: none;
+  }
+}

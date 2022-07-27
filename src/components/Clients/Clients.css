@@ -1,0 +1,162 @@
+.clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.container-title-clients {
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-client {
+  font-size: 2.2rem;
+  color: var(--color-gray);
+  font-weight: 500;
+  border-bottom: solid 3px var(--color-aqua);
+}
+
+.clients-background {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 250px;
+}
+
+.clients-banner {
+  width: 100%;
+  height: 250px;
+  background-image: url("../../assets/bannerClients.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.bg-glass-clients {
+  background-color: rgba(0, 0, 0, 0.1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 250px;
+}
+
+.bg-glass-clients span {
+  font-size: 30px;
+  width: 65%;
+  margin-right: 3rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.clients-images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 62%;
+  padding: 0rem;
+}
+
+.clients-images img {
+  width: 130px;
+  cursor: pointer;
+  padding: 2rem;
+}
+
+.clients-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0rem;
+}
+
+.clients-laurel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-laurel img {
+  width: 200px;
+}
+
+/*-----------------------------------------------------------------*/
+/*-------------------------*MEDIA QUERIES*-------------------------*/
+/*-----------------------------------------------------------------*/
+
+@media (min-width: 1700px) {
+  .clients-images {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+  }
+  .clients-images img {
+    width: 250px;
+  }
+  .clients {
+    margin: 3rem 0rem;
+  }
+
+  .clients-laurel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .clients-laurel img {
+    width: 200px;
+  }
+}
+
+@media (max-width: 850px) {
+  .clients {
+    width: 100%;
+  }
+
+  .container-title-clients {
+    width: 13rem;
+  }
+
+  .clients-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .clients-background {
+    width: 100%;
+    height: 250px;
+  }
+
+  .clients-banner {
+    width: 100%;
+    height: 250px;
+  }
+
+  .clients-banner span {
+    font-size: 1rem;
+    margin: 0.5rem;
+    width: 72%;
+    opacity: 0.9;
+  }
+
+  .bg-glass-clients {
+    width: 100%;
+    height: 250px;
+  }
+
+  .clients-laurel {
+    display: none;
+  }
+}

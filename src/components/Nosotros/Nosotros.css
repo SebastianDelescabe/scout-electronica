@@ -1,0 +1,241 @@
+.container-nosotros {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.bg-nosotros {
+  background-image: url(../../assets/bgNosotros.jpg);
+  height: 24rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-elements-nosotros {
+  width: 90%;
+}
+
+.bg-black {
+  height: 14rem;
+  padding: 2rem;
+  margin: 2rem;
+  width: 85%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+}
+
+.container-title-nosotros {
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.title-nosotros {
+  font-size: 2.2rem;
+  width: 12rem;
+  color: var(--color-gray);
+  font-weight: 500;
+  border-bottom: solid 3px var(--color-aqua);
+}
+
+.experience-title-nosotros {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #fff;
+}
+.quines-title-nosotros {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+.text-nosotros {
+  font-size: 1.2rem;
+  color: #fff;
+  width: 60rem;
+}
+.cotnainer-pq-serv-nosotros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+.porque-nosotros {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container-serv-nosotros {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  height: 25rem;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
+  box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
+}
+.img-serv-card {
+  width: 11rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.title-serv-card {
+  margin-top: 0rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: rgb(103, 103, 103);
+}
+
+/*-----------------------------------------------------------------*/
+/*-------------------------*MEDIA QUERIES*-------------------------*/
+/*-----------------------------------------------------------------*/
+
+@media (min-width: 1700px) {
+  .container-elements-nosotros {
+    width: 110rem;
+  }
+  .container-elements-nosotros {
+    width: 110rem;
+  }
+  .bg-nosotros {
+    height: 25rem;
+  }
+  .container-serv-nosotros {
+    width: 26rem;
+    height: 25rem;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
+    box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+  }
+  .container-title-nosotros {
+    width: 92%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+  .bg-black {
+    width: 88%;
+  }
+  .text-nosotros {
+    width: 90rem;
+  }
+  .quines-title-nosotros {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+  }
+}
+
+/*-------------------------*600*-------------------------*/
+
+@media (max-width: 600px) {
+  .container-elements-nosotros {
+    width: 22rem;
+  }
+  .bg-nosotros {
+    background-image: url(../../assets/bgNosotros.jpg);
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bg-black {
+    height: 28rem;
+    padding: 0;
+    width: 20rem;
+    margin: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(255, 255, 255, 0)
+    );
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  }
+  .experience-title-nosotros {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #fff;
+  }
+  .quines-title-nosotros {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+  }
+  .text-nosotros {
+    font-size: 1.1rem;
+    color: #fff;
+  }
+  .cotnainer-pq-serv-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .container-serv-nosotros {
+    width: 20rem;
+    height: 25rem;
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
+    box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .text-nosotros {
+    font-size: 1.1rem;
+    color: #fff;
+    width: 20rem;
+  }
+}
