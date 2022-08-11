@@ -1,3 +1,7 @@
+.nosotros {
+  margin-top: 5rem;
+}
+
 .container-nosotros {
   background-color: #fff;
   width: 100%;
@@ -46,7 +50,7 @@
   margin: 0 auto;
 }
 
-.container-title-nosotros {
+/* .container-title-nosotros {
   width: 90%;
   align-items: center;
   justify-content: center;
@@ -60,7 +64,7 @@
   font-weight: 500;
   border-bottom: solid 3px var(--color-aqua);
   padding-top: 1.5rem;
-}
+} */
 
 .experience-title-nosotros {
   font-size: 1.7rem;
@@ -121,9 +125,6 @@
   .container-elements-nosotros {
     width: 110rem;
   }
-  .container-elements-nosotros {
-    width: 110rem;
-  }
 
   .bg-nosotros {
     height: 25rem;
@@ -140,13 +141,13 @@
     padding: 1rem;
     text-align: center;
   }
-  .container-title-nosotros {
+  /* .container-title-nosotros {
     width: 92%;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     margin-top: 4rem;
-  }
+  } */
   .bg-black {
     width: 88%;
   }
@@ -162,43 +163,27 @@
 
 /*-------------------------*600*-------------------------*/
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .container-elements-nosotros {
     width: 22rem;
   }
   .bg-nosotros {
-    background-image: url(../../assets/bgNosotros.jpg);
-    height: 30rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    height: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .bg-black {
+    padding: 2rem 0.5rem;
     height: 28rem;
-    padding: 0;
-    width: 20rem;
-    margin: 2rem;
+    width: 85%;
+    margin: 0rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(
-      135deg,
-      rgba(0, 0, 0, 0.3),
-      rgba(255, 255, 255, 0)
-    );
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
   }
   .experience-title-nosotros {
     font-size: 1.7rem;
@@ -222,7 +207,7 @@
     margin-top: 2rem;
   }
   .container-serv-nosotros {
-    width: 20rem;
+    width: 95%;
     height: 25rem;
     -webkit-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
     -moz-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
@@ -237,6 +222,6 @@
   .text-nosotros {
     font-size: 1.1rem;
     color: #fff;
-    width: 20rem;
+    width: 95%;
   }
 }

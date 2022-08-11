@@ -16,6 +16,13 @@ html {
   --color-gray: #9b9999;
   --color-background: rgb(238, 238, 238);
   --hard-grey: #4c4c4c;
+
+  /* //Swiper config */
+  --swiper-navigation-color: var(--color-aqua);
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-color: var(--color-aqua);
+  --swiper-pagination-bullet-inactive-color: var(--color-gray);
+  --swiper-pagination-bullet-inactive-opacity: 0.7;
 }
 
 * {

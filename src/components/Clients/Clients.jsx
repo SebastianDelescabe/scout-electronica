@@ -13,9 +13,9 @@ export const Clients = () => {
 
     return (
         <div id="clients" className='clients'>
-            <div className='container-title-clients'>
+            {/* <div className='container-title-clients'>
                 <p className='title-client'>CLIENTES</p>
-            </div>
+            </div> */}
             <div className="clients-background">
                 <div className='clients-banner'>
                     <div className='bg-glass-clients'>

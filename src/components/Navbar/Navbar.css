@@ -104,7 +104,7 @@
 
 /*-------------------------*600*-------------------------*/
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   .container-drawer-nav {
     display: flex;
   }
@@ -126,7 +126,7 @@
   }
   .container-elements-nav {
     display: flex;
-    width: 22rem;
+    width: 90%;
     justify-content: space-between;
     align-items: center;
   }

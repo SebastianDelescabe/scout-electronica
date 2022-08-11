@@ -10,11 +10,11 @@ export const Nosotros = () => {
     Aos.init({ duration: 1000 });
   }, []);
   return (
-    <>
-      <div className="container-title-nosotros" id="nosotros">
+    <div className="nosotros">
+      {/* <div className="container-title-nosotros" id="nosotros">
         <p className="title-nosotros">NOSOTROS</p>
-      </div>
-      <div className="bg-nosotros">
+      </div> */}
+      <div className="bg-nosotros" id="nosotros">
         <div className="bg-black">
           <p className="experience-title-nosotros">
             20 años de experiencia te garantizan nuestra calidad y compromiso
@@ -62,6 +62,6 @@ export const Nosotros = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
