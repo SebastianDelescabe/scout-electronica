@@ -13,13 +13,13 @@ html {
 :root {
   --font-base: "Poppins", sans-serif;
   --color-aqua: #6fe3e7;
-  --color-gray: #9b9999;
+  --color-gray: #c9c9c9;
   --color-background: rgb(238, 238, 238);
   --hard-grey: #4c4c4c;
 
   /* //Swiper config */
-  --swiper-navigation-color: var(--color-aqua);
-  --swiper-pagination-bullet-size: 10px;
+  --swiper-navigation-color: white;
+  --swiper-pagination-bullet-size: 15px;
   --swiper-pagination-color: var(--color-aqua);
   --swiper-pagination-bullet-inactive-color: var(--color-gray);
   --swiper-pagination-bullet-inactive-opacity: 0.7;

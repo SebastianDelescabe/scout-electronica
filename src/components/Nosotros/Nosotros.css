@@ -7,7 +7,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 
 .bg-nosotros {
@@ -49,22 +49,6 @@
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
   margin: 0 auto;
 }
-
-/* .container-title-nosotros {
-  width: 90%;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-}
-
-.title-nosotros {
-  font-size: 2.2rem;
-  width: 12rem;
-  color: var(--color-gray);
-  font-weight: 500;
-  border-bottom: solid 3px var(--color-aqua);
-  padding-top: 1.5rem;
-} */
 
 .experience-title-nosotros {
   font-size: 1.7rem;
@@ -118,6 +102,74 @@
 }
 
 /*-----------------------------------------------------------------*/
+/*-------------------------*SLIDER*-------------------------*/
+/*-----------------------------------------------------------------*/
+
+.slider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0rem;
+}
+.slider-container {
+  width: 92%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.aboutUs {
+  width: 50%;
+  z-index: 0;
+}
+
+.aboutUs-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.aboutUs img {
+  display: block;
+  width: 100%;
+  height: 550px;
+  border-radius: 10px;
+}
+
+.slider-texto {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  line-height: 25px;
+}
+
+.slider-texto h1 {
+  text-align: center;
+  color: rgb(179, 179, 179);
+}
+
+.slider-textop p {
+  color: var(--color-gray);
+  text-align: start;
+}
+
+.slider-text-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: white;
+  border: 2px double var(--color-aqua);
+  outline: 2px solid var(--color-aqua);
+  outline-offset: -9px;
+  padding: 4rem 2rem;
+  width: 65%;
+}
+
+/*-----------------------------------------------------------------*/
 /*-------------------------*MEDIA QUERIES*-------------------------*/
 /*-----------------------------------------------------------------*/
 
@@ -141,13 +193,6 @@
     padding: 1rem;
     text-align: center;
   }
-  /* .container-title-nosotros {
-    width: 92%;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 4rem;
-  } */
   .bg-black {
     width: 88%;
   }
@@ -158,6 +203,58 @@
     font-size: 1.8rem;
     font-weight: 500;
     color: #fff;
+  }
+}
+/*-------------------------*1325 slider*-------------------------*/
+
+@media (max-width: 1325px) {
+  .slider-texto {
+    width: 40%;
+  }
+  .aboutUs {
+    width: 32rem;
+  }
+
+  .slider-text-container {
+    width: 100%;
+  }
+  .aboutUs-slide img {
+    display: block;
+    width: 32rem;
+    height: 24rem;
+  }
+  .slider-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/*-------------------------*950 slider*-------------------------*/
+
+@media (max-width: 950px) {
+  .slider-container {
+    width: 100%;
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  .slider-texto {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .aboutUs {
+    width: 100%;
+  }
+
+  .aboutUs-slide img {
+    display: block;
+    width: 100%;
+    height: 30rem;
+  }
+
+  .slider-text-container {
+    width: 100%;
   }
 }
 

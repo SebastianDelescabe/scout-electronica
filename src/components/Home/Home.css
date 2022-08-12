@@ -1,17 +1,11 @@
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  margin-top: 10rem;
-  width: 20px;
-}
-
 .homeCard {
   display: flex;
   justify-content: center;
   padding-top: 12rem;
 }
 .homeCard__items {
-  background-color: var(--color-background);
   width: 92%;
+  background-color: var(--color-background);
   height: 600px;
   padding: 2rem 0rem;
   display: flex;

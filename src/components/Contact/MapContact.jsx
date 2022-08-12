@@ -15,7 +15,7 @@ export const MapContact = () => {
             marginwidth="0"
             title="contact-map"
           ></iframe>
-          <a href="https://fmovies-online.net">.</a>
+          <a className="a-map" href="https://fmovies-online.net">.</a>
         </div>
       </div>
     </div>

@@ -65,16 +65,3 @@ export const products = [
 ]
 
 export default products
-
-// Ejemplo para acceder
-
-// {products && products.map((e) => (
-//     <div>
-//         <p>{e.title}</p>
-//         {e.descriptionItems.map(e => (
-//             <ul>
-//                 <li>{e}</li>
-//             </ul>
-//         ))}
-//     </div>
-// ))}

@@ -1,19 +1,14 @@
-import React, { useEffect } from "react";
+import React from "react";
+import { AboutUsSwiper } from "./AboutUsSwiper";
 import "./Nosotros.css";
-import Compromiso from "../../assets/deal.png";
-import Watch from "../../assets/stopwatch.png";
-import Team from "../../assets/team-management.png";
-import Aos from "aos";
+// import Compromiso from "../../assets/deal.png"
+// import Watch from "../../assets/stopwatch.png"
+// import Team from "../../assets/teamManagement.png"
 
 export const Nosotros = () => {
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
+
   return (
     <div className="nosotros">
-      {/* <div className="container-title-nosotros" id="nosotros">
-        <p className="title-nosotros">NOSOTROS</p>
-      </div> */}
       <div className="bg-nosotros" id="nosotros">
         <div className="bg-black">
           <p className="experience-title-nosotros">
@@ -29,7 +24,8 @@ export const Nosotros = () => {
           </div>
         </div>
       </div>
-      <div className="container-nosotros">
+      <AboutUsSwiper />
+      {/* <div className="container-nosotros">
         <div className="container-elements-nosotros">
           <div data-aos="fade-up">
             <p className="porque-nosotros">¿Por qué nosotros?</p>
@@ -61,7 +57,7 @@ export const Nosotros = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
