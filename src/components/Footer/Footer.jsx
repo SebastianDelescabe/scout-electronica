@@ -2,7 +2,7 @@ import React from 'react';
 import { MdPhone } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 import { MdHouse } from "react-icons/md";
-import logo from '../../assets/logo1-nav.png'
+import logo from '../../assets/images/logo1-nav.png'
 import './Footer.css'
 
 export const Footer = () => {

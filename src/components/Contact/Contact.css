@@ -45,7 +45,7 @@
 }
 .container-form-info-contact {
   display: flex;
-  width: 100%;
+  width: 90%;
   align-items: flex-start;
   justify-content: center;
 }
@@ -55,14 +55,12 @@
 /*-----------------------------------------------------------------*/
 
 .contact-info {
-  height: 28rem;
-  margin-top: 1rem;
+  height: 38rem;
   width: 40%;
-  margin-right: 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .contact-info__container {
@@ -105,8 +103,12 @@
 
 .contact-form {
   width: 100%;
-  height: 35rem;
-  margin-top: 2rem;
+  margin: 3rem 0rem;
+  padding: 2rem;
+
+  -webkit-box-shadow: 0px 0px 10px 2px rgb(231, 230, 230);
+  -moz-box-shadow: 0px 0px 10px 2px rgb(240, 240, 240);
+  box-shadow: 0px 0px 10px 2px rgb(216, 216, 216);
 }
 
 .contact-form-inputs-container {
@@ -157,23 +159,34 @@
 /*-----------------------------------------------------------------*/
 
 /*-------------------------*1700*-------------------------*/
-@media (min-width: 1700px) {
-  .container-elements-contact {
-    width: 110rem;
-    padding-top: 2rem;
-  }
-  .container-map-contact {
+
+/*-------------------------*1440*-------------------------*/
+@media (max-width: 1440px) {
+  .container-form-info-contact {
+    display: flex;
     width: 100%;
-    height: 30rem;
+    align-items: flex-start;
+    justify-content: center;
   }
-  /*-------------------------*Map*-------------------------*/
-  .map-google {
-    width: 110rem;
+
+  .contact-form {
+    margin: 2rem 0rem;
+    padding: 2rem;
+  }
+}
+/*-------------------------*850*-------------------------*/
+@media (max-width: 850px) {
+  /* .contact-form {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  } */
+  .contact-info {
+    margin-top: 3rem;
+    margin-right: 1rem;
     height: 30rem;
   }
 }
-/*-------------------------*1200*-------------------------*/
-
 /*-------------------------*600*-------------------------*/
 
 @media (max-width: 600px) {
@@ -192,6 +205,7 @@
 
   .container-form-info-contact {
     flex-direction: column;
+    width: 100%;
   }
 
   /* Contact Info */
@@ -203,8 +217,13 @@
 
   /* Form */
   .contact-form {
-    width: 100%;
+    width: 90%;
     height: 730px;
+    padding: 0.5rem;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
   .contact-form h4 {
     font-size: 14px;

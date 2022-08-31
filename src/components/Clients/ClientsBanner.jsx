@@ -26,7 +26,7 @@ export const ClientsBanner = () => {
                 </div>
                 <div>
                     <img src={clientBanner4} alt="" />
-                    <p>Asesoria técnica a nuestros clientes</p>
+                    <p>Asesoria técnica de calidad</p>
                 </div>
             </div>
         </div>

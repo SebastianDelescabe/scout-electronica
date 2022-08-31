@@ -14,7 +14,7 @@ export const Service = () => {
                     </div>
                 </div>
                 {
-                    serviceData && serviceData.map(service => (
+                    serviceData && serviceData.map((service) => (
                         <div key={uuidv4()} className='service__item'>
                             <div className='service__item-text'>
                                 <h1>{service.title}</h1>

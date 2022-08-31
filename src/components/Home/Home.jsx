@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { HomeCard } from './HomeCard';
 import { Clients } from '../Clients/Clients';
 import { homeData } from '../../assets/data/homeData';
-import { Nosotros } from "../Nosotros/Nosotros";
+import { AboutUs } from "../AboutUs/AboutUs";
 import { v4 as uuidv4 } from 'uuid';
 import './Home.css';
 
@@ -14,20 +14,20 @@ import 'swiper/css/bundle';
 
 export const Home = () => {
 
-    // const [isPhone, setIsPhone] = useState(
-    //     window.innerWidth < 900 ? true : false
-    // )
+    const [isPhone, setIsPhone] = useState(
+        window.innerWidth < 900 ? true : false
+    )
 
-    // const handleResize = () => {
-    //     if (window.innerWidth < 900) setIsPhone(true)
-    //     else setIsPhone(false)
-    // }
+    const handleResize = () => {
+        if (window.innerWidth < 900) setIsPhone(true)
+        else setIsPhone(false)
+    }
 
-    // useEffect(() => {
-    //     handleResize()
-    //     window.addEventListener("resize", handleResize);
-    //     return () => window.removeEventListener('resize', handleResize)
-    // })
+    useEffect(() => {
+        handleResize()
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener('resize', handleResize)
+    })
 
     return (
         <div className='home' id='home'>
@@ -38,7 +38,7 @@ export const Home = () => {
                     delay: 3500,
                     disableOnInteraction: false,
                 }}
-                // navigation={isPhone ? false : true}
+                navigation={isPhone ? false : true}
                 pagination={{ clickable: true }}
                 modules={[Navigation, Pagination, Autoplay]}
                 className="swiper"
@@ -51,10 +51,8 @@ export const Home = () => {
                     ))
                 }
             </Swiper>
-            <Nosotros />
-            <div className='home-clients'>
-                <Clients />
-            </div>
+            <AboutUs />
+            <Clients />
         </div>
     );
 };

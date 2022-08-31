@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import Logo from "../../assets/logo-nav.png";
+import Logo from "../../assets/images/logo-nav.png";
 import { Drawer } from "./Drawer";
 import { Link } from "react-router-dom";
 import { useScrollPosition } from "../../customHooks/useScrollPosition";

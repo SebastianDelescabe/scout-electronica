@@ -6,6 +6,7 @@ import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import products from "../../assets/data/productData";
+import { v4 as uuidv4 } from 'uuid';
 import "./Productos.css";
 
 const Accordion = styled((props) => (
@@ -52,6 +53,7 @@ export const LineaProduccion = () => {
     <div>
       {products.map((prod) => (
         <Accordion
+          key={uuidv4()}
           expanded={expanded === `panel${prod.id}`}
           onChange={handleChange(`panel${prod.id}`)}
         >
@@ -62,7 +64,7 @@ export const LineaProduccion = () => {
             <div className="container-prod-elements">
               <div >
                 {prod.descriptionItems.map((el) => (
-                  <Typography><span className="point-product-items">.</span>{el}</Typography>
+                  <Typography key={uuidv4()}><span className="point-product-items">.</span>{el}</Typography>
                 ))}
               </div>
               <img className="img-acc-prod" src={prod.image} alt="prod" width="450px" height='350px' />

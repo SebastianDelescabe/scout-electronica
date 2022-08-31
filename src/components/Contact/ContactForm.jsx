@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useFormik } from 'formik';
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
@@ -17,10 +17,12 @@ export const ContactForm = () => {
         request: '',
     }
 
-    const onSubmit = () => {
+    const onSubmit = async (values, { resetForm }) => {
+        console.log(values);
         emailjs.sendForm('service_h2zusuy', 'template_pqpj53j', form.current, 'x6-8LVIrjwT2UXfe-')
             .then(() => {
                 toast.success("Email enviado correctamente");
+                resetForm({ company: "", email: "" })
             }, (error) => {
                 toast.error("Error al enviar la consulta");
             });
@@ -36,7 +38,7 @@ export const ContactForm = () => {
                 <ToastContainer
                     position="top-center"
                     theme="colored"
-                    autoClose={2000}
+                    autoClose={1000}
                 />
                 <form onSubmit={handleSubmit} ref={form}>
                     <h2>Cotizá y Asesorate</h2>
@@ -93,11 +95,11 @@ export const ContactForm = () => {
                             cols="30"
                             rows="5"
                             required
-                            maxlength={1000}
+                            maxLength={1000}
                         />
                     </div>
                     <div className='form-button'>
-                        <button type='submit' className="app__button">
+                        <button type='submit' className="app__button" >
                             <span className="circle" aria-hidden="true">
                                 <span className="icon arrow"></span>
                             </span>

@@ -5,7 +5,7 @@
 }
 
 .banner-bg-products {
-  background-image: url(../../assets/prodBg.jpg);
+  background-image: url(../../assets/images/prodBg.jpg);
   width: 100%;
   height: 23rem;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@
 /*-------------------------*1700*-------------------------*/
 @media (min-width: 1700px) {
   .banner-bg-products {
-    background-image: url(../../assets/prodBg.jpg);
+    background-image: url(../../assets/images/prodBg.jpg);
     width: 100%;
     height: 23rem;
     background-repeat: no-repeat;
@@ -133,7 +133,7 @@
     padding-bottom: 4rem;
   }
   .banner-bg-products {
-    background-image: url(../../assets/prodBg.jpg);
+    background-image: url(../../assets/images/prodBg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;

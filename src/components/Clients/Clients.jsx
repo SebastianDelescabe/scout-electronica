@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { ClientsBanner } from './ClientsBanner';
 import { clients } from '../../assets/data/clientsData'
-import laurel1 from '../../assets/laurel1.png'
-import laurel2 from '../../assets/laurel2.png'
+import laurel1 from '../../assets/images/laurel1.png'
+import laurel2 from '../../assets/images/laurel2.png'
 import Aos from 'aos'
 import { v4 as uuidv4 } from 'uuid';
 import './Clients.css';

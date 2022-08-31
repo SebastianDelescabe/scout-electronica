@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Navigation, Pagination } from "swiper";
-import equipo1 from "../../assets/equipo1.jpg";
-import equipo2 from "../../assets/equipo2.jpg";
-import equipo3 from "../../assets/equipo3.jpg";
+import equipo1 from "../../assets/images/equipo1.jpg";
+import equipo2 from "../../assets/images/equipo2.jpg";
+import equipo3 from "../../assets/images/equipo3.jpg";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
@@ -41,7 +41,7 @@ export const AboutUsSwiper = () => {
                 </Swiper>
                 <div className="slider-texto">
                     <div className="slider-text-container">
-                        <h1>Scout Electronica</h1>
+                        <h1>Scout <b>Electronica</b></h1>
                         <p>
                             Con años de experiencia en el rubro sanitario, comenzamos a elaborar distintos equipos electrónicos para control de sólidos en laboratorios medicinales importantes de Argentina.
                             Con el paso del tiempo logramos diversificar nuestros productos y expandir nuestras ventas tanto en el interior del pais, como en latinoamerica.
