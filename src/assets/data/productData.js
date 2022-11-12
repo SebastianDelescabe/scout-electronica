@@ -1,13 +1,14 @@
 export const products = [
     {
-        title: 'Durómetro de capsulas blandas',
+        title: 'Durómetro SCOUT',
         descriptionItems: [
             'Seteo de fuerza requerida para ensayos',
             'Realiza ensayos instructivos y no destructivos',
             'Se desempeña como texturometro sin penetracion',
         ],
         image: 'https://i.ibb.co/rbx7g4w/durometro-convencional.jpg',
-        id: '1'
+        id: '1',
+        fav: true
     },
     {
         title: 'Baño Termostático',
@@ -20,17 +21,18 @@ export const products = [
         id: '2'
     },
     {
-        title: 'Desintegrador',
+        title: 'Desintegrador SCOUT',
         descriptionItems: [
             'Display de cuatro renglones por veinte caracteres con backlight',
             'Gabinete en acrílico con ventana sobre batea para iluminarla por led',
             'Batea en acrilico transparente, fácilmente desarmable de fácil limpieza',
         ],
         image: 'https://i.ibb.co/8YTFkkY/desintegrador.jpg',
-        id: '3'
+        id: '3',
+        fav: true
     },
     {
-        title: 'Texturómetro',
+        title: 'Texturómetro SCOUT',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -40,7 +42,7 @@ export const products = [
         id: '4'
     },
     {
-        title: 'Disolutor de ocho o seis vasos de vidrio',
+        title: 'Disolutor SCOUT',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -50,7 +52,7 @@ export const products = [
         id: '5'
     },
     {
-        title: 'Automuestreador',
+        title: 'Automuestreador SCOUT',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -60,7 +62,7 @@ export const products = [
         id: '6'
     },
     {
-        title: 'Dosificadora de líquidos',
+        title: 'Dosificadora de líquidos SCOUT',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -70,7 +72,7 @@ export const products = [
         id: '7'
     },
     {
-        title: 'Dosificadora de polvos',
+        title: 'Dosificadora de polvos SCOUT',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -80,37 +82,7 @@ export const products = [
         id: '8'
     },
     {
-        title: 'Durómetro convencional',
-        descriptionItems: [
-            'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
-            'Display de cuatro renglones por veinte caracteres',
-            'Distintas puntas de penetración segun elemento a ensayar',
-        ],
-        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
-        id: '9'
-    },
-    {
-        title: 'Durómetro con medición de diámetro y espesor',
-        descriptionItems: [
-            'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
-            'Display de cuatro renglones por veinte caracteres',
-            'Distintas puntas de penetración segun elemento a ensayar',
-        ],
-        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
-        id: '10'
-    },
-    {
-        title: 'Durómetro Táctil',
-        descriptionItems: [
-            'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
-            'Display de cuatro renglones por veinte caracteres',
-            'Distintas puntas de penetración segun elemento a ensayar',
-        ],
-        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
-        id: '11'
-    },
-    {
-        title: 'Friabilómetro',
+        title: 'Friabilómetro SCOUT',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -120,7 +92,7 @@ export const products = [
         id: '12'
     },
     {
-        title: 'Medidor de densidad de polvos',
+        title: 'Medidor de densidad de polvos SCOUT',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -130,7 +102,7 @@ export const products = [
         id: '13'
     },
     {
-        title: 'Test de hermeticidad',
+        title: 'Test de hermeticidad SCOUT',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -140,14 +112,15 @@ export const products = [
         id: '14'
     },
     {
-        title: 'Titulador automático método Karl Fischer',
+        title: 'Karl Fischer SCOUT',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
             'Distintas puntas de penetración segun elemento a ensayar',
         ],
         image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
-        id: '15'
+        id: '15',
+        fav: true
     }
 ]
 

@@ -45,18 +45,22 @@
     rgba(255, 255, 255, 0)
   );
   -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
   margin: 0 auto;
 }
 
 .experience-title-nosotros {
-  font-size: 1.7rem;
-  font-weight: 600;
-  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+.experience-title-nosotros strong {
+  font-family: 900;
 }
 .quines-title-nosotros {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #fff;
 }
@@ -71,8 +75,12 @@
   align-items: center;
   margin-top: 2rem;
 }
-
+.container-serv-nosotros:hover {
+  transform: scale(1.1);
+  transition: all 0.7s ease;
+}
 .container-serv-nosotros {
+  cursor: pointer;
   width: 20rem;
   display: flex;
   flex-direction: column;
@@ -84,16 +92,22 @@
   -moz-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
   box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
 }
+.bg-black:hover {
+  transform: scale(1.05);
+  transition: all 0.7s ease;
+}
+
 .img-serv-card {
   width: 11rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  filter: grayscale(0.1);
 }
 .title-serv-card {
   margin-top: 0rem;
   font-size: 1.8rem;
-  font-weight: 500;
-  color: rgb(103, 103, 103);
+  font-weight: 700;
+  color: #606060;
 }
 
 /*-----------------------------------------------------------------*/
@@ -104,7 +118,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   padding: 3rem 0rem;
 }
 .slider-container {
@@ -126,10 +139,15 @@
   object-fit: cover;
 }
 
+.swiper {
+  height: 100%;
+}
+
 .aboutUs img {
   display: block;
   width: 100%;
-  height: 550px;
+  height: 94%;
+  cursor: pointer;
 }
 
 .slider-texto {
@@ -138,28 +156,34 @@
   justify-content: center;
   width: 50%;
   line-height: 25px;
+  height: 100%;
 }
 
 .slider-texto h1 {
   text-align: center;
-  color: rgb(179, 179, 179);
+  color: #606060;
+  text-decoration: underline;
+  line-height: 2;
+  text-underline-offset: 10px;
+  text-transform: uppercase;
 }
 
-.slider-textop p {
+.slider-texto p {
   color: var(--color-gray);
   text-align: start;
 }
-
 .slider-text-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   background-color: white;
   border: 2px double var(--color-aqua);
   outline: 2px solid var(--color-aqua);
   outline-offset: -9px;
-  padding: 4rem 2rem;
+  /* padding: 0rem 3rem;
+  height: 100%; */
+  padding: 5rem 3rem;
   width: 65%;
 }
 
@@ -230,7 +254,7 @@
     width: 90rem;
   }
   .quines-title-nosotros {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #fff;
   }
@@ -310,11 +334,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .experience-title-nosotros {
-    font-size: 1.7rem;
-    font-weight: 600;
-    color: #fff;
   }
   .quines-title-nosotros {
     font-size: 1.4rem;

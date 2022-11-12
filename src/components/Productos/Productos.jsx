@@ -9,12 +9,14 @@ export const Productos = () => {
           <p className="p-title-products">Nuestros Productos</p>
         </div>
       </div>
+
       <div className="container-productos">
         <div>
-          <p className="title-cal-products">Linea de Producción</p>
+          <p className="title-cal-products">Equipos <strong>Destacados</strong></p>
           <LineaProduccion />
         </div>
       </div>
+
       <div className='products-button'>
         <button type='submit' className="app__button">
           <span className="circle" aria-hidden="true">

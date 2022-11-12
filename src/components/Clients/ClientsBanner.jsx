@@ -8,7 +8,7 @@ import './Clients.css'
 export const ClientsBanner = () => {
     return (
         <div className='clients-banner'>
-            <span>Nuestros Diferenciales</span>
+            <span>Diferenciales <strong> SCOUT</strong></span>
             <div className='clients-banner-data'>
                 <div>
                     <img src={clientBanner1} alt="" />

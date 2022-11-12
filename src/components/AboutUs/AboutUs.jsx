@@ -12,7 +12,7 @@ export const AboutUs = () => {
       <div className="bg-nosotros" id="nosotros">
         <div className="bg-black">
           <p className="experience-title-nosotros">
-            20 años de experiencia te garantizan nuestra calidad y compromiso
+            20 años de experiencia garantizan <strong>calidad y compromiso</strong>
           </p>
           <div>
             <p className="quines-title-nosotros">¿Quiénes somos?</p>
@@ -25,13 +25,6 @@ export const AboutUs = () => {
         </div>
       </div>
       <AboutUsSwiper />
-      <div className='bannerTitle'>
-        <div className='bannerTitle__container'>
-          <div />
-          <span>¿Por qué <b>NOSOTROS?</b></span>
-          <div />
-        </div>
-      </div>
       <div className="container-nosotros">
         <div className="container-elements-nosotros">
           <div data-aos="fade-up">

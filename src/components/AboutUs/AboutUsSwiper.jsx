@@ -41,11 +41,16 @@ export const AboutUsSwiper = () => {
                 </Swiper>
                 <div className="slider-texto">
                     <div className="slider-text-container">
-                        <h1>Scout <b>Electronica</b></h1>
+                        <h1>Scout <strong>Electronica</strong></h1>
                         <p>
                             Con años de experiencia en el rubro sanitario, comenzamos a elaborar distintos equipos electrónicos para control de sólidos en laboratorios medicinales importantes de Argentina.
+                        </p>
+                        <p>
                             Con el paso del tiempo logramos diversificar nuestros productos y expandir nuestras ventas tanto en el interior del pais, como en latinoamerica.
                             Hoy sólidamente instalados en el rubro, somos proveedores de los mas destacados laboratorios medicinales
+                        </p>
+                        <p>
+                            Hoy sólidamente instalados en el rubro, <strong>somos proveedores de los mas destacados laboratorios medicinales.</strong>
                         </p>
                     </div>
                 </div>

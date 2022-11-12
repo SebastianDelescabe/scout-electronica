@@ -35,7 +35,7 @@ export const Home = () => {
                 slidesPerView={1}
                 loop={true}
                 autoplay={{
-                    delay: 3500,
+                    delay: 5500,
                     disableOnInteraction: false,
                 }}
                 navigation={isPhone ? false : true}

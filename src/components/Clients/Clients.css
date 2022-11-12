@@ -17,11 +17,15 @@
 }
 
 .clients-banner span {
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 2rem;
   align-items: center;
-  color: rgb(104, 103, 103);
+  color: #606060;
   font-weight: 600;
+  text-transform: uppercase;
+}
+.clients-banner span strong {
+  font-weight: 900;
 }
 .clients-banner-data {
   display: flex;
@@ -67,8 +71,9 @@
 }
 
 .clients-images img:hover {
-  opacity: 0.5;
-  transition: opacity 0.5s ease;
+  transition: transform 0.7s ease;
+  transform: none;
+  -webkit-transform: scale(1.2) !important;
 }
 
 .clients-container {
@@ -143,11 +148,13 @@
 
   .clients-images {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     width: 100%;
+    overflow: scroll;
+    justify-content: flex-start;
   }
   .clients-images img {
-    width: 200px;
+    width: 300px;
   }
 
   .clients-laurel {
