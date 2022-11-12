@@ -30,9 +30,11 @@
 }
 .p-title-products {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 500;
   margin: 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 .productos-destacados {
   display: flex;
@@ -43,7 +45,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 35%;
+  width: 100%;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -2px,
     rgba(0, 0, 0, 0.01) 0px 2px 4px -1px;
@@ -55,11 +57,13 @@
   font-size: 1.3rem;
   font-weight: 700;
   color: #606060;
+  text-align: center;
 }
+.productos-container img,
 .productos-destacados-container img {
   padding: 2rem 0rem;
-  width: 250px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
 }
 .productos-destacados-container:hover button {
   color: var(--color-aqua);
@@ -97,7 +101,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 27%;
+  width: 100%;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -2px,
     rgba(0, 0, 0, 0.01) 0px 2px 4px -1px;
@@ -109,11 +113,6 @@
   font-size: 1.3rem;
   font-weight: 700;
   color: #606060;
-}
-.productos-container img {
-  padding: 2rem 0rem;
-  width: 250px;
-  height: 300px;
 }
 .productos-container:hover button {
   color: var(--color-aqua);
@@ -141,7 +140,10 @@
   border-radius: 50px;
   padding: 1rem;
 }
-
+.products-button {
+  text-align: center;
+  padding: 5rem 0rem 7rem 0rem;
+}
 /*-----------------------------------------------------------------*/
 /*-----------------------*LINEA PRODUCCION*------------------------*/
 /*-----------------------------------------------------------------*/
@@ -164,63 +166,22 @@
 /*-------------------------*MEDIA QUERIES*-------------------------*/
 /*-----------------------------------------------------------------*/
 
-/*-------------------------*1700*-------------------------*/
-@media (min-width: 1700px) {
-  .banner-bg-products {
-    background-image: url(../../assets/images/prodBg.jpg);
-    width: 100%;
-    height: 23rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .banner-products-bgblack {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 23rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .p-title-products {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 4rem;
-    font-weight: 500;
-  }
+.productos-destacados {
+  overflow: auto;
 }
-
-@media (max-width: 600px) {
-  .container-productos {
-    width: 90%;
-    margin: 0 auto;
-    padding-bottom: 4rem;
+@media screen and (min-width: 850px) {
+  .p-title-products {
+    font-size: 4rem;
   }
-  .banner-bg-products {
-    background-image: url(../../assets/images/prodBg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    padding-top: 5rem;
+  .productos-destacados-container {
+    width: 35%;
   }
-  .banner-products-bgblack {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .productos-container {
+    width: 27%;
+  }
+  .productos-container img,
+  .productos-destacados-container img {
+    width: 250px;
+    height: 300px;
   }
 }
