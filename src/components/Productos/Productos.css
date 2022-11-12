@@ -1,5 +1,5 @@
 .container-productos {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 2rem;
 }
@@ -45,12 +45,10 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  min-width: 100%;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -2px,
     rgba(0, 0, 0, 0.01) 0px 2px 4px -1px;
-  margin: 2rem;
-  padding: 1rem;
   cursor: pointer;
 }
 .productos-destacados-container span {
@@ -170,6 +168,9 @@
   overflow: auto;
 }
 @media screen and (min-width: 850px) {
+  .container-productos {
+    width: 90%;
+  }
   .p-title-products {
     font-size: 4rem;
   }
