@@ -1,8 +1,8 @@
 import React from 'react';
-import clientBanner1 from '../../assets/clientBanner1.png';
-import clientBanner2 from '../../assets/clientBanner2.png';
-import clientBanner3 from '../../assets/clientBanner3.png';
-import clientBanner4 from '../../assets/clientBanner4.png';
+import clientBanner1 from '../../assets/images/clientBanner1.png';
+import clientBanner2 from '../../assets/images/clientBanner2.png';
+import clientBanner3 from '../../assets/images/clientBanner3.png';
+import clientBanner4 from '../../assets/images/clientBanner4.png';
 import './Clients.css'
 
 export const ClientsBanner = () => {
