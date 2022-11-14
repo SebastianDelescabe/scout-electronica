@@ -15,7 +15,10 @@ export const LineaProduccion = () => {
 
   return (
     <div>
-      <p className="title-cal-products" onClick={() => setOpenDest(!openDest)}>Equipos <strong>Destacados</strong></p>
+      <div className="title-pro">
+
+        <p className="title-cal-products" onClick={() => setOpenDest(!openDest)}>{openDest ? '▼' : '▶'} Equipos <strong>Destacados</strong></p>
+      </div>
       <div className="productos-destacados">
         {
           openDest &&
@@ -31,7 +34,7 @@ export const LineaProduccion = () => {
           ))
         }
       </div>
-      <p className="title-cal-products" onClick={() => setOpenAll(!openAll)}>Todos los <strong>Equipos</strong></p>
+      <p className="title-cal-products" onClick={() => setOpenAll(!openAll)}>{openAll ? '▼ ' : '▶ '} Todos los <strong>Equipos</strong></p>
       {
         openAll &&
         <div className="productos">
