@@ -47,7 +47,6 @@ export const AboutUsSwiper = () => {
                         </p>
                         <p>
                             Con el paso del tiempo logramos diversificar nuestros productos y expandir nuestras ventas tanto en el interior del pais, como en latinoamerica.
-                            Hoy sólidamente instalados en el rubro, somos proveedores de los mas destacados laboratorios medicinales
                         </p>
                         <p>
                             Hoy sólidamente instalados en el rubro, <strong>somos proveedores de los mas destacados laboratorios medicinales.</strong>

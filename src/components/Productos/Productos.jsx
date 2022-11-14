@@ -6,13 +6,12 @@ export const Productos = () => {
     <div>
       <div className="banner-bg-products">
         <div className="banner-products-bgblack">
-          <p className="p-title-products">Equipos Scout Electronica</p>
+          <p className="p-title-products">PRODUCTOS SCOUT</p>
         </div>
       </div>
 
       <div className="container-productos">
         <div>
-          <p className="title-cal-products">Equipos <strong>Destacados</strong></p>
           <LineaProduccion />
         </div>
       </div>

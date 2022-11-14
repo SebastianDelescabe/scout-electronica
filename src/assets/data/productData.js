@@ -1,6 +1,6 @@
 export const products = [
     {
-        title: 'Durómetro SCOUT',
+        title: 'Durómetro ',
         descriptionItems: [
             'Seteo de fuerza requerida para ensayos',
             'Realiza ensayos instructivos y no destructivos',
@@ -21,7 +21,7 @@ export const products = [
         id: '2'
     },
     {
-        title: 'Desintegrador SCOUT',
+        title: 'Desintegrador ',
         descriptionItems: [
             'Display de cuatro renglones por veinte caracteres con backlight',
             'Gabinete en acrílico con ventana sobre batea para iluminarla por led',
@@ -32,7 +32,7 @@ export const products = [
         fav: true
     },
     {
-        title: 'Texturómetro SCOUT',
+        title: 'Texturómetro ',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -42,7 +42,7 @@ export const products = [
         id: '4'
     },
     {
-        title: 'Disolutor SCOUT',
+        title: 'Disolutor ',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -52,7 +52,7 @@ export const products = [
         id: '5'
     },
     {
-        title: 'Automuestreador SCOUT',
+        title: 'Automuestreador ',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -62,7 +62,7 @@ export const products = [
         id: '6'
     },
     {
-        title: 'Dosificadora de líquidos SCOUT',
+        title: 'Dosificadora de líquidos ',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -72,7 +72,7 @@ export const products = [
         id: '7'
     },
     {
-        title: 'Dosificadora de polvos SCOUT',
+        title: 'Dosificadora de polvos ',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -82,7 +82,7 @@ export const products = [
         id: '8'
     },
     {
-        title: 'Friabilómetro SCOUT',
+        title: 'Friabilómetro ',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -92,7 +92,7 @@ export const products = [
         id: '12'
     },
     {
-        title: 'Medidor de densidad de polvos SCOUT',
+        title: 'Medidor de densidad de polvos ',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -102,7 +102,7 @@ export const products = [
         id: '13'
     },
     {
-        title: 'Test de hermeticidad SCOUT',
+        title: 'Test de hermeticidad ',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',
@@ -112,7 +112,7 @@ export const products = [
         id: '14'
     },
     {
-        title: 'Karl Fischer SCOUT',
+        title: 'Karl Fischer ',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
             'Display de cuatro renglones por veinte caracteres',

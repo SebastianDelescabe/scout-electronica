@@ -50,12 +50,16 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -2px,
     rgba(0, 0, 0, 0.01) 0px 2px 4px -1px;
   cursor: pointer;
+  padding: 2rem 0rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 .productos-destacados-container span {
   font-size: 1.3rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #606060;
   text-align: center;
+  justify-content: center;
 }
 .productos-container img,
 .productos-destacados-container img {
@@ -73,7 +77,9 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   transform: scale(1.05);
 }
-
+.productos-destacados-container ul {
+  min-height: 180px;
+}
 .productos-destacados-container ul li {
   height: auto;
   padding: 0.5rem;
@@ -89,11 +95,18 @@
   border-radius: 50px;
   padding: 1rem;
 }
+.product-ref {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 .productos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: 100%;
+  justify-content: center;
 }
 .productos-container {
   display: flex;
@@ -103,8 +116,8 @@
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -2px,
     rgba(0, 0, 0, 0.01) 0px 2px 4px -1px;
-  margin: 2rem;
-  padding: 1rem;
+  margin: 0.5rem;
+  padding: 1.5rem;
   cursor: pointer;
 }
 .productos-container span {
@@ -142,11 +155,17 @@
   text-align: center;
   padding: 5rem 0rem 7rem 0rem;
 }
+.productos-destacados-container strong,
+.productos-container strong {
+  font-weight: 700;
+  color: #606060;
+}
 /*-----------------------------------------------------------------*/
 /*-----------------------*LINEA PRODUCCION*------------------------*/
 /*-----------------------------------------------------------------*/
 .title-cal-products {
   font-size: 1.5rem;
+  cursor: pointer;
   color: #606060;
   font-weight: 500;
   width: 100%;
@@ -154,7 +173,7 @@
   text-transform: uppercase;
   background-color: var(--color-aqua);
   color: white;
-  padding: 1rem 0rem;
+  padding: 0.5rem 0rem;
 }
 .title-cal-products::before {
   content: " ▶ ";
@@ -174,15 +193,51 @@
   .p-title-products {
     font-size: 4rem;
   }
+  .productos-destacados {
+    overflow: unset;
+    display: flex;
+    justify-content: center;
+  }
   .productos-destacados-container {
-    width: 35%;
+    min-width: unset;
+    width: 25%;
+    padding: 1.5rem;
+    margin: 1.5rem;
   }
   .productos-container {
-    width: 27%;
+    width: 25%;
+    padding: 1.5rem;
+    margin: 1.5rem;
   }
   .productos-container img,
   .productos-destacados-container img {
     width: 250px;
     height: 300px;
+  }
+}
+
+.fadeIn {
+  animation: fadeInAnimation 1s;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeOut {
+  animation: fadeOutAnimation 1s;
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }

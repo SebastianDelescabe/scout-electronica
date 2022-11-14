@@ -5,6 +5,9 @@ body {
   font-family: "Montserrat", sans-serif;
   --swiper-theme-color: var(--color-aqua);
 }
+::marker {
+  color: var(--color-aqua);
+}
 
 html {
   overflow-y: scroll;
