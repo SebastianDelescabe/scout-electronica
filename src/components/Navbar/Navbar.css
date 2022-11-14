@@ -28,6 +28,10 @@
   box-shadow: 0px 2px 9px 0px rgba(133, 133, 133, 1);
   transition: all 0.5s ease;
 }
+.container-nav-scroll .img-logo {
+  width: 150px;
+  transition: width 0.5s ease;
+}
 .container-elements-nav {
   display: flex;
   width: 70rem;
@@ -83,7 +87,18 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
+.simbol-scout {
+  width: 40%;
+  justify-self: center;
+  align-self: center;
+  margin-top: 3rem;
+}
+.icon-close {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
 /*-----------------------------------------------------------------*/
 /*----------------------------*DRAWER*-----------------------------*/
 /*-----------------------------------------------------------------*/
@@ -154,8 +169,8 @@
     color: #595959;
     text-decoration: none;
     font-weight: 600;
-    padding: 1rem;
-    border-bottom: solid 2px var(--red);
+    padding: 1rem 0rem;
+    border-bottom: solid 1px #606060;
   }
   .div-container-elements-home {
     margin-top: 7.5rem;

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Navigation, Pagination } from "swiper";
 import equipo1 from "../../assets/images/equipo1.jpg";
@@ -8,16 +8,11 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Aos from "aos";
 
 export const AboutUsSwiper = () => {
-    useEffect(() => {
-        Aos.init({ duration: 1000 });
-    }, []);
-
     return (
         <div className="slider">
-            <div className="slider-container" data-aos="fade-right">
+            <div className="slider-container">
                 <Swiper
                     spaceBetween={30}
                     effect={"fade"}

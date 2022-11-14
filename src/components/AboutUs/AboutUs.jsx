@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AboutUsSwiper } from "./AboutUsSwiper";
 import Compromiso from "../../assets/images/deal.png"
 import Watch from "../../assets/images/stopwatch.png"
 import Team from "../../assets/images/teamManagement.png"
 import "./AboutUs.css";
+import Aos from "aos";
 
 export const AboutUs = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
 
   return (
     <div className="nosotros">

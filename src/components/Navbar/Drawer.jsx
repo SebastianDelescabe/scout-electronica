@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { SwipeableDrawer, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from '@mui/icons-material/Close';
 import { v4 as uuidv4 } from 'uuid';
-
+import Logo from "../../assets/images/scout-simbol.png";
 
 import { NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
 
@@ -46,11 +47,26 @@ export const Drawer = () => {
           >
             <div className="div-drawer-contain">
               <div className="div-container-menu-mobile">
-                <NavHashLink to="/productos">PRODUCTOS</NavHashLink>
-                <NavHashLink to="/service">SERVICIO TÉCNCIO</NavHashLink>
-                <NavHashLink to="/#nosotros">NOSOTROS</NavHashLink>
-                <NavHashLink to="/#clients">CLIENTES</NavHashLink>
-                <NavHashLink to="/contact">CONTACTO</NavHashLink>
+                <div className="icon-close">
+                  <IconButton
+                    anchor={anchor}
+                    open={state[anchor]}
+                    onClick={toggleDrawer(anchor, false)}
+                    style={{
+                      fontSize: "large",
+                      cursor: "pointer",
+                      color: "black"
+                    }}
+                  >
+                    <CloseIcon />
+                  </IconButton>
+                </div>
+                <NavHashLink onClick={toggleDrawer(anchor, false)} to="/productos#top">PRODUCTOS</NavHashLink>
+                <NavHashLink onClick={toggleDrawer(anchor, false)} to="/service#top">SERVICIO TÉCNCIO</NavHashLink>
+                <NavHashLink onClick={toggleDrawer(anchor, false)} to="/#nosotros">NOSOTROS</NavHashLink>
+                <NavHashLink onClick={toggleDrawer(anchor, false)} to="/#clients">CLIENTES</NavHashLink>
+                <NavHashLink onClick={toggleDrawer(anchor, false)} to="/contact#top">CONTACTO</NavHashLink>
+                <img className="simbol-scout" src={Logo} alt="logo-responsive" />
               </div>
             </div>
           </SwipeableDrawer>

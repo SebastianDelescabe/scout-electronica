@@ -376,6 +376,14 @@
 }
 
 @media screen and (max-width: 750px) {
+  .container-serv-nosotros:hover {
+    transform: unset !important;
+    transition: unset !important;
+  }
+  .bg-black:hover {
+    transform: unset !important;
+    transition: unset !important;
+  }
   .aboutUs img {
     display: block;
     width: 100%;
