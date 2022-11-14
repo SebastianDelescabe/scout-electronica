@@ -1,4 +1,4 @@
-import fotoHome1 from '../../assets/images/fotoHome1.jpg';
+import fotoHome1 from '../../assets/images/fotoHome1.png';
 import fotoHome2 from '../../assets/images/fotoHome2.jpg';
 import fotoHome3 from '../../assets/images/fotoHome3.jpg';
 
