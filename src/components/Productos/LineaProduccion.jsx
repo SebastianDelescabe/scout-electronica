@@ -28,7 +28,7 @@ export const LineaProduccion = () => {
                 <span>{producto.title}<strong>SCOUT</strong></span>
                 <img src={producto.image} alt="" />
                 <ul>{producto.descriptionItems.map(item => <li>{item}</li>)}</ul>
-                <button>Cotizar ahora</button>
+                <button>Más información</button>
               </NavHashLink>
             </div>
           ))

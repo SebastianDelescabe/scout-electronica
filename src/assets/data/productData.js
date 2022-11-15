@@ -4,30 +4,32 @@ export const products = [
         descriptionItems: [
             'Seteo de fuerza requerida para ensayos',
             'Realiza ensayos instructivos y no destructivos',
-            'Se desempeña como texturometro sin penetracion',
+            'Indicación de valor de rotura, carga máxima, carga mínima, promedio y desvío estandar',
         ],
-        image: 'https://i.ibb.co/rbx7g4w/durometro-convencional.jpg',
+        image: 'https://i.ibb.co/5xB14zr/Medio-frente-dur-m-p-a-p-con-imp-interna.jpg',
         id: '1',
         fav: true
     },
     {
-        title: 'Baño Termostático',
+        title: 'Baño Termostático ',
         descriptionItems: [
             'Control de temperatura por variador manual o seteable',
             'Posibilidad de temperatura estándar o personalizada',
             'Resistencia calefactora en acero inoxidable',
         ],
-        image: 'https://i.ibb.co/kKHRjL6/ba-o-termostatico.jpg',
+        image: 'https://i.ibb.co/XYKYFZn/Ba-o-termost-tico-Scout.jpg',
+        // https://i.ibb.co/XYKYFZn/Ba-o-termost-tico-Scout.jpg
+        // https://i.ibb.co/gvHTkvc/Ba-o-termost-tico-Scout-2.jpg
         id: '2'
     },
     {
         title: 'Desintegrador ',
         descriptionItems: [
-            'Display de cuatro renglones por veinte caracteres con backlight',
-            'Gabinete en acrílico con ventana sobre batea para iluminarla por led',
-            'Batea en acrilico transparente, fácilmente desarmable de fácil limpieza',
+            'Control por sistema electrónico monochip (brinda una minima posibilidad de fallas)',
+            'Muestreo de temperatura por panel',
+            'Control de temperatura digital con rampa de calentamiento programado',
         ],
-        image: 'https://i.ibb.co/8YTFkkY/desintegrador.jpg',
+        image: 'https://i.ibb.co/6y4yb87/Desintegrador-con-impresora-interna.jpg',
         id: '3',
         fav: true
     },
@@ -35,8 +37,8 @@ export const products = [
         title: 'Texturómetro ',
         descriptionItems: [
             'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
-            'Display de cuatro renglones por veinte caracteres',
-            'Distintas puntas de penetración segun elemento a ensayar',
+            'En sustancias alimenticias, medición de fuerza G',
+            'En laboratorios medicinales usado para control de calidad de cápsulas blandas'
         ],
         image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
         id: '4'
@@ -44,81 +46,81 @@ export const products = [
     {
         title: 'Disolutor ',
         descriptionItems: [
-            'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
-            'Display de cuatro renglones por veinte caracteres',
-            'Distintas puntas de penetración segun elemento a ensayar',
+            'Calentamiento por convección e indicación de tiempo de dilución.',
+            'Recirculación de agua en batea',
+            'Controlador de velocidad según especificaciones USP',
         ],
-        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
+        image: 'https://i.ibb.co/d7DQznk/disolutor.png',
         id: '5'
     },
     {
         title: 'Automuestreador ',
         descriptionItems: [
-            'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
-            'Display de cuatro renglones por veinte caracteres',
-            'Distintas puntas de penetración segun elemento a ensayar',
+            'Seteo programable de caudal y tiempo',
+            '8 (ocho) motores paso a paso',
+            'Bandeja para viales en acrílico',
         ],
-        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
+        image: 'https://i.ibb.co/JkKZ58R/A-Perfil-ventana-automuestreador.jpg',
         id: '6'
     },
     {
         title: 'Dosificadora de líquidos ',
         descriptionItems: [
-            'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
-            'Display de cuatro renglones por veinte caracteres',
-            'Distintas puntas de penetración segun elemento a ensayar',
+            'Llenadora semiautomática para distintos tipos de envases',
+            'Seteo de numero de vueltas y velocidad',
+            'Pico dosificador y pié en acero inoxidable',
         ],
-        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
+        image: 'https://i.ibb.co/z8fXt0p/dosificador-de-liquidos.jpg',
         id: '7'
     },
     {
         title: 'Dosificadora de polvos ',
         descriptionItems: [
-            'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
-            'Display de cuatro renglones por veinte caracteres',
-            'Distintas puntas de penetración segun elemento a ensayar',
+            'Programable según el tipo de producto y tolerancia requerida',
+            'Controlada por balanza electrónica de precisión',
+            'Posibilidad de mas de un pico dosificador',
         ],
-        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
+        image: 'https://i.ibb.co/kSMRRk5/dosificador-de-polvos.jpg',
         id: '8'
     },
     {
         title: 'Friabilómetro ',
         descriptionItems: [
-            'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
-            'Display de cuatro renglones por veinte caracteres',
-            'Distintas puntas de penetración segun elemento a ensayar',
+            'Inversión de marcha para descarga automática de comprimidos en caja de acrílico',
+            'Calibración interior automática, conteo regresivo de vueltas',
+            'Rueda de acrílico transparente de precisa terminación',
         ],
-        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
+        image: 'https://i.ibb.co/kQGFXRr/Friabil-metro-con-impresora-interna-2.jpg',
         id: '12'
     },
     {
-        title: 'Medidor de densidad de polvos ',
+        title: 'Medidor de densidad ',
         descriptionItems: [
-            'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
+            'Posibilidad de seteo de tiempo, ensayo y velocidad',
+            'Rápida sujeción de bureta por medio de elastómero',
             'Display de cuatro renglones por veinte caracteres',
-            'Distintas puntas de penetración segun elemento a ensayar',
         ],
-        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
+        image: 'https://i.ibb.co/4M9vywq/medidor-de-densidad.jpg',
         id: '13'
     },
     {
         title: 'Test de hermeticidad ',
         descriptionItems: [
-            'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
-            'Display de cuatro renglones por veinte caracteres',
-            'Distintas puntas de penetración segun elemento a ensayar',
+            'Igualación de presión de forma automática',
+            'Desecador con llaves para vacio y placas de porcelana de 210mm',
+            'Bomba de vacio con manómetro de una tapa',
         ],
-        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
+        image: 'https://i.ibb.co/9TYdXNM/20170502-124911.jpg',
         id: '14'
     },
     {
-        title: 'Karl Fischer ',
+        title: 'Titulador automático ',
         descriptionItems: [
-            'Equipo confiable tanto en laboratorio medicial como en sustancias alimenticias',
-            'Display de cuatro renglones por veinte caracteres',
-            'Distintas puntas de penetración segun elemento a ensayar',
+            'Apto para industria farmacéutica, veterinaria y alimenticia ',
+            'Agitador magnético incluido dentro del propio gabinete',
+            'Validación de microbomba peristáltica por medio de balanza certificada',
         ],
-        image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
+        image: 'https://i.ibb.co/NysMDT3/titulador-automatico.jpg',
         id: '15',
         fav: true
     }

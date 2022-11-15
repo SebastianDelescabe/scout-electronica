@@ -53,7 +53,8 @@
   margin: 1rem;
   margin-bottom: 2rem;
 }
-.productos-destacados-container span {
+.productos-destacados-container span,
+.productos-container span {
   font-size: 1.3rem;
   font-weight: 500;
   color: #606060;
@@ -64,7 +65,7 @@
 .productos-destacados-container img {
   padding: 2rem 0rem;
   width: 200px;
-  height: 200px;
+  height: 250px;
 }
 .productos-destacados-container:hover button {
   color: var(--color-aqua);
@@ -114,11 +115,7 @@
   padding: 1.5rem;
   cursor: pointer;
 }
-.productos-container span {
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #606060;
-}
+
 .productos-container:hover button {
   color: var(--color-aqua);
   background-color: white;
@@ -209,8 +206,8 @@
   }
   .productos-container img,
   .productos-destacados-container img {
-    width: 250px;
-    height: 300px;
+    width: 270px;
+    height: 320px;
   }
 }
 
