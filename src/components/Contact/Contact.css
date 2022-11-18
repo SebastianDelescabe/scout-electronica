@@ -86,10 +86,15 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-
+.contact-info__data-position a {
+  color: var(--color-gray);
+  font-weight: 400;
+  margin: 0px 0px 5px 0px;
+}
 .contact-info__data-position span:nth-child(even) {
   color: var(--color-gray);
   font-weight: 400;
+  margin: 2px 0px;
 }
 
 /*-----------------------------------------------------------------*/

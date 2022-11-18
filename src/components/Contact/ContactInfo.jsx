@@ -10,14 +10,15 @@ export const ContactInfo = () => {
                 <MdEmail className='contact-info__icon' />
                 <div className='contact-info__data-position'>
                     <span>Email</span>
-                    <span>scout@scout.com.ar</span>
+                    <a href={`mailto:scout@scout.com.ar`} >scout@scout.com.ar </a>
+                    <a href={`mailto:scoutelectronica@gmail.com`} > scoutelectronica@gmail.com</a>
                 </div>
             </div>
             <div className='contact-info__container'>
                 <MdPhone className='contact-info__icon' />
                 <div className='contact-info__data-position'>
                     <span>Teléfono</span>
-                    <span>(+54) 4720-5603</span>
+                    <span>(+54) 7527-9718</span>
                 </div>
             </div>
             <div className='contact-info__container'>

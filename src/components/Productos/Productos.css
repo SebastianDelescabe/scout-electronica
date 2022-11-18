@@ -74,6 +74,8 @@
 }
 .productos-destacados-container ul {
   min-height: 180px;
+  padding-inline-start: 15px;
+  margin: 0;
 }
 .productos-destacados-container ul li {
   height: auto;
@@ -175,6 +177,10 @@
   overflow: auto;
 }
 @media screen and (min-width: 850px) {
+  .productos-destacados-container ul,
+  .productos-container ul {
+    margin-bottom: 1rem;
+  }
   .productos-destacados-container:hover {
     transition: all 0.5s ease;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -189,7 +195,10 @@
   .productos-destacados {
     overflow: unset;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow: auto;
+    cursor: grab;
   }
   .productos-destacados-container {
     min-width: unset;

@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import products from "../../assets/data/productData";
 import { v4 as uuidv4 } from 'uuid';
+import { useDraggable } from "react-use-draggable-scroll";
 import { NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
 import "./Productos.css";
+
 
 
 const productosFavoritos = products.filter(producto => producto.fav);
@@ -10,16 +12,20 @@ const productos = products.filter(producto => !producto.fav);
 
 export const LineaProduccion = () => {
 
+  const ref = useRef();
+  const { events } = useDraggable(ref);
+
   const [openDest, setOpenDest] = useState(true)
   const [openAll, setOpenAll] = useState(false)
+
 
   return (
     <div>
       <div className="title-pro">
-
         <p className="title-cal-products" onClick={() => setOpenDest(!openDest)}>{openDest ? '▼' : '▶'} Equipos <strong>Destacados</strong></p>
       </div>
-      <div className="productos-destacados">
+      <div className="productos-destacados"  {...events}
+        ref={ref}>
         {
           openDest &&
           productosFavoritos && productosFavoritos.map(producto => (

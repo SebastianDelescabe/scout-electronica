@@ -18,11 +18,12 @@ export const Footer = () => {
                     <span>Contactanos</span>
                     <div>
                         <MdPhone className='footer__icons' />
-                        <p>(+54) 4720-5603</p>
+                        <p>(+54) 7527-9718</p>
                     </div>
                     <div>
                         <MdEmail className='footer__icons' />
-                        <a href={`mailto:scout@scout.com.ar`} >scout@scout.com.ar</a>
+                        <a href={`mailto:scout@scout.com.ar`} >scout@scout.com.ar -</a>
+                        <a className='footer__other-mail' href={`mailto:scoutelectronica@gmail.com`} > scoutelectronica@gmail.com</a>
                     </div>
                     <div>
                         <MdHouse className='footer__icons' />

@@ -2,7 +2,7 @@ export const products = [
     {
         title: 'Durómetro ',
         descriptionItems: [
-            'Seteo de fuerza requerida para ensayos',
+            'Registra fuerza de rotura del comprimido en distintas unidades, mide diámetro y espesor',
             'Realiza ensayos instructivos y no destructivos',
             'Indicación de valor de rotura, carga máxima, carga mínima, promedio y desvío estandar',
         ],
@@ -91,7 +91,8 @@ export const products = [
             'Rueda de acrílico transparente de precisa terminación',
         ],
         image: 'https://i.ibb.co/kQGFXRr/Friabil-metro-con-impresora-interna-2.jpg',
-        id: '12'
+        id: '12',
+        fav: true
     },
     {
         title: 'Medidor de densidad ',
