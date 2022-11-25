@@ -87,6 +87,26 @@
   display: none;
 }
 
+/* SUSCRIPCION */
+.sp-link-wrapper.sp-brandname__left {
+  display: none !important;
+}
+.sp-form-fields-wrapper.show-grid {
+  font-family: "Montserrat", sans-serif !important;
+}
+label.sp-control-label {
+  display: none !important;
+}
+.sp-field.sp-field-full-width p {
+  text-transform: uppercase !important;
+}
+.sp-form-fields-wrapper.show-grid {
+  width: 1100px !important;
+}
+.sp-field.sp-button-container button {
+  background: var(--color-aqua) !important;
+}
+
 @media (max-width: 600px) {
   .footer__container {
     height: 370px;
