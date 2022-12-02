@@ -3,7 +3,6 @@ import { HomeCard } from './HomeCard';
 import { Clients } from '../Clients/Clients';
 import { homeData } from '../../assets/data/homeData';
 import { AboutUs } from "../AboutUs/AboutUs";
-import { v4 as uuidv4 } from 'uuid';
 import './Home.css';
 
 //Carrousel imports
@@ -13,7 +12,6 @@ import 'swiper/css';
 import 'swiper/css/bundle';
 
 export const Home = () => {
-
     const [isPhone, setIsPhone] = useState(
         window.innerWidth < 900 ? true : false
     )
@@ -45,7 +43,7 @@ export const Home = () => {
             >
                 {
                     homeData && homeData.map(data => (
-                        <SwiperSlide key={uuidv4()}>
+                        <SwiperSlide key={data.id}>
                             <HomeCard data={data} />
                         </SwiperSlide>
                     ))

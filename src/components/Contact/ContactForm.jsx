@@ -30,6 +30,7 @@ export const ContactForm = () => {
                 .then(() => {
                     toast.success("Email enviado correctamente");
                     resetForm({ company: "", email: "" })
+                    setCaptcha(false)
                     setTimeout(() => {
                         window.location.reload();
                     }, 2000)

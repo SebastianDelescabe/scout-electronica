@@ -1,11 +1,8 @@
 import React, { useState, useRef } from "react";
 import products from "../../assets/data/productData";
-import { v4 as uuidv4 } from 'uuid';
 import { useDraggable } from "react-use-draggable-scroll";
 import { NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
 import "./Productos.css";
-
-
 
 const productosFavoritos = products.filter(producto => producto.fav);
 const productos = products.filter(producto => !producto.fav);
@@ -29,7 +26,7 @@ export const LineaProduccion = () => {
         {
           openDest &&
           productosFavoritos && productosFavoritos.map(producto => (
-            <div className="productos-destacados-container fadeIn">
+            <div className="productos-destacados-container fadeIn" key={producto.title}>
               <NavHashLink className="product-ref" to='/contact#form'>
                 <span>{producto.title}<strong>SCOUT</strong></span>
                 <img src={producto.image} alt="" />
@@ -46,11 +43,11 @@ export const LineaProduccion = () => {
         <div className="productos">
           {
             productos && productos.map(producto => (
-              <div className="productos-container fadeIn">
+              <div className="productos-container fadeIn" key={producto.title}>
                 <NavHashLink className="product-ref" to='/contact#form'>
                   <span>{producto.title}<strong>SCOUT</strong></span>
                   <img src={producto.image} alt="" />
-                  <ul>{producto.descriptionItems.map(item => <li>{item}</li>)}</ul>
+                  <ul>{producto.descriptionItems.map((item, i) => <li key={i}>{item}</li>)}</ul>
                   <button>Cotizar ahora</button>
                 </NavHashLink>
 

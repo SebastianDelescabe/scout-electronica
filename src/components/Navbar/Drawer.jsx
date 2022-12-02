@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { SwipeableDrawer, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from '@mui/icons-material/Close';
-import { v4 as uuidv4 } from 'uuid';
 import Logo from "../../assets/images/scout-simbol.png";
 
 import { NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
@@ -26,7 +25,7 @@ export const Drawer = () => {
   return (
     <div className="div-drawer">
       {["right"].map((anchor) => (
-        <React.Fragment key={uuidv4()}>
+        <React.Fragment key={anchor}>
           <IconButton
             anchor={anchor}
             open={state[anchor]}

@@ -37,9 +37,6 @@
   flex-direction: column;
   justify-content: center;
 }
-.footer__other-mail {
-  margin-left: 7px;
-}
 .footer__info span,
 .footer__contact span {
   font-size: 20px;
@@ -97,19 +94,49 @@
 label.sp-control-label {
   display: none !important;
 }
-.sp-field.sp-field-full-width p {
-  text-transform: uppercase !important;
-}
+
 .sp-form-fields-wrapper.show-grid {
   width: 1100px !important;
 }
 .sp-field.sp-button-container button {
   background: var(--color-aqua) !important;
 }
-.sp-field.sp-field-full-width div > p {
+form.sp-element-container.sp-field-nolabel div:first-child div p {
   font-weight: bold !important;
   font-size: 18px !important;
   color: #606060 !important;
+}
+.sp-form-fields-wrapper.show-grid {
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form.sp-element-container.sp-field-nolabel div p {
+  text-align: center !important;
+}
+.sp-field.sp-button-container {
+  text-align: center !important;
+}
+.sp-form .sp-field {
+  text-align: center !important;
+}
+@media screen and (min-width: 768px) {
+  .sp-form-fields-wrapper.show-grid {
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form.sp-element-container.sp-field-nolabel div p {
+    text-align: left !important;
+  }
+  .sp-field.sp-button-container {
+    text-align: left !important;
+  }
+  .sp-form .sp-field {
+    text-align: left !important;
+  }
 }
 
 @media (max-width: 600px) {

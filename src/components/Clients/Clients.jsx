@@ -3,9 +3,7 @@ import { ClientsBanner } from './ClientsBanner';
 import { clients } from '../../assets/data/clientsData'
 import laurel1 from '../../assets/images/laurel1.png'
 import laurel2 from '../../assets/images/laurel2.png'
-import { v4 as uuidv4 } from 'uuid';
 import './Clients.css';
-
 export const Clients = () => {
 
     return (
@@ -17,7 +15,7 @@ export const Clients = () => {
                 </div>
                 <div className='clients-images'>
                     {clients && clients.map(image => (
-                        <img key={uuidv4()} src={image} alt="clientsimage" />
+                        <img key={image} src={image} alt="clientsimage" />
                     ))}
                 </div>
                 <div className='clients-laurel'>

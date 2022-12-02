@@ -22,8 +22,10 @@ export const Footer = () => {
                     </div>
                     <div>
                         <MdEmail className='footer__icons' />
-                        <a href={`mailto:scout@scout.com.ar`} >scout@scout.com.ar -</a>
-                        <a className='footer__other-mail' href={`mailto:scoutelectronica@gmail.com`} > scoutelectronica@gmail.com</a>
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                            <a href={`mailto:scout@scout.com.ar`} >scout@scout.com.ar</a>
+                            <a className='footer__other-mail' href={`mailto:scoutelectronica@gmail.com`} > scoutelectronica@gmail.com</a>
+                        </div>
                     </div>
                     <div>
                         <MdHouse className='footer__icons' />

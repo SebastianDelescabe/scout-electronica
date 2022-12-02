@@ -2,8 +2,6 @@ import React from 'react';
 import './Service.css';
 import { serviceData } from '../../assets/data/serviceData';
 import { HashLink } from 'react-router-hash-link';
-import { v4 as uuidv4 } from 'uuid';
-
 export const Service = () => {
     return (
         <div className='service' id='service'>
@@ -15,7 +13,7 @@ export const Service = () => {
                 </div>
                 {
                     serviceData && serviceData.map((service) => (
-                        <div key={uuidv4()} className='service__item'>
+                        <div key={service.title} className='service__item'>
                             <div className='service__item-text'>
                                 <h1>{service.title}</h1>
                                 <p>{service.text}</p>
