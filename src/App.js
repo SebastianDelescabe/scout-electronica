@@ -6,6 +6,7 @@ import { Home } from './components/Home/Home';
 import { Productos } from './components/Productos/Productos';
 import { Service } from './components/Service/Service'
 import { Footer } from './components/Footer/Footer';
+import { Error404 } from './components/Error404/Error404';
 import { WhatsappIcon } from './components/Footer/WhatsappIcon';
 
 import { AnimatePresence, motion } from 'framer-motion';
@@ -35,6 +36,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
           <Route path='/service' element={<Service />} />
           <Route path='/productos' element={<Productos />} />
+          <Route path='*' exact={true} element={<Error404 />} />
         </Routes>
         <WhatsappIcon />
         <Footer />
