@@ -47,7 +47,7 @@ export const LineaProduccion = () => {
         <div className="productos">
           {
             productos && productos.map(producto => (
-              <div className="productos-container fadeIn" key={producto.title}>
+              <div onClick={() => setProductTitle(producto.title)} className="productos-container fadeIn" key={producto.title}>
                 <NavHashLink className="product-ref" to='/contact#form'>
                   <span>{producto.title}<strong>SCOUT</strong></span>
                   <img src={producto.image} alt="" />
