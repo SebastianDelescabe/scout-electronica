@@ -4,7 +4,7 @@ import { MapContact } from "./MapContact";
 import { ContactInfo } from "./ContactInfo";
 import "./Contact.css";
 
-export const Contact = () => {
+export const Contact = ({ data }) => {
   return (
     <>
       <div className="banner-bg-contact">
@@ -19,7 +19,7 @@ export const Contact = () => {
           </div>
           <div className="container-form-info-contact">
             <ContactInfo />
-            <ContactForm />
+            <ContactForm data={data} />
           </div>
         </div>
       </div>

@@ -1,13 +1,17 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useContext } from "react";
 import products from "../../assets/data/productData";
 import { useDraggable } from "react-use-draggable-scroll";
 import { NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
 import "./Productos.css";
+import { ProductContext } from "../../helper/ProductContext";
+
 
 const productosFavoritos = products.filter(producto => producto.fav);
 const productos = products.filter(producto => !producto.fav);
 
 export const LineaProduccion = () => {
+
+  const { setProductTitle } = useContext(ProductContext)
 
   const ref = useRef();
   const { events } = useDraggable(ref);
@@ -26,8 +30,8 @@ export const LineaProduccion = () => {
         {
           openDest &&
           productosFavoritos && productosFavoritos.map(producto => (
-            <div className="productos-destacados-container fadeIn" key={producto.title}>
-              <NavHashLink className="product-ref" to='/contact#form'>
+            <div onClick={() => setProductTitle(producto.title)} className="productos-destacados-container fadeIn" key={producto.title}>
+              <NavHashLink className="product-ref" to='/contact#form' >
                 <span>{producto.title}<strong>SCOUT</strong></span>
                 <img src={producto.image} alt="" />
                 <ul>{producto.descriptionItems.map(item => <li>{item}</li>)}</ul>
