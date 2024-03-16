@@ -33,7 +33,7 @@ button.app__button .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: var(--color-aqua);
+  background: #606060;
   border-radius: 1.625rem;
 }
 

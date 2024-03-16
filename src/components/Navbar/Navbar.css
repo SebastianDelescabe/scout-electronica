@@ -12,9 +12,10 @@
   -moz-box-shadow: 0px 2px 9px 0px rgba(133, 133, 133, 1);
   box-shadow: 0px 2px 9px 0px rgba(133, 133, 133, 1);
   transition: all 0.5s ease;
+  top: 0;
 }
 .container-nav-scroll {
-  height: 6rem;
+  height: 5rem;
   position: fixed;
   width: 100%;
   z-index: 100;
@@ -27,6 +28,7 @@
   -moz-box-shadow: 0px 2px 9px 0px rgba(133, 133, 133, 1);
   box-shadow: 0px 2px 9px 0px rgba(133, 133, 133, 1);
   transition: all 0.5s ease;
+  top: 0;
 }
 .container-nav-scroll .img-logo {
   width: 150px;
@@ -40,6 +42,7 @@
 }
 .img-logo {
   width: 13rem;
+  transition: 0.5s ease;
 }
 .container-titles-nav {
   display: flex;
@@ -141,6 +144,7 @@
     -webkit-box-shadow: 0px 2px 9px 0px rgba(133, 133, 133, 1);
     -moz-box-shadow: 0px 2px 9px 0px rgba(133, 133, 133, 1);
     box-shadow: 0px 2px 9px 0px rgba(133, 133, 133, 1);
+    top: 0;
   }
   .container-elements-nav {
     display: flex;

@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin: 2rem 0rem;
 }
 /* //BANER */
 .clients-banner {
@@ -13,12 +12,10 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 1rem 0rem;
+  padding-top: 3rem;
 }
-
 .clients-banner span {
   font-size: 25px;
-  margin-bottom: 2rem;
   align-items: center;
   color: #606060;
   font-weight: 600;
@@ -29,10 +26,12 @@
 }
 .clients-banner-data {
   display: flex;
-  width: 60%;
+  width: 75%;
+  padding: 3rem 0rem;
+  justify-content: center;
 }
 .clients-banner-data div {
-  width: 50%;
+  width: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,13 +42,14 @@
 .clients-banner-data div img {
   width: 60px;
   color: white;
-  filter: invert(78%) sepia(13%) saturate(3207%) hue-rotate(130deg)
-    brightness(95%) contrast(80%);
+  filter: invert(36%) sepia(3%) saturate(3%) hue-rotate(37deg) brightness(102%) contrast(93%);
 }
 .clients-banner-data div p {
   width: 90%;
 }
-
+.cotnainer-pq-serv-nosotros>div:first-child img {
+  filter: none;
+}
 /* fin */
 
 .clients-images {
@@ -58,7 +58,7 @@
   justify-content: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 62%;
+  width: 100%;
   padding: 0rem;
   align-items: center;
   justify-items: center;

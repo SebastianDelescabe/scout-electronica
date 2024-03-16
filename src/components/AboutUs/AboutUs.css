@@ -1,13 +1,11 @@
 .nosotros {
-  margin-top: 5rem;
+  margin-top: 7rem;
 }
-
 .container-nosotros {
   background-color: #fff;
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 5rem;
 }
 
 .bg-nosotros {
@@ -73,35 +71,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
+  height: 35rem;
 }
 .container-serv-nosotros:hover {
-  transform: scale(1.1);
-  transition: all 0.7s ease;
+  transform: scale(1.03);
 }
 .container-serv-nosotros {
   cursor: pointer;
-  width: 20rem;
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
-  height: 25rem;
-  -webkit-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
-  -moz-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
-  box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
-}
-.bg-black:hover {
-  transform: scale(1.05);
-  transition: all 0.7s ease;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.5s ease ;
 }
 
 .img-serv-card {
   width: 11rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  filter: grayscale(0.1);
+  filter: invert(36%) sepia(3%) saturate(3%) hue-rotate(37deg) brightness(102%) contrast(93%);
 }
 .title-serv-card {
   margin-top: 0rem;
@@ -178,13 +169,11 @@
   justify-content: center;
   flex-direction: column;
   background-color: white;
-  border: 2px double var(--color-aqua);
-  outline: 2px solid var(--color-aqua);
-  outline-offset: -9px;
   /* padding: 0rem 3rem;
   height: 100%; */
-  padding: 5rem 3rem;
+  padding: 2.2rem 3rem;
   width: 65%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /* **PORQUE NOSOTROS** */
@@ -236,7 +225,7 @@
     height: 25rem;
   }
   .container-serv-nosotros {
-    width: 26rem;
+    width: 25rem;
     height: 25rem;
     -webkit-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
     -moz-box-shadow: 0px 0px 10px 2px rgba(171, 171, 171, 1);
@@ -401,4 +390,21 @@
     font-size: 25px;
     color: var(--color-base);
   }
+}
+
+
+/* 
+NEW UPDATE */
+.nosotros .swiper-button-prev:before,
+.nosotros .swiper-button-next:before {
+  content: '';
+  background: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  z-index: -1;
+  position: absolute;
+}
+.nosotros .swiper-fade .swiper-slide{
+  height: max-content;
 }

@@ -1,25 +1,19 @@
 import React from 'react';
 import { ClientsBanner } from './ClientsBanner';
 import { clients } from '../../assets/data/clientsData'
-import laurel1 from '../../assets/images/laurel1.png'
-import laurel2 from '../../assets/images/laurel2.png'
+import {ClientsCards} from './ClientsCards';
 import './Clients.css';
 export const Clients = () => {
 
     return (
-        <div id="clients" className='clients'>
+        <div className='clients'>
+            <ClientsCards/>
             <ClientsBanner />
-            <div className='clients-container'>
-                <div className='clients-laurel'>
-                    <img src={laurel1} alt='laurel1' />
-                </div>
+            <div className='clients-container' id="clients" >
                 <div className='clients-images'>
                     {clients && clients.map(image => (
                         <img key={image} src={image} alt="clientsimage" />
                     ))}
-                </div>
-                <div className='clients-laurel'>
-                    <img src={laurel2} alt='laurel2' />
                 </div>
             </div>
         </div>

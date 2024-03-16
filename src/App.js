@@ -10,6 +10,8 @@ import { Footer } from './components/Footer/Footer';
 import { Error404 } from './components/Error404/Error404';
 import { WhatsappIcon } from './components/Footer/WhatsappIcon';
 import { ProductContext } from './helper/ProductContext';
+import { AboutUs } from './components/AboutUs/AboutUs';
+
 
 import { AnimatePresence, motion } from 'framer-motion';
 import { useEffect } from 'react';
@@ -52,6 +54,7 @@ function App() {
             <Route path='/contact' element={<Contact data={productTitle} />} />
             <Route path='/service' element={<Service />} />
             <Route path='/productos' element={<Productos />} />
+            <Route path='/conocenos' element={<AboutUs />} />
             <Route path='*' exact={true} element={<Error404 />} />
           </Routes>
           <WhatsappIcon />

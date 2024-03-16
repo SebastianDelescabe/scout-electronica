@@ -1,6 +1,6 @@
 .swiper-button-next,
 .swiper-button-prev {
-  color: var(--color-aqua) !important;
+  color:var(--color-aqua) !important;
 }
 .homeCard {
   display: flex;
@@ -53,6 +53,23 @@ span.homeCard__title {
   text-transform: uppercase;
 }
 
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+  left: 20px !important;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  right: 20px !important;
+}
+.swiper-button-next, .swiper-button-prev{
+  top: 55% !important;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: 'prev';
+  font-size: 20px !important;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: 'next';
+  font-size: 20px !important;
+}
 @media (max-width: 1700px) {
   .homeCard__items {
     background-color: var(--color-background);
@@ -134,3 +151,4 @@ span.homeCard__title {
     margin-top: 3rem;
   }
 }
+
