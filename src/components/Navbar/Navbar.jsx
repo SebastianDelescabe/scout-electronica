@@ -32,7 +32,7 @@ export const Navbar = () => {
             </ul>
             </span>
           <NavHashLink className="hover-underline-animation" to="/service#top">SERVICIO TÉCNCIO</NavHashLink>
-          <NavHashLink className="hover-underline-animation" to="/conocenos">CONOCENOS</NavHashLink>
+          <NavHashLink className="hover-underline-animation" to="/conocenos#top">CONOCENOS</NavHashLink>
           <NavHashLink className="hover-underline-animation" to="/#clients">CLIENTES</NavHashLink>
           <NavHashLink className="hover-underline-animation" to="/contact#top">CONTACTO</NavHashLink>
         </div>

@@ -171,3 +171,10 @@ form.sp-element-container.sp-field-nolabel div p {
     display: none;
   }
 }
+
+.linkdin {
+  position: relative;
+  left: -15px;
+  font-size: 30px;
+  color: #606060;
+}

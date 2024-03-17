@@ -1,7 +1,8 @@
 import React from 'react';
 import { MdPhone } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
-import { MdHouse } from "react-icons/md";
+import { MdOutlineLocationOn } from "react-icons/md";
+import { IoLogoLinkedin } from "react-icons/io5";
 import logo from '../../assets/images/logo1-nav.png'
 import './Footer.css'
 
@@ -18,7 +19,7 @@ export const Footer = () => {
                     <span>Contactanos</span>
                     <div>
                         <MdPhone className='footer__icons' />
-                        <p>(+54) 7527-9718</p>
+                        <p>(+54) 1169465607</p>
                     </div>
                     <div>
                         <MdEmail className='footer__icons' />
@@ -27,13 +28,18 @@ export const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <MdHouse className='footer__icons' />
+                        <MdOutlineLocationOn className='footer__icons' />
                         <p>Buenos Aires, Villa ballester</p>
                     </div>
                 </div>
                 <div className="footer__logo">
                     <img src={logo} alt="logo" />
                     <span>Nuestros objetivos son los mismos que los suyos.</span>
+                    <div className='linkdin'>
+                        <a href="https://www.linkedin.com/company/scout-electronica" target='new_blanc'>
+                            <IoLogoLinkedin className='footer__incons'/>
+                        </a>
+                    </div>
                 </div>
                 <div className='footer__info'>
                     <span>Horarios de atención</span>

@@ -68,10 +68,10 @@
   width: 175px;
   cursor: pointer;
   padding: 2rem;
+  transition: all 0.5s ease;
 }
 
 .clients-images img:hover {
-  transition: transform 0.7s ease;
   transform: none;
   -webkit-transform: scale(1.2) !important;
 }

@@ -1,3 +1,6 @@
+.contact{
+  padding-top: 7rem;
+}
 .container-contact {
   display: flex;
   justify-content: center;
@@ -12,20 +15,19 @@
 .banner-bg-contact {
   background: url(../../assets/images/contactBanner.jpg);
   width: 100%;
-  height: 23rem;
+  height: 16rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  padding-top: 7rem;
 }
 
 .banner-contact-bgblack {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 23rem;
+  height: 16rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,13 +35,15 @@
 
 .p-title-contact {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 4rem;
-  font-weight: 500;
+  font-size: 2.5rem;
+  font-weight: 600;
   text-align: center;
   text-transform: uppercase;
 }
 .contact-info__data-position span:first-child {
   text-transform: uppercase;
+  color: var(--color-gray);
+  font-weight: 700;
 }
 
 .container-map-contact {
@@ -50,48 +54,81 @@
 .container-form-info-contact {
   display: flex;
   width: 90%;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
 }
+.container-form-info\&form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 3rem 0rem 2rem 0rem;
+}
+.container-form-titles{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+.container-form-titles>h5,.container-form-titles>h2{
+  color: #606060;
+  margin: 0;
+  text-transform: uppercase;
+}
+.container-form-titles>h5{
+  color: var(--color-aqua);
+}
+.contact-info__container svg{
+  transition: 0.5s ease;
+}
+.contact-info__container:hover svg{
+  color: var(--color-aqua);
 
+}
 /*-----------------------------------------------------------------*/
 /*--------------------------*CONTACT INFO*---------------------------*/
 /*-----------------------------------------------------------------*/
 
 .contact-info {
-  height: 38rem;
-  width: 40%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-evenly;
+  width: 55%;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .contact-info__container {
   display: flex;
-  align-items: center;
-  color: var(--color-aqua);
+  color: #9d9d9d;
   font-weight: bold;
+  width: 45%;
+  background: #eeeeee45;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-info__data-position > a{
+  color: #9d9d9d;
 }
 
 .contact-info__icon {
   font-size: 3.5rem;
-  color: var(--color-aqua);
   margin-right: 5px;
 }
 
 .contact-info__data-position {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .contact-info__data-position a {
   color: var(--color-gray);
   font-weight: 400;
   margin: 0px 0px 5px 0px;
 }
-.contact-info__data-position span:nth-child(even) {
+.contact-info__data-position span {
   color: var(--color-gray);
   font-weight: 400;
   margin: 2px 0px;
@@ -111,13 +148,9 @@
 /*-----------------------------------------------------------------*/
 
 .contact-form {
-  width: 100%;
-  margin: 3rem 0rem;
+  width: 45%;
   padding: 2rem;
-
-  -webkit-box-shadow: 0px 0px 10px 2px rgb(231, 230, 230);
-  -moz-box-shadow: 0px 0px 10px 2px rgb(240, 240, 240);
-  box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px;
+  background-color: #eeeeee45
 }
 
 .contact-form-inputs-container {
@@ -126,16 +159,6 @@
   align-items: center;
 }
 
-.contact-form h2 {
-  color: var(--color-aqua);
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.contact-form h4 {
-  color: var(--color-gray);
-  font-weight: 400;
-}
 
 .contact-form form div {
   display: flex;
@@ -151,7 +174,6 @@
 .contact-form textarea {
   width: 100%;
   border: 0.5px solid #c7c7c7;
-  border-radius: 8px;
   font-size: 0.9rem;
   outline: 0;
   padding: 0.5rem 0.5rem;
@@ -181,7 +203,6 @@
   }
 
   .contact-form {
-    margin: 2rem 0rem;
     padding: 2rem;
   }
 }
@@ -235,9 +256,6 @@
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
-  }
-  .contact-form h4 {
-    font-size: 14px;
   }
   .contact-form-inputs-container {
     flex-direction: column;

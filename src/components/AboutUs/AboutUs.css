@@ -1,5 +1,5 @@
 .nosotros {
-  margin-top: 7rem;
+  padding-top: 7rem;
 }
 .container-nosotros {
   background-color: #fff;
@@ -38,11 +38,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.3),
-    rgba(255, 255, 255, 0)
-  );
+  background:linear-gradient(135deg, rgb(0 0 0 / 47%), rgba(255, 255, 255, 0));
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(15px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
@@ -408,7 +404,7 @@ NEW UPDATE */
 .nosotros .swiper-button-prev:before,
 .nosotros .swiper-button-next:before {
   content: '';
-  background: white;
+  background: #ffffff40;
   width: 45px;
   height: 45px;
   border-radius: 50px;

@@ -8,7 +8,7 @@ export const Service = () => {
             <div className='service-container'>
                 <div className="banner-bg-service">
                     <div className="banner-service-bgblack">
-                        <p className="p-title-service">Servicio Técnico</p>
+                        <p className="p-title-contact">Servicio Técnico</p>
                     </div>
                 </div>
                 {
