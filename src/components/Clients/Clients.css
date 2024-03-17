@@ -65,7 +65,7 @@
 }
 
 .clients-images img {
-  width: 150px;
+  width: 175px;
   cursor: pointer;
   padding: 2rem;
 }
@@ -160,6 +160,9 @@
   .clients-laurel {
     display: none;
   }
+  .clients-banner-data div{
+    width: 50%;
+  }
 }
 
 @media (max-width: 650px) {
@@ -168,7 +171,11 @@
   }
   .clients-banner span {
     font-size: 25px;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
     align-items: center;
+  }
+  .clients-banner-data div{
+    width: 50%;
   }
 }

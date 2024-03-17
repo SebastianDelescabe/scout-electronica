@@ -62,7 +62,7 @@ export const Drawer = () => {
                 </div>
                 <NavHashLink onClick={toggleDrawer(anchor, false)} to="/productos#top">PRODUCTOS</NavHashLink>
                 <NavHashLink onClick={toggleDrawer(anchor, false)} to="/service#top">SERVICIO TÉCNCIO</NavHashLink>
-                <NavHashLink onClick={toggleDrawer(anchor, false)} to="/#nosotros">NOSOTROS</NavHashLink>
+                <NavHashLink onClick={toggleDrawer(anchor, false)} to="/conocenos">NOSOTROS</NavHashLink>
                 <NavHashLink onClick={toggleDrawer(anchor, false)} to="/#clients">CLIENTES</NavHashLink>
                 <NavHashLink onClick={toggleDrawer(anchor, false)} to="/contact#top">CONTACTO</NavHashLink>
                 <img className="simbol-scout" src={Logo} alt="logo-responsive" />

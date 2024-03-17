@@ -7,8 +7,8 @@ export const homeData = [
     {
         title: 'Inovación y calidad para laboratorios de latinoamérica',
         image: fotoHome1,
-        button: 'Equipos',
-        id: '/productos'
+        button: 'Conocenos',
+        id: '/conocenos'
     },
     {
         title: 'Servicio técnico de pronta respuesta y calidad',
