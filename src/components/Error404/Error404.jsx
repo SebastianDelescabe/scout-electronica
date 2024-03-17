@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const Error404 = () => {
     return (
         <div className='error'>
-            <div>NO SE ENCONTRO LA PAGINA</div>
+            <div>No se encontro la página</div>
             <Link to='/'>
                 <button>Volver</button>
             </Link>

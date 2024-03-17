@@ -6,7 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import "react-toastify/dist/ReactToastify.css";
 import './Contact.css';
 
-export const ContactForm = ({ data }) => {
+export const ContactForm = () => {
 
     const form = useRef();
 
@@ -91,16 +91,7 @@ export const ContactForm = ({ data }) => {
                             />
                         </div>
                         <div>
-                            {data ? (
-                                <input
-                                    placeholder='Asunto'
-                                    name='theme'
-                                    type='text'
-                                    value={data}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            ) : (
+                            {
                                 <input
                                     placeholder='Asunto'
                                     name='theme'
@@ -109,7 +100,7 @@ export const ContactForm = ({ data }) => {
                                     onChange={handleChange}
                                     required
                                 />
-                            )
+                            
                             }
                         </div>
                     </div>

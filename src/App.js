@@ -1,20 +1,18 @@
 import './App.css';
-import React, { useState } from 'react';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/Navbar/Navbar';
 import { Contact } from './components/Contact/Contact';
 import { Home } from './components/Home/Home';
-import { Productos } from './components/Productos/Productos';
+import { ProductsDetail } from './components/ProductsDetail/ProductsDetail';
 import { Service } from './components/Service/Service'
 import { Footer } from './components/Footer/Footer';
 import { Error404 } from './components/Error404/Error404';
 import { WhatsappIcon } from './components/Footer/WhatsappIcon';
-import { ProductContext } from './helper/ProductContext';
 import { AboutUs } from './components/AboutUs/AboutUs';
 
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect } from 'react';
 
 
 const pageTransition = {
@@ -27,19 +25,8 @@ const pageTransition = {
 }
 
 function App() {
-  const [productTitle, setProductTitle] = useState(null)
-
-  useEffect(() => {
-    if (window.location.pathname !== 'contact') {
-      setProductTitle(null)
-    }
-  }, [productTitle])
 
   return (
-    <ProductContext.Provider value={{
-      productTitle,
-      setProductTitle,
-    }}>
       <AnimatePresence>
         <Navbar />
         <motion.div
@@ -51,9 +38,9 @@ function App() {
           variants={pageTransition}>
           <Routes>
             <Route exact path='/' element={<Home />} />
-            <Route path='/contact' element={<Contact data={productTitle} />} />
+            <Route path='/contact' element={<Contact />} />
             <Route path='/service' element={<Service />} />
-            <Route path='/productos' element={<Productos />} />
+            <Route path='/:id' element={<ProductsDetail />} />
             <Route path='/conocenos' element={<AboutUs />} />
             <Route path='*' exact={true} element={<Error404 />} />
           </Routes>
@@ -61,7 +48,6 @@ function App() {
           <Footer />
         </motion.div>
       </AnimatePresence>
-    </ProductContext.Provider>
   );
 }
 

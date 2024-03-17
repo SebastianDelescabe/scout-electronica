@@ -19,7 +19,7 @@ export const Contact = ({ data }) => {
           </div>
           <div className="container-form-info-contact">
             <ContactInfo />
-            <ContactForm data={data} />
+            <ContactForm/>
           </div>
         </div>
       </div>

@@ -7,8 +7,7 @@ export const products = [
             'Indicación de valor de rotura, carga máxima, carga mínima, promedio y desvío estandar',
         ],
         image: 'https://i.ibb.co/5xB14zr/Medio-frente-dur-m-p-a-p-con-imp-interna.jpg',
-        id: '1',
-        fav: true
+        id: 1,
     },
     {
         title: 'Baño Termostático ',
@@ -18,9 +17,7 @@ export const products = [
             'Resistencia calefactora en acero inoxidable',
         ],
         image: 'https://i.ibb.co/XYKYFZn/Ba-o-termost-tico-Scout.jpg',
-        // https://i.ibb.co/XYKYFZn/Ba-o-termost-tico-Scout.jpg
-        // https://i.ibb.co/gvHTkvc/Ba-o-termost-tico-Scout-2.jpg
-        id: '2'
+        id: 2,
     },
     {
         title: 'Desintegrador ',
@@ -30,8 +27,7 @@ export const products = [
             'Control de temperatura digital con rampa de calentamiento programado',
         ],
         image: 'https://i.ibb.co/6y4yb87/Desintegrador-con-impresora-interna.jpg',
-        id: '3',
-        fav: true
+        id: 3,
     },
     {
         title: 'Texturómetro ',
@@ -41,7 +37,7 @@ export const products = [
             'En laboratorios medicinales usado para control de calidad de cápsulas blandas'
         ],
         image: 'https://i.ibb.co/DgCpmC3/texturometro.jpg',
-        id: '4'
+        id: 4
     },
     {
         title: 'Disolutor ',
@@ -51,7 +47,7 @@ export const products = [
             'Controlador de velocidad según especificaciones USP',
         ],
         image: 'https://i.ibb.co/d7DQznk/disolutor.png',
-        id: '5'
+        id: 5
     },
     {
         title: 'Automuestreador ',
@@ -61,7 +57,7 @@ export const products = [
             'Bandeja para viales en acrílico',
         ],
         image: 'https://i.ibb.co/JkKZ58R/A-Perfil-ventana-automuestreador.jpg',
-        id: '6'
+        id: 6
     },
     {
         title: 'Dosificadora de líquidos ',
@@ -71,7 +67,7 @@ export const products = [
             'Pico dosificador y pié en acero inoxidable',
         ],
         image: 'https://i.ibb.co/z8fXt0p/dosificador-de-liquidos.jpg',
-        id: '7'
+        id: 7
     },
     {
         title: 'Dosificadora de polvos ',
@@ -81,7 +77,7 @@ export const products = [
             'Posibilidad de mas de un pico dosificador',
         ],
         image: 'https://i.ibb.co/kSMRRk5/dosificador-de-polvos.jpg',
-        id: '8'
+        id: 8
     },
     {
         title: 'Friabilómetro ',
@@ -91,8 +87,7 @@ export const products = [
             'Rueda de acrílico transparente de precisa terminación',
         ],
         image: 'https://i.ibb.co/kQGFXRr/Friabil-metro-con-impresora-interna-2.jpg',
-        id: '12',
-        fav: true
+        id: 12
     },
     {
         title: 'Medidor de densidad ',
@@ -102,7 +97,7 @@ export const products = [
             'Display de cuatro renglones por veinte caracteres',
         ],
         image: 'https://i.ibb.co/4M9vywq/medidor-de-densidad.jpg',
-        id: '13'
+        id: 13
     },
     {
         title: 'Test de hermeticidad ',
@@ -112,7 +107,7 @@ export const products = [
             'Bomba de vacio con manómetro de una tapa',
         ],
         image: 'https://i.ibb.co/9TYdXNM/20170502-124911.jpg',
-        id: '14'
+        id: 14
     },
     {
         title: 'Titulador automático ',
@@ -122,8 +117,7 @@ export const products = [
             'Validación de microbomba peristáltica por medio de balanza certificada',
         ],
         image: 'https://i.ibb.co/NysMDT3/titulador-automatico.jpg',
-        id: '15',
-        fav: true
+        id: 15
     }
 ]
 

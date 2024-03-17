@@ -4,7 +4,7 @@ import Logo from "../../assets/images/logo1-nav.png";
 import { Drawer } from "./Drawer";
 import { Link } from "react-router-dom";
 import { useScrollPosition } from "../../customHooks/useScrollPosition";
-
+import products from "../../assets/data/productData";
 import { NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
 
 export const Navbar = () => {
@@ -20,7 +20,17 @@ export const Navbar = () => {
           </Link>
         </div>
         <div className="container-titles-nav">
-          <NavHashLink className="hover-underline-animation" to='/productos#top'>EQUIPOS</NavHashLink>
+            <span className="hover-underline-animation products-menu" href="#">EQUIPOS
+            <ul className="scout-menu">
+            {
+              products && products.map(product => (
+                <li key={product.id}>
+                  <a href={product.id}>{product.title}</a>
+                </li>
+              ))
+            }
+            </ul>
+            </span>
           <NavHashLink className="hover-underline-animation" to="/service#top">SERVICIO TÉCNCIO</NavHashLink>
           <NavHashLink className="hover-underline-animation" to="/conocenos">CONOCENOS</NavHashLink>
           <NavHashLink className="hover-underline-animation" to="/#clients">CLIENTES</NavHashLink>

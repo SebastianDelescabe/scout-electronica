@@ -1,0 +1,14 @@
+.product__detail{
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product__detail-header {
+    width: 50%;
+}
+.product__detail-header img {
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+}

@@ -50,6 +50,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 .container-titles-nav a {
   color: var(--hard-grey);
@@ -69,7 +70,6 @@
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-  color: #4eeaff;
   padding-bottom: 0.4rem;
 }
 
@@ -102,7 +102,7 @@
   justify-content: flex-end;
   width: 100%;
 }
-.container-titles-nav a:last-child {
+.container-titles-nav>a:last-child {
   font-weight: 700;
 }
 /*-----------------------------------------------------------------*/
@@ -182,4 +182,47 @@
   .div-container-elements-home {
     margin-top: 7.5rem;
   }
+}
+
+
+/* MENU SCOUT */
+.scout-menu{
+  display: none;
+}
+span.hover-underline-animation.products-menu:hover .scout-menu {
+  position: absolute;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  top: 24px;
+  left: 0px;
+  gap: 1rem;
+  padding: 2rem 0rem 2rem 2rem;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+span.hover-underline-animation.products-menu{
+  color: #606060 ;
+  font-weight: 500;
+}
+ul.scout-menu {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+.scout-menu li {
+  width: 48%;
+  height: 25px;
+  cursor: pointer;
+}
+.scout-menu li a{
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #606060 ;
+  transition: all 0.3s; 
+  font-weight: 400 ;
+}
+.scout-menu li:hover a {
+  color: var(--color-aqua);
 }
