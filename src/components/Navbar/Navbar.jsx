@@ -29,6 +29,9 @@ export const Navbar = () => {
                 </li>
               ))
             }
+            <li>
+              <a target="new_blanc" href="https://drive.google.com/u/0/uc?id=1J4gnNZKP_-USQcEtoSnMyURBn9C6rlvz&export=download">Descargar catálogo</a>
+            </li>
             </ul>
             </span>
           <NavHashLink className="hover-underline-animation" to="/service#top">SERVICIO TÉCNCIO</NavHashLink>

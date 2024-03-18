@@ -13,8 +13,7 @@ export const ClientsCards = () => {
 
   return (
     <div className="container-nosotros">
-      <div className="container-elements-nosotros">
-        <div data-aos="fade-up" >
+      <div className="container-elements-nosotros" data-aos="fade-up">
           <div className="cotnainer-pq-serv-nosotros">
             <div className="container-serv-nosotros">
               <NavHashLink to={"/conocenos#top"}>
@@ -48,7 +47,6 @@ export const ClientsCards = () => {
             </div>
           </div>
         </div>
-      </div>
     </div>
   );
 };

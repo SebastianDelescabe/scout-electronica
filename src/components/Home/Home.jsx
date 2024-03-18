@@ -28,6 +28,7 @@ export const Home = () => {
 
     return (
         <div className='home' id='home'>
+            <div className='home__banners'>
             <Swiper
                 slidesPerView={1}
                 loop={true}
@@ -48,6 +49,7 @@ export const Home = () => {
                     ))
                 }
             </Swiper>
+            </div>
             <Clients />
         </div>
     );

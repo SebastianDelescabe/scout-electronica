@@ -73,7 +73,7 @@
 
 .clients-images img:hover {
   transform: none;
-  -webkit-transform: scale(1.2) !important;
+  -webkit-transform: scale(1.1) !important;
 }
 
 .clients-container {

@@ -10,7 +10,7 @@
 .homeCard__items {
   width: 100%;
   background-color: var(--color-background);
-  padding: 5rem;
+  padding: 5rem 3rem 7rem 3rem;
   display: flex;
   align-items: center;
 }
@@ -152,3 +152,7 @@ span.homeCard__title {
   }
 }
 
+
+.home__banners {
+  padding-bottom: 4rem ;
+}

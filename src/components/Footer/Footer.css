@@ -70,6 +70,8 @@
   height: 0px;
   width: 150px;
   border-bottom: 2px solid #606060;
+  position: relative;
+    top: -5px;
 }
 
 .whatsapp-icon {
