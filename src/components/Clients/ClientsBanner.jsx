@@ -13,7 +13,7 @@ export const ClientsBanner = () => {
     }, []);
 
     return (
-        <div className='clients-banner'>
+        <div className='clients-banner' id="clients" >
             <span>Diferenciales <strong> SCOUT</strong></span>
             <div className='clients-banner-data' data-aos="fade-right">
                 <div>

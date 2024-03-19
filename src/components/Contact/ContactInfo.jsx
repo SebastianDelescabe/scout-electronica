@@ -11,7 +11,7 @@ export const ContactInfo = () => {
                 <MdEmail className='contact-info__icon' />
                 <div className='contact-info__data-position'>
                     <span>Email</span>
-                    <a href={`mailto:scoutelectronica@gmail.com`} > scoutelectronica@gmail.com</a>
+                    <a href={`mailto:scoutelectronica@gmail.com`} > scoutelectronica@ gmail.com</a>
                 </div>
             </div>
             <div className='contact-info__container'>

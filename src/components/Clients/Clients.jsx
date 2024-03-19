@@ -8,8 +8,8 @@ export const Clients = () => {
     return (
         <div className='clients'>
             <ClientsCards/>
-            <ClientsBanner />
-            <div className='clients-container' id="clients" >
+            <ClientsBanner/>
+            <div className='clients-container'>
                 <div className='clients-images'>
                     {clients && clients.map(image => (
                         <img key={image} src={image} alt="clientsimage" />
