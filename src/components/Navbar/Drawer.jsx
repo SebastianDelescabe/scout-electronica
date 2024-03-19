@@ -3,6 +3,9 @@ import { SwipeableDrawer, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from '@mui/icons-material/Close';
 import Logo from "../../assets/images/scout-simbol.png";
+import { MdPhone } from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+import { MdOutlineLocationOn } from "react-icons/md";
 
 import { NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
 
@@ -60,12 +63,29 @@ export const Drawer = () => {
                     <CloseIcon />
                   </IconButton>
                 </div>
-                <NavHashLink onClick={toggleDrawer(anchor, false)} to="/productos#top">PRODUCTOS</NavHashLink>
+                <NavHashLink onClick={toggleDrawer(anchor, false)} to="/productos#top">EQUIPOS</NavHashLink>
                 <NavHashLink onClick={toggleDrawer(anchor, false)} to="/service#top">SERVICIO TÉCNCIO</NavHashLink>
-                <NavHashLink onClick={toggleDrawer(anchor, false)} to="/conocenos#top">NOSOTROS</NavHashLink>
+                <NavHashLink onClick={toggleDrawer(anchor, false)} to="/conocenos#top">CONOCENOS</NavHashLink>
                 <NavHashLink onClick={toggleDrawer(anchor, false)} to="/#clients">CLIENTES</NavHashLink>
                 <NavHashLink onClick={toggleDrawer(anchor, false)} to="/contact#top">CONTACTO</NavHashLink>
                 <img className="simbol-scout" src={Logo} alt="logo-responsive" />
+
+                <div className="contact-mobile-menu">
+                    <div>
+                        <MdPhone className='footer__icons' />
+                        <p>(+54) 1169465607</p>
+                    </div>
+                    <div>
+                        <MdEmail className='footer__icons' />
+                        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+                            <a className='footer__other-mail' href={`mailto:scoutelectronica@gmail.com`} > scoutelectronica@gmail.com</a>
+                        </div>
+                    </div>
+                    <div>
+                        <MdOutlineLocationOn className='footer__icons' />
+                        <p>Buenos Aires, Villa ballester</p>
+                    </div>
+                </div>
               </div>
             </div>
           </SwipeableDrawer>

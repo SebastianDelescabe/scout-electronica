@@ -196,9 +196,6 @@ gap: 1rem;
 /*-----------------------------------------------------------------*/
 /*-------------------------*MEDIA QUERIES*-------------------------*/
 /*-----------------------------------------------------------------*/
-
-/*-------------------------*1700*-------------------------*/
-
 /*-------------------------*1440*-------------------------*/
 @media (max-width: 1440px) {
   .container-form-info-contact {
@@ -260,28 +257,18 @@ gap: 1rem;
     width: 100%;
     height: 30rem;
   }
-
   .container-map-contact {
     width: 100%;
     height: 30rem;
   }
-
   .container-form-info-contact {
     flex-direction: column;
     width: 100%;
   }
-
-
-  /* Form */
   .contact-form-inputs-container {
     flex-direction: column;
   }
-
   .contact-form textarea {
     width: 100%;
-  }
-
-  .form-button {
-
   }
 }

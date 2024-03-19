@@ -172,7 +172,7 @@
     padding: 1rem;
     width: 15rem;
   }
-  .div-container-menu-mobile a {
+  .div-container-menu-mobile>a {
     color: #595959;
     text-decoration: none;
     font-weight: 600;
@@ -239,4 +239,15 @@ ul.scout-menu {
   text-align: center;
   background-color: #7575757d;
   width: 93%;
+}
+
+.contact-mobile-menu{
+  margin-top: 2rem;
+}
+.contact-mobile-menu > div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 13px;
+
 }
