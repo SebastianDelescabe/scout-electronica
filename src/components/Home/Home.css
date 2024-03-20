@@ -29,6 +29,7 @@
   font-size: 2.2rem;
   color: var(--hard-grey);
   margin-bottom: 3rem;
+  text-transform: uppercase;
 }
 
 .homeCard__image {
@@ -78,7 +79,7 @@ span.homeCard__title {
   .homeCard__title {
     color: var(--hard-grey);
     margin-bottom: 3rem;
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 @media (max-width: 850px) {

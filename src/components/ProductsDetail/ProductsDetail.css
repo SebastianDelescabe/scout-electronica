@@ -1,14 +1,104 @@
 .product__detail{
     margin-top: 7rem;
+}
+.product__detail-container{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    padding: 3rem;
+
 }
 .product__detail-header {
-    width: 50%;
+    width: 25%;
 }
 .product__detail-header img {
-    width: 50%;
+    width: 350px;
     object-fit: cover;
     object-position: center;
+}
+.porduct__detail-body{
+    width: 75%;
+}
+.product__detail{
+    gap: 2rem;
+}
+.product__detail-body-text > h1 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.bannerImage-text{
+    background: url('../../assets/images/backgroundProducts.jpg');
+    height: 250px;
+    width: 100%;
+}
+.bannerImage-text > h1{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #606060;
+    font-size: 30px;
+}
+.bannerImage-text > h1:after {
+    content: 'SCOUT';
+    font-weight: 800;
+    margin-left: 12px;
+}
+.product__detail-extraInfo{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product__detail-extraInfo li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    text-align: center;
+    background: #eeeeee;
+    border-radius: 50%;
+    height: 160px;
+    gap: 0.5rem;
+    transition: 0.5s ease ;
+}
+.product__detail-extraInfo li:hover{
+    transform: scale(1.05);
+}
+ul.product__detail-extraInfo > li > img {
+    width: 50px;
+    height: 50px;
+}
+.product__detail-extraInfo li > span {
+    width: 145px;
+}
+
+
+/* description */
+ul.product__detail-body-items-description {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 3rem;
+    flex-direction: column;
+    padding: 0rem 1rem;
+    background: #eeee;
+}
+
+ul.product__detail-body-items-description > li {
+    display: flex;
+    text-align: start;
+    padding: 0.5rem;
+    line-height: 25px;
 }

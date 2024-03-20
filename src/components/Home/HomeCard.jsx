@@ -7,7 +7,7 @@ export const HomeCard = ({ data }) => {
         <div className='homeCard'>
             <div className='homeCard__items'>
                 <div className="homeCard__container">
-                    <span className='homeCard__title'>{data.title}</span>
+                    <h1 className='homeCard__title'>{data.title}</h1>
                     <button className="app__button">
                         <span className="circle" aria-hidden="true">
                             <span className="icon arrow"></span>

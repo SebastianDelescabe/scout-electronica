@@ -1,12 +1,40 @@
+import hermeticImg from '../images/productsExtraImages/hermetic.png'
+import automaticImg from '../images/productsExtraImages/automatic.png'
+import calibrationImg from '../images/productsExtraImages/calibration.png'
+import idealSizeImg from '../images/productsExtraImages/idealSize.png'
+import softwareImg from '../images/productsExtraImages/software.png'
+import printerImg from '../images/productsExtraImages/printer.png'
+import usbImg from '../images/productsExtraImages/usb.png'
+
+let extraInfo = [
+    ['Hermético',hermeticImg],
+    ['Completamente Automático',automaticImg],
+    ['Tamaño ideal',idealSizeImg],
+    ['Software amigable',softwareImg],
+    ['Salida USB (opcional)',usbImg],
+    ['Impresora (Opcional)',printerImg],
+    ['Simple Calibración',calibrationImg]
+]
+
 export const products = [
     {
         title: 'Durómetro ',
         descriptionItems: [
-            'Registra fuerza de rotura del comprimido en distintas unidades, mide diámetro y espesor',
-            'Realiza ensayos instructivos y no destructivos',
-            'Indicación de valor de rotura, carga máxima, carga mínima, promedio y desvío estandar',
+            'Este dispositivo realiza ensayos instructivos y no destructivos, preservando la integridad del producto mientras ofrece información precisa sobre su resistencia. Además, el durometro mide el diámetro y espesor del comprimido, garantizando su uniformidad dimensional.',
+            'La versatilidad del durometro se destaca en la variedad de unidades de medida disponibles, desde kilogramos hasta la escala STRONG y newtons, adaptándose a las necesidades específicas de cada usuario. Sus resultados detallados incluyen valores de carga máxima, mínima, promedio y desvío estándar, proporcionando una visión completa de la calidad del comprimido.',
+            'En resumen, el durometro no solo asegura la calidad de los comprimidos farmacéuticos, sino que también optimiza los procesos de producción al proporcionar información valiosa y precisa sobre su resistencia y uniformidad.',
+        ],
+        extraInfo: [
+            extraInfo[0],
+            extraInfo[1],
+            extraInfo[2],
+            extraInfo[3],
+            extraInfo[4],
+            extraInfo[5],
+            extraInfo[6],
         ],
         image: 'https://i.ibb.co/5xB14zr/Medio-frente-dur-m-p-a-p-con-imp-interna.jpg',
+        material:['Acrilico','Acero Inoxidable'],
         id: 1,
     },
     {
