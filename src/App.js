@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { Navbar } from './components/Navbar/Navbar';
 import { Contact } from './components/Contact/Contact';
@@ -10,6 +10,7 @@ import { Footer } from './components/Footer/Footer';
 import { Error404 } from './components/Error404/Error404';
 import { WhatsappIcon } from './components/Footer/WhatsappIcon';
 import { AboutUs } from './components/AboutUs/AboutUs';
+import { ProductSelectedContext } from './context/ProductSelectedContext';
 
 
 import { AnimatePresence, motion } from 'framer-motion';
@@ -26,7 +27,14 @@ const pageTransition = {
 
 function App() {
 
+  const [productSelected, setproductSelected] = useState(false)
+
+
   return (
+    <ProductSelectedContext.Provider value={{
+      productSelected,
+      setproductSelected
+    }}>
       <AnimatePresence>
         <Navbar />
         <motion.div
@@ -48,6 +56,7 @@ function App() {
           <Footer />
         </motion.div>
       </AnimatePresence>
+      </ProductSelectedContext.Provider>
   );
 }
 

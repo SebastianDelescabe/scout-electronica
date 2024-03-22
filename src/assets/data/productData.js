@@ -5,6 +5,7 @@ import idealSizeImg from "../images/productsImages/idealSize.png";
 import softwareImg from "../images/productsImages/software.png";
 import printerImg from "../images/productsImages/printer.png";
 import usbImg from "../images/productsImages/usb.png";
+import manualImage from "../images/productsImages/manual.png"
 
 import imagesDurometro from "../images/productsImages/durometro/index";
 import bañotermostaticoImages from "../images/productsImages/bañotermostatico/index";
@@ -20,7 +21,7 @@ import imagepenetrometro from '../images/productsImages/penetrometro/index';
 import imagefriabilometro from '../images/productsImages/friabilometro/index';
 
 //EXTRA DATA 
-let [hermetico, automatico, tamaño, software, usb, print, calibracion] = [
+let [hermetico, automatico, tamaño, software, usb, print, calibracion,manual] = [
   ["Hermético", hermeticImg],
   ["Completamente Automático", automaticImg],
   ["Tamaño ideal", idealSizeImg],
@@ -28,6 +29,8 @@ let [hermetico, automatico, tamaño, software, usb, print, calibracion] = [
   ["Salida USB (opcional)", usbImg],
   ["Impresora (opcional)", printerImg],
   ["Simple Calibración", calibrationImg],
+  ["Manual de instrucciones", manualImage],
+
 ];
 
 export const products = [
@@ -38,7 +41,7 @@ export const products = [
       "La versatilidad del durometro se destaca en la variedad de unidades de medida disponibles, desde kilogramos hasta la escala STRONG y newtons, adaptándose a las necesidades específicas de cada cliente. Sus resultados detallados incluyen valores de carga máxima, mínima, promedio y desvío estándar, proporcionando una visión completa de la calidad del comprimido.",
       "El durómetro no solo asegura la calidad de los comprimidos farmacéuticos, sino que también optimiza los procesos de producción al proporcionar información valiosa y precisa sobre su resistencia y uniformidad.",
     ],
-    extraInfo: [hermetico, automatico, tamaño, software, usb, print, calibracion],
+    extraInfo: [hermetico, automatico, tamaño, software, usb, print, calibracion,manual],
     image: imagesDurometro,
     id: 1,
   },
@@ -51,7 +54,7 @@ export const products = [
     ],
     image: bañotermostaticoImages,
     id: 2,
-    extraInfo: [hermetico, automatico, tamaño, software],
+    extraInfo: [hermetico, automatico, tamaño, software,manual],
   },
   {
     title: "Desintegrador ",
@@ -62,7 +65,7 @@ export const products = [
     ],
     image: desintegradorImages,
     id: 3,
-    extraInfo: [hermetico, automatico, tamaño, software, print, calibracion],
+    extraInfo: [hermetico, automatico, tamaño, software, print, calibracion,manual],
   },
   {
     title: "Texturómetro ",
@@ -72,7 +75,7 @@ export const products = [
     ],
     image: texturometroImages,
     id: 4,
-    extraInfo: [hermetico, automatico, software, print],
+    extraInfo: [hermetico, automatico, software, print,manual],
   },
   {
     title: "Disolutor ",
@@ -83,7 +86,7 @@ export const products = [
     ],
     id: 5,
     image: disolutorImages,
-    extraInfo: [hermetico, automatico, software, usb, print],
+    extraInfo: [hermetico, automatico, software, usb, print,manual],
   },
   {
     title: "Automuestreador ",
@@ -94,7 +97,7 @@ export const products = [
     ],
     image: automuestreadorImages,
     id: 6,
-    extraInfo: [hermetico, automatico, tamaño, software, usb, print, calibracion]
+    extraInfo: [hermetico, automatico, tamaño, software, usb, print, calibracion,manual]
   },
   {
     title: "Penetrómetro ",
@@ -105,40 +108,40 @@ export const products = [
     ],
     image: imagepenetrometro,
     id: 7,
-    extraInfo: [ automatico, tamaño, software, usb, print, calibracion],
+    extraInfo: [ automatico, tamaño, software, usb, print, calibracion,manual],
   },
   {
     title: "Dosificadora de polvos ",
     descriptionItems: [
       "Programable según el tipo de producto y tolerancia requerida, esta dosificadora de polvos se adapta fácilmente a las necesidades de su proceso de producción. Controlada por una balanza electrónica de precisión, garantiza una dosificación exacta y uniforme, asegurando la calidad del producto final.",
-      "Con la capacidad de más de un pico dosificador, esta máquina ofrece mayor versatilidad y capacidad de producción, optimizando la eficiencia en su línea de ensamblaje. Con esta dosificadora, obtenga resultados precisos y consistentes en cada dosis, mejorando la calidad y la productividad de su proceso.",
-      'Su diseño ergonómico y su fácil mantenimiento hacen que esta dosificadora sea una solución práctica y conveniente para su laboratorio. Con controles intuitivos y accesibles, así como componentes duraderos y fáciles de limpiar, garantiza una larga vida útil del equipo.'
+      "Con la capacidad de más de un pico dosificador, esta máquina ofrece mayor versatilidad y capacidad de producción, optimizando la eficiencia en su línea de ensamblaje. ",
+      'Su diseño ergonómico y su fácil mantenimiento hacen que esta dosificadora sea una solución práctica y conveniente para su laboratorio. Con controles intuitivos y accesibles.'
     ],
     image: imagedosificadoradepolvos,
     id: 8,
-    extraInfo: [ automatico, tamaño, software, usb, print, calibracion],
+    extraInfo: [ automatico, tamaño, software, usb, print, calibracion,manual],
   },
   {
     title: "Friabilómetro ",
     descriptionItems: [
       "El fiabrilómetro ofrece funcionalidades avanzadas para el conteo preciso de comprimidos en la industria farmacéutica. Con la capacidad de inversión de marcha para la descarga automática de comprimidos en una caja de acrílico, agiliza el proceso de conteo y empaque. ",
       "Su calibración interior automática y conteo regresivo de vueltas aseguran la precisión en cada operación, simplificando el mantenimiento y cumpliendo con los estándares de calidad requeridos.",
-      "Destacado por su rueda de acrílico transparente de precisa terminación, el fiabrilómetro ofrece una visualización clara del proceso de conteo. Esta característica no solo facilita la supervisión del conteo, sino que también garantiza una larga vida útil del dispositivo debido a su diseño robusto y duradero.",
+      "Destacado por su rueda de acrílico transparente de precisa terminación, el fiabrilómetro ofrece una visualización clara del proceso de conteo.",
     ],
     image: imagefriabilometro,
     id: 12,
-    extraInfo: [hermetico, automatico, tamaño, software, usb, print, calibracion],
+    extraInfo: [hermetico, automatico, tamaño, software, usb, print, calibracion,manual],
   },
   {
     title: "Medidor de densidad ",
     descriptionItems: [
       "Con la capacidad de ajustar el tiempo, ensayo y velocidad, nuestro medidor de densidad ofrece un control personalizado para adaptarse a sus necesidades específicas de prueba. Esta flexibilidad garantiza resultados consistentes y confiables en todas las condiciones de trabajo.",
-      "La sujeción rápida de la bureta mediante elastómero agiliza la preparación de muestras, optimizando el tiempo de análisis sin comprometer la seguridad. Este diseño innovador permite una manipulación eficiente y segura durante todo el proceso.",
-      "Equipado con un display de cuatro renglones por veinte caracteres, nuestro medidor proporciona una interfaz clara y fácil de leer para una visualización instantánea de los datos.",
+      "La sujeción rápida de la bureta mediante elastómero agiliza la preparación de muestras, optimizando el tiempo de análisis sin comprometer la seguridad. Permite una manipulación eficiente y segura durante todo el proceso.",
+      "Equipado con un display de cuatro renglones por veinte caracteres, nuestro medidor proporciona una interfaz clara y fácil de leer.",
     ],
     image: tapdencityImagenes,
     id: 13,
-    extraInfo: [hermetico, automatico, tamaño, software, usb, print, calibracion],
+    extraInfo: [hermetico, automatico, tamaño, software, usb, print, calibracion,manual],
   },
   {
     title: "Test de hermeticidad ",
@@ -154,13 +157,13 @@ export const products = [
   {
     title: "Titulador automático ",
     descriptionItems: [
-      "El titulador automático es ideal para la industria farmacéutica, veterinaria y alimenticia. Equipado con un agitador magnético integrado en su propio gabinete, garantiza una mezcla homogénea y eficiente de los componentes, asegurando resultados precisos y consistentes.",
-      "Cuenta con la validación de microbomba peristáltica, verificada mediante una balanza certificada. Esta característica garantiza un control absoluto sobre los procesos de dosificación, cumpliendo con los más altos estándares de calidad y seguridad requeridos por estas industrias.",
+      "El titulador automático es ideal para la industria farmacéutica y alimenticia. Equipado con un agitador magnético integrado en su propio gabinete, garantiza una mezcla homogénea y eficiente de los componentes, asegura resultados precisos y consistentes.",
+      "Cuenta con la validación de microbomba peristáltica, verificada mediante una balanza certificada. Esta característica garantiza un control absoluto sobre los procesos de dosificación, cumpliendo con los más altos estándares de calidad.",
       "Nuestros clientes puedenoptimizar sus procesos de producción, asegurando la calidad de sus productos y cumpliendo con las regulaciones vigentes. Una solución confiable y eficaz para satisfacer las demandas más exigentes del mercado.",
     ],
     image: tituladorautomaticoImages,
     id: 15,
-    extraInfo: [hermetico, automatico, tamaño, software, print,usb, calibracion],
+    extraInfo: [hermetico, automatico, tamaño, software, print,usb, calibracion,manual],
   },
 ];
 

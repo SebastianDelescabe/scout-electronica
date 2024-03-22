@@ -5,19 +5,22 @@ import { ToastContainer, toast } from "react-toastify";
 import ReCAPTCHA from "react-google-recaptcha";
 import "react-toastify/dist/ReactToastify.css";
 import './Contact.css';
+import { useContext } from 'react';
+import { ProductSelectedContext } from '../../context/ProductSelectedContext';
 
 export const ContactForm = () => {
 
     const form = useRef();
 
+    const { productSelected } = useContext(ProductSelectedContext)
+
     const initialValues = {
         company: '',
         email: '',
         phone: '',
-        theme: '',
+        theme: productSelected === false ? '' : productSelected,
         request: '',
     }
-
 
     const [captcha, setCaptcha] = useState(false)
 
@@ -89,17 +92,15 @@ export const ContactForm = () => {
                             />
                         </div>
                         <div>
-                            {
-                                <input
-                                    placeholder='Asunto'
-                                    name='theme'
-                                    type='text'
-                                    values={values.theme}
-                                    onChange={handleChange}
-                                    required
-                                />
-                            
-                            }
+                            <input
+                                placeholder='Asunto'
+                                name='theme'
+                                type='text'
+                                values={values.theme}
+                                value={values.theme}
+                                onChange={handleChange}
+                                required
+                            />
                         </div>
                     </div>
                     <div>
@@ -115,6 +116,7 @@ export const ContactForm = () => {
                         />
                     </div>
                     <ReCAPTCHA
+                        className='captcha--content'
                         sitekey="6LdMERkjAAAAACb93r264r5WbOVDIZFHYCWCO4Ev"
                         onChange={onChange}
                         required

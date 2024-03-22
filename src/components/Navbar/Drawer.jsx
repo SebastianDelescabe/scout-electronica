@@ -9,7 +9,9 @@ import { MdOutlineLocationOn } from "react-icons/md";
 
 import { NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
 
-export const Drawer = () => {
+export const Drawer = (data) => {
+  const { menuData } = data
+
   const [state, setState] = useState({
     right: false,
   });
@@ -24,6 +26,12 @@ export const Drawer = () => {
 
     setState({ ...state, [anchor]: open });
   };
+
+  const [openSubmenu, setopenSubmenu] = useState(true)
+
+  const handeOnClickSubMenu = () => {
+    setopenSubmenu(!openSubmenu)
+  }
 
   return (
     <div className="div-drawer">
@@ -63,7 +71,30 @@ export const Drawer = () => {
                     <CloseIcon />
                   </IconButton>
                 </div>
-                <NavHashLink onClick={toggleDrawer(anchor, false)} to="/productos#top">EQUIPOS</NavHashLink>
+                <div onClick={() => handeOnClickSubMenu()} className="products__title-menu">
+                  <span>EQUIPOS</span>
+                  {
+                    openSubmenu ? 
+                   <svg width="24" height="24" viewBox="0 0 24 24" style={{transform: 'rotate(180deg)',transition:'all 0.5s ease'}}><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                    :
+                   <svg width="24" height="24" viewBox="0 0 24 24" style={{transform: 'unset',transition:'all 0.5s ease'}}><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                  }
+                </div>
+                {
+                  openSubmenu &&
+                  <ul className="scout-menu-mobile">
+                    {
+                      menuData && menuData.map(product => (
+                        <li key={product.id}>
+                          <a href={product.id}>{product.title}</a>
+                        </li>
+                      ))
+                    }
+                    <li className="menu-mobile-descarga">
+                      <a target="new_blanc" href="https://drive.google.com/u/0/uc?id=1J4gnNZKP_-USQcEtoSnMyURBn9C6rlvz&export=download">Descargar catálogo</a>
+                    </li>
+                    </ul>
+                }
                 <NavHashLink onClick={toggleDrawer(anchor, false)} to="/service#top">SERVICIO TÉCNCIO</NavHashLink>
                 <NavHashLink onClick={toggleDrawer(anchor, false)} to="/conocenos#top">CONOCENOS</NavHashLink>
                 <NavHashLink onClick={toggleDrawer(anchor, false)} to="/#clients">CLIENTES</NavHashLink>

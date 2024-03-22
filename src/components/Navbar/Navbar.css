@@ -101,6 +101,9 @@
   align-items: center;
   justify-content: flex-end;
   width: 100%;
+  margin-bottom: 2rem;
+  position: relative;
+  left: 10px;
 }
 .container-titles-nav>a:last-child {
   font-weight: 700;
@@ -170,7 +173,8 @@
     flex-direction: column;
     text-align: start;
     padding: 1rem;
-    width: 15rem;
+    width: 17rem;
+    box-sizing: border-box;
   }
   .div-container-menu-mobile>a {
     color: #595959;
@@ -223,6 +227,9 @@ ul.scout-menu {
   color: #606060 ;
   transition: all 0.3s; 
   font-weight: 400 ;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 .scout-menu li:hover a {
   color: var(--color-aqua);
@@ -250,4 +257,39 @@ ul.scout-menu {
   justify-content: left;
   font-size: 13px;
 
+}
+ul.scout-menu-mobile {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding: 1.3rem 0rem 1rem 0rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+ul.scout-menu-mobile>li>a:hover{
+  color: var(--color-aqua);
+}
+ul.scout-menu-mobile>li {
+  color: #606060;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.products__title-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #606060;
+}
+.products__title-menu span{
+  font-weight: 600;
+  color: #595959;
+  padding: 1rem 0rem;
+}
+li.menu-mobile-descarga {
+  background: #eeee;
+  text-align: center;
+  padding: 0.5rem;
 }

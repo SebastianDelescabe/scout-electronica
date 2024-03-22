@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import products from "../../assets/data/productData";
+import { NavHashLink } from "react-router-hash-link";
+import { ProductSelectedContext } from "../../context/ProductSelectedContext";
 import "./ProductsDetail.css";
 
 //Carrousel imports
@@ -13,14 +15,16 @@ export const ProductsDetail = () => {
   
   const { id } = useParams();
 
+  const {setproductSelected} = useContext(ProductSelectedContext)
+
   const [productID, setProductID] = useState(false);
 
   useEffect(() => {
-    const filterItem = products.find((product) => product.id == id);
+    const filterItem = products.find((product) => product.id.toString() === id);
     setProductID(filterItem);
-  }, [productID]);
+  }, [id]);
 
-  console.log(productID);
+
   if (id && productID ) {
     return (
       <div className="product__detail" id="product__detail" >
@@ -56,6 +60,13 @@ export const ProductsDetail = () => {
                     <li key={index}>{descriptionItem}</li>
                   ))}
               </ul>
+              <NavHashLink 
+                to="/contact#form" 
+                className='button__see-more'
+                onClick={setproductSelected(productID.title)}
+                >
+                Solicitar mas información
+                </NavHashLink>
           </div>
         </div>
           <ul className="product__detail-extraInfo">

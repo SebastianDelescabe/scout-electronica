@@ -40,7 +40,7 @@ export const Navbar = () => {
           <NavHashLink className="hover-underline-animation" to="/contact#top">CONTACTO</NavHashLink>
         </div>
         <div className="container-drawer-nav">
-          <Drawer />
+          <Drawer menuData = {products}/>
         </div>
       </div>
     </div >
