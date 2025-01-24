@@ -13,23 +13,23 @@ import 'swiper/css/bundle';
 
 export const ProductsDetail = () => {
   
-  const { id } = useParams();
-
+  const seo_name = useParams();
+  
   const {setproductSelected} = useContext(ProductSelectedContext)
 
-  const [productID, setProductID] = useState(false);
+  const [product, setProduct] = useState(false);
 
   useEffect(() => {
-    const filterItem = products.find((product) => product.id.toString() === id);
-    setProductID(filterItem);
-  }, [id]);
+    const filterItem = products.find((item) => item.seo_name === seo_name.id);
+    setProduct(filterItem);
+  }, [seo_name]);
 
 
-  if (id && productID ) {
+  if (seo_name && product ) {
     return (
       <div className="product__detail" id="product__detail" >
         <div className="bannerImage-text">
-          <h1>{productID.title}</h1>
+          <h1>{product.title}</h1>
         </div>
         <div className="product__detail-container">
           <div className="product__detail-header">
@@ -45,7 +45,7 @@ export const ProductsDetail = () => {
                 className="swiper"
             >
                 {
-                  productID.image && productID.image.map(img => (
+                  product.image && product.image.map(img => (
                     <SwiperSlide key={img.id}>
                           <img src={img} alt="" />
                     </SwiperSlide>
@@ -55,23 +55,23 @@ export const ProductsDetail = () => {
           </div>
           <div className="porduct__detail-body">
               <ul className="product__detail-body-items-description">
-                {productID.descriptionItems &&
-                  productID.descriptionItems.map((descriptionItem, index) => (
+                {product.descriptionItems &&
+                  product.descriptionItems.map((descriptionItem, index) => (
                     <li key={index}>{descriptionItem}</li>
                   ))}
               </ul>
               <NavHashLink 
                 to="/contact#form" 
                 className='button__see-more'
-                onClick={setproductSelected(productID.title)}
+                onClick={setproductSelected(product.title)}
                 >
                 Solicitar mas información
                 </NavHashLink>
           </div>
         </div>
           <ul className="product__detail-extraInfo">
-            {productID.extraInfo &&
-              productID.extraInfo.map((extraInfo, index) => (
+            {product.extraInfo &&
+              product.extraInfo.map((extraInfo, index) => (
                 <li key={index}>
                   <img src={extraInfo[1]} alt="" />
                   <span>{extraInfo[0]}</span>

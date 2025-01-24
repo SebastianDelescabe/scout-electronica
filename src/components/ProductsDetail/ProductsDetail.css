@@ -51,11 +51,13 @@
     font-weight: 600;
     color: #606060;
     font-size: 30px;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
 }
 .bannerImage-text > h1:after {
-    content: 'SCOUT';
-    font-weight: 800;
-    margin-left: 12px;
+    content: 'SCOUT ELECTRÓNICA';
+    font-size: 15px;
+    font-weight: 200;
 }
 .product__detail-extraInfo{
     list-style: none;

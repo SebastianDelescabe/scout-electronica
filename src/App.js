@@ -50,7 +50,8 @@ function App() {
             <Route path='/service' element={<Service />} />
             <Route path='/:id' element={<ProductsDetail />} />
             <Route path='/conocenos' element={<AboutUs />} />
-            <Route path='*' exact={true} element={<Error404 />} />
+            <Route  element={<Error404 />} />
+{/*             <Route path='*' exact={true} element={<Error404 />} /> */}
           </Routes>
           <WhatsappIcon />
           <Footer />

@@ -25,7 +25,7 @@ export const Navbar = () => {
             {
               products && products.map(product => (
                 <li key={product.id}>
-                  <a href={product.id}>{product.title}</a>
+                  <a href={product.seo_name}>{product.title}</a>
                 </li>
               ))
             }
