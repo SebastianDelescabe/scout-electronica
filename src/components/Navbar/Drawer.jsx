@@ -86,7 +86,7 @@ export const Drawer = (data) => {
                     {
                       menuData && menuData.map(product => (
                         <li key={product.id}>
-                          <a href={product.id}>{product.title}</a>
+                          <a href={product.seo_name}>{product.title}</a>
                         </li>
                       ))
                     }

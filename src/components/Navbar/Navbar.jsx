@@ -21,18 +21,18 @@ export const Navbar = () => {
         </div>
         <div className="container-titles-nav">
             <span className="hover-underline-animation products-menu" href="#">EQUIPOS
-            <ul className="scout-menu">
-            {
-              products && products.map(product => (
-                <li key={product.id}>
-                  <a href={product.seo_name}>{product.title}</a>
-                </li>
-              ))
-            }
-            <li>
-              <a target="new_blanc" href="https://drive.google.com/u/0/uc?id=1J4gnNZKP_-USQcEtoSnMyURBn9C6rlvz&export=download">Descargar catálogo</a>
-            </li>
-            </ul>
+              <ul className="scout-menu">
+              {
+                products && products.map(product => (
+                  <li key={product.id}>
+                    <a href={product.seo_name}>{product.title}</a>
+                  </li>
+                ))
+              }
+              <li>
+                <a target="new_blanc" href="https://drive.google.com/u/0/uc?id=1J4gnNZKP_-USQcEtoSnMyURBn9C6rlvz&export=download">Descargar catálogo</a>
+              </li>
+              </ul>
             </span>
           <NavHashLink className="hover-underline-animation" to="/service#top">SERVICIO TÉCNCIO</NavHashLink>
           <NavHashLink className="hover-underline-animation" to="/conocenos#top">CONOCENOS</NavHashLink>

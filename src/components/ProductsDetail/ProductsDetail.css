@@ -50,12 +50,12 @@
     text-transform: uppercase;
     font-weight: 600;
     color: #606060;
-    font-size: 30px;
+    font-size: 35px;
     flex-direction: column-reverse;
     gap: 0.5rem;
 }
 .bannerImage-text > h1:after {
-    content: 'SCOUT ELECTRÓNICA';
+    content: 'SCOUT ELECTRONICA';
     font-size: 15px;
     font-weight: 200;
 }
@@ -181,10 +181,11 @@ a.button__see-more:hover {
     }
     .bannerImage-text{
         background-position: center;
+        height: 150px;
     }
     .bannerImage-text > h1{
         display: flex;
-        flex-direction: column;
-        font-size: 25px;
+        flex-direction: column-reverse;
+        font-size: 20px;
     }
 }
