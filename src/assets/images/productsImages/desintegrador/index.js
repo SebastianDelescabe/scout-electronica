@@ -5,8 +5,8 @@ import desintegrador3 from '../desintegrador/desintegrador3.png'
 
 const desintegradorImages = [
     desintegrador1,
-    desintegrador2,
-    desintegrador3
+/*     desintegrador2,
+    desintegrador3 */
 ]
 
 export default desintegradorImages

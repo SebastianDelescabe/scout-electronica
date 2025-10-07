@@ -4,10 +4,10 @@ import testhermeticidad3 from '../testhermeticidad/testhermeticidad3.png'
 import testhermeticidad4 from '../testhermeticidad/testhermeticidad4.png'
 
 const testhermeticidadImagenes = [
-    testhermeticidad2,
     testhermeticidad1,
+/*     testhermeticidad2,
     testhermeticidad3,
-    testhermeticidad4,
+    testhermeticidad4, */
 
 ]
 

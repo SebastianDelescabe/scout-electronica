@@ -4,10 +4,10 @@ import baniotermostatico1 from '../baniotermostatico/baniotermostatico1.png'
 import baniotermostatico4 from '../baniotermostatico/baniotermostatico4.png'
 
 const baniotermostaticoImages = [
-    baniotermostatico3,
-    baniotermostatico2,
     baniotermostatico1,
-    baniotermostatico4
+/*     baniotermostatico3,
+    baniotermostatico2,
+    baniotermostatico4 */
 ]
 
 export default baniotermostaticoImages

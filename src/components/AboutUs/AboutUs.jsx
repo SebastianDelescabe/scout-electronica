@@ -18,7 +18,7 @@ export const AboutUs = () => {
           <div>
             <p className="quines-title-nosotros">¿Quiénes somos?</p>
             <p className="text-nosotros">
-              Scout Electronica es una empresa dedicada a ofrecer soluciones
+              Scout Electrónica es una empresa dedicada a ofrecer soluciones
               integrales en el suministro de equipos e insumos para laboratorios
               medicinales o afines.
             </p>

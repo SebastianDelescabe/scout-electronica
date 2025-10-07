@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { HomeCard } from './HomeCard';
 import { Clients } from '../Clients/Clients';
+import { Destacados } from '../Destacados/Destacados';
+
 import { homeData } from '../../assets/data/homeData';
 import './Home.css';
 
@@ -50,6 +52,7 @@ export const Home = () => {
                 }
             </Swiper>
             </div>
+            <Destacados/>
             <Clients />
         </div>
     );

@@ -4,11 +4,10 @@ import Logo from "../../assets/images/logo1-nav.png";
 import { Drawer } from "./Drawer";
 import { Link } from "react-router-dom";
 import { useScrollPosition } from "../../customHooks/useScrollPosition";
-import products from "../../assets/data/productData";
-import { NavHashLink } from 'react-router-hash-link'; //NavHashlink te lleva al id, Hash link te lleva a la ruta
+import { navItems } from "../../assets/data/navData";
+import { NavHashLink } from 'react-router-hash-link';
 
 export const Navbar = () => {
-
   const scrollPosition = useScrollPosition();
 
   return (
@@ -19,30 +18,54 @@ export const Navbar = () => {
             <img className="img-logo" src={Logo} alt="logo" />
           </Link>
         </div>
+
         <div className="container-titles-nav">
-            <span className="hover-underline-animation products-menu" href="#">EQUIPOS
-              <ul className="scout-menu">
-              {
-                products && products.map(product => (
-                  <li key={product.id}>
-                    <a href={product.seo_name}>{product.title}</a>
-                  </li>
-                ))
-              }
+          <span className="hover-underline-animation products-menu" href="#">
+            EQUIPOS
+            <ul className="scout-menu">
+              {navItems.map((category) => (
+                <li key={category.category} className="submenu-category">
+                  {category.category}
+                  <ul className="submenu-items">
+                    {category.items.map((item) => (
+                      <li key={item.id}>
+                        <a href={item.seo_name}>{item.title}</a>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ))}
+
               <li>
-                <a target="new_blanc" href="https://drive.google.com/u/0/uc?id=1J4gnNZKP_-USQcEtoSnMyURBn9C6rlvz&export=download">Descargar catálogo</a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://drive.google.com/file/d/1wk4QVLYoafvb8KECOv-sR8M0rGecYuif/view?usp=drive_link"
+                >
+                  Descargar catálogo
+                </a>
               </li>
-              </ul>
-            </span>
-          <NavHashLink className="hover-underline-animation" to="/service#top">SERVICIO TÉCNCIO</NavHashLink>
-          <NavHashLink className="hover-underline-animation" to="/conocenos#top">CONOCENOS</NavHashLink>
-          <NavHashLink className="hover-underline-animation" to="/#clients">CLIENTES</NavHashLink>
-          <NavHashLink className="hover-underline-animation" to="/contact#top">CONTACTO</NavHashLink>
+            </ul>
+          </span>
+
+          <NavHashLink className="hover-underline-animation" to="/service#top">
+            SERVICIO TÉCNICO
+          </NavHashLink>
+          <NavHashLink className="hover-underline-animation" to="/conocenos#top">
+            CONOCENOS
+          </NavHashLink>
+          <NavHashLink className="hover-underline-animation" to="/#clients">
+            CLIENTES
+          </NavHashLink>
+          <NavHashLink className="hover-underline-animation" to="/contact#top">
+            CONTACTO
+          </NavHashLink>
         </div>
+
         <div className="container-drawer-nav">
-          <Drawer menuData = {products}/>
+          <Drawer menuData={navItems} />
         </div>
       </div>
-    </div >
+    </div>
   );
 };

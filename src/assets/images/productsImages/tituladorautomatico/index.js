@@ -5,9 +5,9 @@ import tituladorautomatico4 from '../tituladorautomatico/tituladorautomatico4.pn
 
 const tituladorautomaticoImagenes = [
     tituladorautomatico1,
-    tituladorautomatico2,
+/*     tituladorautomatico2,
     tituladorautomatico3,
-    tituladorautomatico4,
+    tituladorautomatico4, */
 
 ]
 

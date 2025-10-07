@@ -20,11 +20,13 @@ import imagedosificadoradepolvos from '../images/productsImages/dosificadoradepo
 import imagepenetrometro from '../images/productsImages/penetrometro/index';
 import imagefriabilometro from '../images/productsImages/friabilometro/index';
 import caudalimetroImages from "../images/productsImages/caudalimetroddegases";
+import imagendurometrocb from '../images/productsImages/durometrocb/index';
+
 
 //EXTRA DATA 
 let [hermetico, automatico, tamaño, software, usb, print, calibracion,manual] = [
   ["Hermético", hermeticImg],
-  ["Completamente Automático", automaticImg],
+  ["Automático", automaticImg],
   ["Tamaño ideal", idealSizeImg],
   ["Software amigable", softwareImg],
   ["Salida USB (opcional)", usbImg],
@@ -45,6 +47,18 @@ export const products = [
     image: imagesDurometro,
     id: 1,
     seo_name:"durometro"
+  },
+    {
+    title: "Durómetro cápsulas blandas",
+    descriptionItems: [
+      "El durómetro de cápsulas blandas está diseñado para medir la consistencia y resistencia de cápsulas con recubrimientos de gel sin dañarlas. Permite ajustar la fuerza requerida para los ensayos y realizar pruebas instructivas y no destructivas, garantizando resultados precisos sin comprometer la integridad del producto.",
+      "Este equipo se desempeña como un texturómetro sin penetración, ideal para cápsulas blandas con gel. Su estructura cuenta con un gabinete en acrílico, ofreciendo durabilidad y un diseño limpio y funcional. Además, incorpora una salida RS2332-USB que facilita la transferencia de datos para su análisis y documentación.",
+      "Representa una herramienta esencial para laboratorios farmacéuticos y de control de calidad, asegurando resultados confiables en la evaluación de la textura y consistencia de los productos.",
+    ],
+    extraInfo: [hermetico, automatico, tamaño, software, usb, print, calibracion,manual],
+    image: imagendurometrocb,
+    id: 1,
+    seo_name:"durometro-capsulas-blandas"
   },
   {
     title: "Baño Termostático ",

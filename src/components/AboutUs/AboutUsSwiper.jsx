@@ -36,7 +36,7 @@ export const AboutUsSwiper = () => {
                 </Swiper>
                 <div className="slider-texto">
                     <div className="slider-text-container">
-                        <h1>Scout <strong>Electronica</strong></h1>
+                        <h1>Scout <strong>Electrónica</strong></h1>
                         <p>
                             Con años de experiencia en el rubro sanitario, comenzamos a elaborar distintos equipos electrónicos para control de sólidos en laboratorios medicinales importantes de Argentina.
                         </p>

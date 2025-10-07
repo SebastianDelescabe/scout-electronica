@@ -5,12 +5,12 @@
 .homeCard {
   display: flex;
   justify-content: center;
-  padding-top: 7rem;
+  height: 95vh;
 }
 .homeCard__items {
   width: 100%;
-  background-color: var(--color-background);
-  padding: 5rem 3rem 7rem 3rem;
+background: #FFFF;
+background: linear-gradient(0deg, rgba(255, 255, 255, 1) 31%, rgba(219, 219, 219, 1) 100%);
   display: flex;
   align-items: center;
 }
@@ -19,25 +19,35 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 70%;
 }
 
 .homeCard__title {
   text-align: center;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 2.2rem;
   color: var(--hard-grey);
   margin-bottom: 3rem;
   text-transform: uppercase;
+  width: 520px;
+  line-height: 50px;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
 }
 
 .homeCard__image {
-  width: 800px;
-  padding: 0rem 2rem;
+  width: 25%;
+  
 }
 
+
 .homeCard__image img {
-  width: 100%;
+    width: 100%;
+    object-fit: contain;
+    max-height: 500px;
+    position: relative;
+    right: 30%;
 }
 
 .homeCard__button-responsive {
@@ -62,6 +72,22 @@ span.homeCard__title {
 .swiper-button-next, .swiper-button-prev{
   top: 55% !important;
 }
+h1.homeCard__title:before {
+    content: 'SCOUT ELECTRÓNICA';
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+h1.homeCard__title:after {
+    color: black;
+    content: '';
+    width: 100%;
+    background: black;
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
   content: 'prev';
   font-size: 20px !important;
@@ -72,7 +98,8 @@ span.homeCard__title {
 }
 @media (max-width: 1700px) {
   .homeCard__items {
-    background-color: var(--color-background);
+background: #FFFF;
+background: linear-gradient(0deg, rgba(255, 255, 255, 1) 31%, rgba(219, 219, 219, 1) 100%);
     cursor: pointer;
   }
   .homeCard__title {
@@ -83,7 +110,7 @@ span.homeCard__title {
 }
 @media (max-width: 850px) {
   .homeCard {
-    padding-top: 8rem;
+    padding-top: 7rem;
     height: 800px;
   }
   .homeCard__items {
@@ -130,7 +157,6 @@ span.homeCard__title {
     flex-direction: column;
     width: 100%;
     padding: 1rem;
-    margin-top: 3rem;
   }
 
   .homeCard__container {

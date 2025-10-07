@@ -71,7 +71,8 @@
   width: 100%;
 }
 .container-form-titles>h5,.container-form-titles>h2{
-  color: #606060;
+  color: var(--hard-grey);
+
   margin: 0;
   text-transform: uppercase;
 }

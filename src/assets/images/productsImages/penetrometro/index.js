@@ -4,9 +4,9 @@ import penetrometro3 from '../penetrometro/penetrometro3.png'
 
 
 const imagepenetrometro = [
-    penetrometro2,
     penetrometro1,
-    penetrometro3
+/*     penetrometro2,
+    penetrometro3 */
 ]
 
 export default imagepenetrometro

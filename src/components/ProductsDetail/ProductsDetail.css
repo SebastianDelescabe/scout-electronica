@@ -3,14 +3,17 @@
 }
 .product__detail-container{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 3rem;
 
 }
 .product__detail-header {
     width: 40%;
-    height: 385px;
+    height: 100%;
+}
+.product__detail-header .swiper{
+    height: 350px;
 }
 .product__detail-header img {
     width: 100%;
@@ -49,13 +52,14 @@
     height: 100%;
     text-transform: uppercase;
     font-weight: 600;
-    color: #606060;
+  color: var(--hard-grey);
+
     font-size: 35px;
     flex-direction: column-reverse;
     gap: 0.5rem;
 }
 .bannerImage-text > h1:after {
-    content: 'SCOUT ELECTRONICA';
+    content: 'SCOUT ELECTRÓNICA';
     font-size: 15px;
     font-weight: 200;
 }
@@ -65,15 +69,15 @@
     gap: 2rem;
     flex-wrap: wrap;
     justify-content: center;
-    width: 75%;
-        list-style: none;
-        display: flex;
-        gap: 2rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 75%;
-        margin: 0 auto;
-        padding: 1rem 0rem 4rem 0rem;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem 0rem 4rem 0rem;
     
 }
 .product__detail-extraInfo li{
@@ -81,11 +85,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 160px;
+    width: 125px;
     text-align: center;
     background: #eeeeee;
     border-radius: 50%;
-    height: 160px;
+    height: 125px;
     gap: 0.5rem;
     transition: 0.5s ease ;
 }
@@ -97,7 +101,8 @@ ul.product__detail-extraInfo > li > img {
     height: 50px;
 }
 .product__detail-extraInfo li > span {
-    width: 145px;
+    width: 100%;
+    font-size: 14px;
 }
 
 
@@ -148,7 +153,12 @@ a.button__see-more:hover {
     color: var(--color-aqua);
 
 }
-
+img.Baño.Termostático {
+    height: unset;
+}
+img.Durómetro.cápsulas.blandas {
+    object-fit: contain;
+}
 
 @media (max-width: 768px){
     .product__detail-container{
@@ -156,6 +166,7 @@ a.button__see-more:hover {
         flex-direction: column;
         padding: 0rem;
         justify-content: center;
+        align-items: center;
     }
     .product__detail-header {
         width: 90%;

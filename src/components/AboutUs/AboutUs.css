@@ -94,7 +94,7 @@
   margin-top: 0rem;
   font-size: 1.8rem;
   font-weight: 700;
-  color: #606060;
+  color: var(--hard-grey);
 }
 
 /*-----------------------------------------------------------------*/
@@ -148,7 +148,8 @@
 
 .slider-texto h1 {
   text-align: center;
-  color: #606060;
+  color: var(--hard-grey);
+
   text-decoration: underline;
   line-height: 2;
   text-underline-offset: 10px;

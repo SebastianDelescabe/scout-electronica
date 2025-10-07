@@ -5,19 +5,19 @@ import fotoHome3 from '../../assets/images/fotoHome3.png';
 
 export const homeData = [
     {
-        title: 'Inovación y calidad para laboratorios de latinoamérica',
+        title: '25 AÑOS FRABICANDO Y CALIBRANDO EQUIPOS DE PARA CONTROL DE CALIDAD',
         image: fotoHome1,
         button: 'Conocenos',
         id: '/conocenos'
     },
     {
-        title: 'Servicio técnico de pronta respuesta y calidad',
+        title: 'FABRICACIÓN NACIONAL Y SERVICIO POST VENTA',
         image: fotoHome2,
         button: 'Servicio Técnico',
         id: '/service'
     },
     {
-        title: 'Trabajamos para clientes de Argentina y latinoamérica',
+        title: 'GARANTÍA LOCAL, RÁPIDA ENTREGA Y SERVICIO TÉCNICO DIRECTO DEL FABRICANTE',
         image: fotoHome3,
         button: 'Clientes',
         id: '#clients'

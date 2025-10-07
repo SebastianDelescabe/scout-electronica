@@ -1,7 +1,7 @@
 .whatsappIcon {
   position: fixed;
   bottom: 2rem;
-  right: 0.2rem;
+  right: 1.2rem;
   background-color: transparent;
   color: var(--color-aqua);
   z-index: 1;

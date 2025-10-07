@@ -47,7 +47,7 @@ export const ProductsDetail = () => {
                 {
                   product.image && product.image.map(img => (
                     <SwiperSlide key={img.id}>
-                          <img src={img} alt="" />
+                          <img className={product.title} src={img} alt="" />
                     </SwiperSlide>
                     ))
                 }
@@ -67,9 +67,7 @@ export const ProductsDetail = () => {
                 >
                 Solicitar mas información
                 </NavHashLink>
-          </div>
-        </div>
-          <ul className="product__detail-extraInfo">
+                        <ul className="product__detail-extraInfo">
             {product.extraInfo &&
               product.extraInfo.map((extraInfo, index) => (
                 <li key={index}>
@@ -78,6 +76,8 @@ export const ProductsDetail = () => {
                 </li>
               ))}
           </ul>
+          </div>
+        </div>
       </div>
     );
   }

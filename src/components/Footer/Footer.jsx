@@ -36,7 +36,7 @@ export const Footer = () => {
                     <img src={logo} alt="logo" />
                     <span>Nuestros objetivos son los mismos que los suyos.</span>
                     <div className='linkdin'>
-                        <a href="https://www.linkedin.com/company/scout-electronica" target='new_blanc'>
+                        <a href="https://www.linkedin.com/company/scoutelectronica/" target='new_blanc'>
                             <IoLogoLinkedin className='footer__incons'/>
                         </a>
                     </div>

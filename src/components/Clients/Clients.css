@@ -17,12 +17,12 @@
 .clients-banner span {
   font-size: 25px;
   align-items: center;
-  color: #606060;
-  font-weight: 600;
+  color: var(--color-gray);
+  font-weight: 300;
   text-transform: uppercase;
 }
 .clients-banner span strong {
-  font-weight: 900;
+  font-weight: 600;
 }
 .clients-banner-data {
   display: flex;
@@ -30,22 +30,34 @@
   padding: 3rem 0rem;
   justify-content: center;
 }
+/* .clients-banner-data {
+    display: block;
+    column-count: 4;
+    margin: 0 auto;
+} */
+ .clients-banner-data {
+    display: flex
+;
+    flex-wrap: wrap;
+}
 .clients-banner-data div {
-  width: 22%;
+  width: 33%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  height: 140px;
+  margin: 10px 0px;
 }
 
 .clients-banner-data div img {
   width: 60px;
   color: white;
-  filter: invert(36%) sepia(3%) saturate(3%) hue-rotate(37deg) brightness(102%) contrast(93%);
+/*   filter: invert(36%) sepia(3%) saturate(3%) hue-rotate(37deg) brightness(102%) contrast(93%); */
 }
 .clients-banner-data div p {
-  width: 90%;
+  width: 55%;
 }
 .cotnainer-pq-serv-nosotros>div:first-child img {
   filter: none;

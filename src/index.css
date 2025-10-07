@@ -15,10 +15,11 @@ html {
 
 :root {
   --font-base: "Poppins", sans-serif;
-  --color-aqua: #39d5da;
-  --color-gray: #606060;
+  --color-aqua: #252525;
+  --color-white: white;
+  --color-gray: #252525;
   --color-background: #eeeeee;
-  --hard-grey: #606060;
+  --hard-grey: #252525;
 
   /* //Swiper config */
   --swiper-navigation-color: white;

@@ -3,8 +3,8 @@ import dosificadoradepolvos2 from '../dosificadoradepolvos/dosificadoradepolvos2
 
 
 const imagedosificadoradepolvos = [
-    dosificadoradepolvos2,
     dosificadoradepolvos1,
+/*     dosificadoradepolvos2, */
 ]
 
 export default imagedosificadoradepolvos

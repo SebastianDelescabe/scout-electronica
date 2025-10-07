@@ -7,7 +7,6 @@ export const Clients = () => {
 
     return (
         <div className='clients'>
-            <ClientsCards/>
             <ClientsBanner/>
             <div className='clients-container'>
                 <div className='clients-images'>
