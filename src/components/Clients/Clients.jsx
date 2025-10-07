@@ -1,7 +1,6 @@
 import React from 'react';
 import { ClientsBanner } from './ClientsBanner';
 import { clients } from '../../assets/data/clientsData'
-import {ClientsCards} from './ClientsCards';
 import './Clients.css';
 export const Clients = () => {
 

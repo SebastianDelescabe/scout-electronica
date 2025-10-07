@@ -5,7 +5,7 @@ import fotoHome3 from '../../assets/images/fotoHome3.png';
 
 export const homeData = [
     {
-        title: '25 AÑOS FRABICANDO Y CALIBRANDO EQUIPOS DE PARA CONTROL DE CALIDAD',
+        title: '25 AÑOS FABRICANDO Y CALIBRANDO EQUIPOS PARA CONTROL DE CALIDAD',
         image: fotoHome1,
         button: 'Conocenos',
         id: '/conocenos'

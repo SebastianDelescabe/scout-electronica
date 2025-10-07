@@ -13,7 +13,7 @@ export const Destacados = () => {
                 destacadosData.map(productoDestacado => (
                 <NavHashLink className="button-text" to={productoDestacado.id}>
                     <div className='destacados-item'>
-                        <img src={productoDestacado.image} />
+                        <img src={productoDestacado.image}  alt={productoDestacado.name}/>
                         <span>{productoDestacado.nombre}</span>
                         <NavHashLink className="button-text" to={productoDestacado.id}>{productoDestacado.button}</NavHashLink>
                     </div>
