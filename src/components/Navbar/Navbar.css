@@ -112,14 +112,14 @@ ease;
   width: 40%;
   justify-self: center;
   align-self: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 .icon-close {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   position: relative;
   left: 10px;
 }
@@ -241,12 +241,14 @@ ul.scout-menu {
   font-weight: 300;
   margin: 0;
   position: relative;
-  padding: 0.5rem 0.5rem;
 }
 
 li.submenu-category span {
     width: 100%;
     display: block;
+}
+li.submenu-category{
+    padding: 0.5rem 0.5rem;
 }
 .scout-menu li a{
   text-transform: uppercase;
@@ -258,6 +260,7 @@ li.submenu-category span {
   display: flex;
   align-items: center;
   height: 100%;
+    padding: 0.5rem 0.5rem;
 }
 .scout-menu li:hover a {
   color: var(--color-aqua);
@@ -275,6 +278,10 @@ span.hover-underline-animation.products-menu > ul.scout-menu > li:last-child a{
     background: var(--hard-grey);
     text-align: center;
     width: 85%;
+}
+
+span.hover-underline-animation.products-menu > ul > li.descartables:after{
+content: unset;
 }
 span.hover-underline-animation.products-menu > ul.scout-menu > li:last-child{
   text-align: center;
@@ -296,9 +303,10 @@ ul.scout-menu-mobile {
   padding: 0;
   margin: 0;
   list-style: none;
-  padding: 1.3rem 0rem 1rem 0rem;
+  padding: 0rem;
   flex-direction: column;
   gap: 1rem;
+  margin-top: 0.5rem;
 }
 ul.scout-menu-mobile>li>a:hover{
   color: var(--color-aqua);
@@ -379,4 +387,52 @@ span.hover-underline-animation.products-menu > ul > li:after {
     display: block;
     margin-right: 0.5rem;
     font-size: 20px;
+}
+span.hover-underline-animation.products-menu > ul.scout-menu > li:last-child:after {
+    content: unset !important;
+}
+
+span.hover-underline-animation.products-menu > ul.scout-menu > li:last-child {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+.scout-menu>li>a {
+    padding: 0;
+}
+li.submenu-category.descartables {
+    padding: 0;
+}
+li.submenu-category.descartables a {
+    padding: 0.72rem 0.5rem;
+}
+.simbol-scout {
+    width: 40%;
+    justify-self: center;
+    align-self: center;
+    margin-top: 1rem;
+    filter: brightness(0.0);
+}
+li.menu-mobile-descarga {
+    margin-top: 0.5rem;
+    border: 1px solid black;
+    background: black;
+    color: white !important;
+    margin-bottom: 1rem;
+}
+ul.submenu-items-mobile {
+    margin: 10px;
+    margin-top: 14px;
+}
+li.submenu-category.descartables.submenu-category-mobile a {
+    padding-left: 0;
+}
+
+li.submenu-category.descartables.submenu-category-mobile {
+    font-weight: bold;
+    margin: 0;
+    padding-left: 0;
+    margin: 0;
 }

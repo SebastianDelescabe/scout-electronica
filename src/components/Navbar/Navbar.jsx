@@ -35,7 +35,9 @@ export const Navbar = () => {
                   </ul>
                 </li>
               ))}
-
+              <li className="submenu-category descartables">
+                <NavHashLink to="/descartables">Productos Descartables</NavHashLink>
+              </li>
               <li>
                 <a
                   target="_blank"

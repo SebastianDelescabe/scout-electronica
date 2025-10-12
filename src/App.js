@@ -11,6 +11,7 @@ import { Error404 } from './components/Error404/Error404';
 import { WhatsappIcon } from './components/Footer/WhatsappIcon';
 import { AboutUs } from './components/AboutUs/AboutUs';
 import { ProductSelectedContext } from './context/ProductSelectedContext';
+import { Descartables } from './components/Descartables/Descartables';
 
 
 import { AnimatePresence, motion } from 'framer-motion';
@@ -50,6 +51,7 @@ function App() {
             <Route path='/service' element={<Service />} />
             <Route path='/:id' element={<ProductsDetail />} />
             <Route path='/conocenos' element={<AboutUs />} />
+            <Route path='/descartables' element={<Descartables />} />
             <Route  element={<Error404 />} />
 {/*             <Route path='*' exact={true} element={<Error404 />} /> */}
           </Routes>

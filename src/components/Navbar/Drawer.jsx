@@ -75,6 +75,9 @@ export const Drawer = ({ menuData }) => {
                         </ul>
                       </li>
                     ))}
+                    <li className="submenu-category descartables submenu-category-mobile">
+                      <NavHashLink to="/descartables">Productos Descartables</NavHashLink>
+                    </li>
                     <li className="menu-mobile-descarga">
                       <a
                         target="_blank"
@@ -100,8 +103,6 @@ export const Drawer = ({ menuData }) => {
                   CONTACTO
                 </NavHashLink>
 
-                <img className="simbol-scout" src={Logo} alt="logo-responsive" />
-
                 <div className="contact-mobile-menu">
                   <div>
                     <MdPhone className='footer__icons' />
@@ -120,6 +121,8 @@ export const Drawer = ({ menuData }) => {
                     <p>Buenos Aires, Villa Ballester</p>
                   </div>
                 </div>
+
+                <img className="simbol-scout" src={Logo} alt="logo-responsive" />
               </div>
             </div>
           </SwipeableDrawer>
